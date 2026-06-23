@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 import { services, serviceAreas } from "@/data/business";
 
-const BASE_URL = "";
+const BASE_URL = "https://mwebbplumbingco.com";
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
