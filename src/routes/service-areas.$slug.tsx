@@ -40,7 +40,7 @@ export const Route = createFileRoute("/service-areas/$slug")({
     if (!loaderData) return {};
     const { area } = loaderData;
     const title = `Plumber in ${area.name} | M. Webb Plumbing Co.`;
-    const desc = `Trusted local plumber in ${area.name}. Residential, commercial & 24-hour emergency plumbing. Call +13253280435 for fast service.`;
+    const desc = `Trusted local plumber in ${area.name}. Residential, commercial & 24-hour emergency plumbing. (325) 328-0435 for fast service.`;
     return {
       meta: [
         { title },

@@ -14,9 +14,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Plumber in Brownwood, TX | M. Webb Plumbing Co. — 24 Hr Service" },
-      { name: "description", content: "Top-rated plumber in Brownwood, TX with 35+ years of experience. Residential, commercial & 24-hour emergency plumbing. Call +13253280435 for fast service." },
+      { name: "description", content: "Top-rated plumber in Brownwood, TX with 35+ years of experience. Residential, commercial & 24-hour emergency plumbing. (325) 328-0435 for fast service." },
       { property: "og:title", content: "Plumber in Brownwood, TX | M. Webb Plumbing Co." },
-      { property: "og:description", content: "35+ years of trusted plumbing service in Brownwood, Early, Bangs, Lake Brownwood & Zephyr, TX. 24-hour emergency. Call +13253280435." },
+      { property: "og:description", content: "35+ years of trusted plumbing service in Brownwood, Early, Bangs, Lake Brownwood & Zephyr, TX. 24-hour emergency. (325) 328-0435." },
       { property: "og:url", content: "/" },
     ],
     links: [
@@ -38,7 +38,7 @@ const faqs = [
   { q: "How quickly can a plumber arrive at my home?", a: "We pride ourselves on fast response times. Most emergency calls in Brownwood and surrounding areas are answered the same day, with many serviced within the hour." },
   { q: "Are you licensed and insured?", a: "Yes — M. Webb Plumbing Co. LLC is fully licensed and insured for both residential and commercial plumbing work in Texas." },
   { q: "Do you handle commercial plumbing?", a: "Absolutely. We service offices, restaurants, retail spaces and industrial properties throughout the Brownwood area with the same care and quality as our residential work." },
-  { q: "How much does a plumbing repair cost?", a: "Pricing depends on the issue. We give honest, upfront estimates before any work begins — no surprises. Call +13253280435 for a free estimate." },
+  { q: "How much does a plumbing repair cost?", a: "Pricing depends on the issue. We give honest, upfront estimates before any work begins — no surprises. (325) 328-0435 for a free estimate." },
 ];
 
 function Index() {

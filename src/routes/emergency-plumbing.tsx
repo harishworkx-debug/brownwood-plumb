@@ -14,7 +14,7 @@ export const Route = createFileRoute("/emergency-plumbing")({
   head: () => ({
     meta: [
       { title: "24 Hour Emergency Plumber in Brownwood, TX | M. Webb Plumbing" },
-      { name: "description", content: "24-hour emergency plumber in Brownwood, TX for burst pipes, major leaks, water line emergencies and overflowing fixtures. Call +13253280435 any time." },
+      { name: "description", content: "24-hour emergency plumber in Brownwood, TX for burst pipes, major leaks, water line emergencies and overflowing fixtures. (325) 328-0435 any time." },
       { property: "og:title", content: "24 Hour Emergency Plumber — Brownwood, TX" },
       { property: "og:description", content: "Burst pipe? Major leak? Call M. Webb Plumbing Co. for fast 24-hour emergency plumbing service in Brownwood and surrounding areas." },
       { property: "og:url", content: "/emergency-plumbing" },
@@ -38,7 +38,7 @@ function Page() {
           <>
             <p>A plumbing emergency in the middle of the night isn't just inconvenient — it can quickly turn into thousands of dollars of water damage. That's why we keep a true 24-hour on-call line for our Brownwood neighbors. Whether it's a burst pipe at 2 AM or a sudden flood under the kitchen sink, you'll talk to an experienced local plumber, not a call center.</p>
             <p>Our emergency plumbing service covers homes and businesses across <strong>Brownwood, Early, Bangs, Lake Brownwood and Zephyr, TX</strong>. We arrive prepared to stop the immediate problem, assess the underlying issue, and walk you through your repair options with honest, upfront pricing.</p>
-            <p>If you're dealing with an active leak right now: shut off the main water valve to your home (usually near the street or in a utility area), move valuables away from the water, and call us at <strong>+13253280435</strong>. We'll be on our way.</p>
+            <p>If you're dealing with an active leak right now: shut off the main water valve to your home (usually near the street or in a utility area), move valuables away from the water, and call us at <strong>(325) 328-0435</strong>. We'll be on our way.</p>
           </>
         }
       />

@@ -6,7 +6,7 @@ export const Route = createFileRoute("/leak-detection")({
   head: () => ({
     meta: [
       { title: "Leak Detection in Brownwood, TX | M. Webb Plumbing Co." },
-      { name: "description", content: "Expert leak detection in Brownwood, TX. Find and fix hidden water leaks fast before they cause expensive damage. Call +13253280435." },
+      { name: "description", content: "Expert leak detection in Brownwood, TX. Find and fix hidden water leaks fast before they cause expensive damage. (325) 328-0435." },
       { property: "og:title", content: "Leak Detection in Brownwood, TX" },
       { property: "og:description", content: "Non-invasive leak detection across Brown County — pinpoint hidden leaks before they damage your home." },
       { property: "og:url", content: "/leak-detection" },

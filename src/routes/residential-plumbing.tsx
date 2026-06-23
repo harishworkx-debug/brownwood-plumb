@@ -6,7 +6,7 @@ export const Route = createFileRoute("/residential-plumbing")({
   head: () => ({
     meta: [
       { title: "Residential Plumber in Brownwood, TX | M. Webb Plumbing Co." },
-      { name: "description", content: "Trusted residential plumber in Brownwood, TX. Home repairs, repipes, fixtures, water heaters & more. 35+ years experience. Call +13253280435." },
+      { name: "description", content: "Trusted residential plumber in Brownwood, TX. Home repairs, repipes, fixtures, water heaters & more. 35+ years experience. (325) 328-0435." },
       { property: "og:title", content: "Residential Plumber in Brownwood, TX" },
       { property: "og:description", content: "Honest, dependable home plumbing services across Brownwood and Brown County, TX." },
       { property: "og:url", content: "/residential-plumbing" },
