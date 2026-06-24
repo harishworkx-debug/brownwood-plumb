@@ -55,3 +55,34 @@ export function reviewSchema(reviews: { name: string; rating: number; text: stri
     })),
   };
 }
+
+export function locationBusinessSchema(locationName: string, latitude: number, longitude: number) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Plumber",
+    "@id": `https://${business.website}/service-areas/${locationName.toLowerCase().replace(/[\s,]/g, "-")}`,
+    name: `${business.name} - ${locationName}`,
+    description: `Trusted plumber serving ${locationName}. 35+ years of experience with residential, commercial & 24-hour emergency plumbing services.`,
+    url: `https://${business.website}/service-areas/${locationName.toLowerCase().replace(/[\s,]/g, "-")}`,
+    telephone: business.phone,
+    email: business.email,
+    priceRange: "$$",
+    areaServed: { "@type": "City", name: locationName },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: business.street,
+      addressLocality: business.city,
+      addressRegion: business.state,
+      postalCode: business.zip,
+      addressCountry: "US",
+    },
+    geo: { "@type": "GeoCoordinates", latitude, longitude },
+    openingHoursSpecification: [
+      { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "08:00", closes: "17:00" },
+      { "@type": "OpeningHoursSpecification", dayOfWeek: ["Saturday","Sunday"], opens: "00:00", closes: "23:59" },
+    ],
+    sameAs: [
+      `https://www.google.com/maps/search/${locationName}+plumber`,
+    ],
+  };
+}

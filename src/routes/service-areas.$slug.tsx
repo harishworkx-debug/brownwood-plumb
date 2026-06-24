@@ -6,6 +6,8 @@ import { Reveal } from "@/components/site/Reveal";
 import { Icon } from "@/components/site/Icon";
 import { QuoteForm } from "@/components/site/QuoteForm";
 import { CTABanner } from "@/components/site/CTABanner";
+import { JsonLd } from "@/components/site/JsonLd";
+import { locationBusinessSchema } from "@/lib/seo";
 
 const areaContent: Record<string, { intro: string; long: string }> = {
   "brownwood-tx": {
@@ -39,15 +41,17 @@ export const Route = createFileRoute("/service-areas/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) return {};
     const { area } = loaderData;
-    const title = `Plumber in ${area.name} | M. Webb Plumbing Co.`;
-    const desc = `Trusted local plumber in ${area.name}. Residential, commercial & 24-hour emergency plumbing. (325) 328-0435 for fast service.`;
+    const title = `Plumber in ${area.name} | Emergency, Residential & Commercial | M. Webb`;
+    const desc = `Expert plumber serving ${area.name}, TX. 35+ years. Residential, commercial & 24-hour emergency plumbing. Fast response, fair prices. Call (325) 328-0435 now.`;
     return {
       meta: [
         { title },
         { name: "description", content: desc },
+        { name: "keywords", content: `plumber ${area.name}, plumbing services ${area.name}, emergency plumber ${area.name}, local plumber ${area.name} tx` },
         { property: "og:title", content: title },
         { property: "og:description", content: desc },
         { property: "og:url", content: `/service-areas/${area.slug}` },
+        { property: "og:type", content: "website" },
       ],
       links: [{ rel: "canonical", href: `/service-areas/${area.slug}` }],
     };
@@ -124,6 +128,7 @@ function Page() {
 
       <CTABanner title={`Need a plumber in ${area.name}?`} subtitle="We're local, fast, and easy to reach. Call now or request a free estimate." />
       <div className="h-24" />
+      <JsonLd data={locationBusinessSchema(area.name, "lat" in area ? area.lat : 31.702854, "lat" in area ? area.lng : -98.990455)} />
     </>
   );
 }

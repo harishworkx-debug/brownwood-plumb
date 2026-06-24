@@ -13,8 +13,9 @@ import { faqSchema, reviewSchema } from "@/lib/seo";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Plumber in Brownwood, TX | M. Webb Plumbing Co. — 24 Hr Service" },
-      { name: "description", content: "Top-rated plumber in Brownwood, TX with 35+ years of experience. Residential, commercial & 24-hour emergency plumbing. (325) 328-0435 for fast service." },
+      { title: "Plumber in Brownwood, TX | 24 Hr Emergency Service | FREE Estimate" },
+      { name: "description", content: "M. Webb Plumbing: Top-rated local plumber in Brownwood, TX. 35+ years. Emergency, residential, commercial plumbing. Fast response, fair prices. Call (325) 328-0435." },
+      { name: "keywords", content: "plumber brownwood tx, emergency plumber, 24 hour plumber, residential plumber, commercial plumber, near me" },
       { property: "og:title", content: "Plumber in Brownwood, TX | M. Webb Plumbing Co." },
       { property: "og:description", content: "35+ years of trusted plumbing service in Brownwood, Early, Bangs, Lake Brownwood & Zephyr, TX. 24-hour emergency. (325) 328-0435." },
       { property: "og:url", content: "/" },

@@ -31,11 +31,11 @@ export const services = [
 ];
 
 export const serviceAreas = [
-  { slug: "brownwood-tx", name: "Brownwood, TX" },
-  { slug: "early-tx", name: "Early, TX" },
-  { slug: "bangs-tx", name: "Bangs, TX" },
-  { slug: "lake-brownwood-tx", name: "Lake Brownwood, TX" },
-  { slug: "zephyr-tx", name: "Zephyr, TX" },
+  { slug: "brownwood-tx", name: "Brownwood, TX", lat: 31.7029, lng: -98.9905 },
+  { slug: "early-tx", name: "Early, TX", lat: 31.8533, lng: -98.7725 },
+  { slug: "bangs-tx", name: "Bangs, TX", lat: 31.7522, lng: -99.0089 },
+  { slug: "lake-brownwood-tx", name: "Lake Brownwood, TX", lat: 31.8089, lng: -99.0175 },
+  { slug: "zephyr-tx", name: "Zephyr, TX", lat: 31.9261, lng: -99.0314 },
 ];
 
 export const testimonials = [

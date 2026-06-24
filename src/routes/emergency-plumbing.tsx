@@ -13,8 +13,9 @@ const faqs = [
 export const Route = createFileRoute("/emergency-plumbing")({
   head: () => ({
     meta: [
-      { title: "24 Hour Emergency Plumber in Brownwood, TX | M. Webb Plumbing" },
-      { name: "description", content: "24-hour emergency plumber in Brownwood, TX for burst pipes, major leaks, water line emergencies and overflowing fixtures. (325) 328-0435 any time." },
+      { title: "24 Hour Emergency Plumber Brownwood, TX | Call NOW (325) 328-0435" },
+      { name: "description", content: "24-hour emergency plumber in Brownwood, Early, Bangs, Lake Brownwood & Zephyr TX. Burst pipes, leaks, no water. Fast response guaranteed. (325) 328-0435." },
+      { name: "keywords", content: "emergency plumber brownwood tx, 24 hour plumber, burst pipe, emergency plumbing service, plumbing emergency" },
       { property: "og:title", content: "24 Hour Emergency Plumber — Brownwood, TX" },
       { property: "og:description", content: "Burst pipe? Major leak? Call M. Webb Plumbing Co. for fast 24-hour emergency plumbing service in Brownwood and surrounding areas." },
       { property: "og:url", content: "/emergency-plumbing" },

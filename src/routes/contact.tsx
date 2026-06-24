@@ -8,10 +8,11 @@ import { QuoteForm } from "@/components/site/QuoteForm";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact M. Webb Plumbing Co. — Brownwood, TX Plumber" },
-      { name: "description", content: "Contact M. Webb Plumbing Co. in Brownwood, TX. (325) 328-0435, email webbplumbing@verizon.net, or request a free estimate online." },
-      { property: "og:title", content: "Contact — M. Webb Plumbing Co., Brownwood TX" },
-      { property: "og:description", content: "Get in touch with M. Webb Plumbing Co. for a free estimate or 24-hour emergency service." },
+      { title: "Contact M. Webb Plumbing Co. — FREE Estimate | Brownwood, TX" },
+      { name: "description", content: "Contact M. Webb Plumbing. Call 24/7 (325) 328-0435, get a FREE estimate, or schedule emergency service. Local plumber in Brownwood, TX." },
+      { name: "keywords", content: "contact plumber, free plumbing estimate, plumbing quote, brownwood plumber, emergency plumber" },
+      { property: "og:title", content: "Free Plumbing Estimate — M. Webb Plumbing Co." },
+      { property: "og:description", content: "Get a free plumbing estimate or call 24/7 for emergency service. We're fast, fair, and local." },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],

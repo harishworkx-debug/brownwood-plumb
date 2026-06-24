@@ -1,2 +1,16 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /admin/
+Disallow: /?*
+Crawl-delay: 1
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+Sitemap: https://mwebbplumbingco.com/sitemap.xml

@@ -50,7 +50,9 @@ function Page() {
                 <span className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-brand to-brand-deep text-white shadow-elegant">
                   <MapPin className="h-5 w-5" />
                 </span>
-                <h3 className="mt-5 font-display text-lg font-bold">Plumber in {a.name}</h3>
+                <Link to="/service-areas/$slug" params={{ slug: a.slug }} className="mt-5 block font-display text-lg font-bold text-brand hover:text-brand-deep transition underline decoration-2 underline-offset-2">
+                  Plumber in {a.name}
+                </Link>
                 <p className="mt-2 text-sm text-foreground/70">Residential, commercial and 24-hour emergency plumbing services in {a.name}.</p>
                 <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep">View area <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" /></span>
               </Link>
