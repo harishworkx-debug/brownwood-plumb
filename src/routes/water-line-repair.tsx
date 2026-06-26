@@ -5,10 +5,10 @@ import { CTABanner } from "@/components/site/CTABanner";
 export const Route = createFileRoute("/water-line-repair")({
   head: () => ({
     meta: [
-      { title: "Water Line Repair in Brownwood, TX | M. Webb Plumbing Co." },
-      { name: "description", content: "Water line repair and replacement in Brownwood, TX. Damaged, leaking or aging main water lines fixed by a 35+ year local plumber." },
-      { property: "og:title", content: "Water Line Repair in Brownwood, TX" },
-      { property: "og:description", content: "Professional water main repair and replacement services across Brown County, Texas." },
+      { title: "Water Line Repair in Brownwood, TX | M. Webb Plumbing" },
+      { name: "description", content: "Water line repair and replacement in Brownwood, TX. We fix leaking, broken, and aging water lines with dependable, long-lasting solutions." },
+      { property: "og:title", content: "Water Line Repair in Brownwood, TX | M. Webb Plumbing" },
+      { property: "og:description", content: "Water line repair and replacement in Brownwood, TX. We fix leaking, broken, and aging water lines with dependable, long-lasting solutions." },
       { property: "og:url", content: "/water-line-repair" },
     ],
     links: [{ rel: "canonical", href: "/water-line-repair" }],

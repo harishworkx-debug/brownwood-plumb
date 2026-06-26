@@ -6,9 +6,9 @@ export const Route = createFileRoute("/plumbing-system-replacement")({
   head: () => ({
     meta: [
       { title: "Plumbing System Replacement in Brownwood, TX | M. Webb Plumbing" },
-      { name: "description", content: "Full plumbing system replacement and repiping in Brownwood, TX. Upgrade your aging system with M. Webb Plumbing Co. — 35+ years of experience." },
-      { property: "og:title", content: "Plumbing System Replacement — Brownwood, TX" },
-      { property: "og:description", content: "Whole-home repipes and full system upgrades for older properties across Brown County." },
+      { name: "description", content: "Replace outdated plumbing with complete plumbing system replacement services in Brownwood, TX. Quality workmanship backed by over 35 years of experience." },
+      { property: "og:title", content: "Plumbing System Replacement in Brownwood, TX | M. Webb Plumbing" },
+      { property: "og:description", content: "Replace outdated plumbing with complete plumbing system replacement services in Brownwood, TX. Quality workmanship backed by over 35 years of experience." },
       { property: "og:url", content: "/plumbing-system-replacement" },
     ],
     links: [{ rel: "canonical", href: "/plumbing-system-replacement" }],

@@ -8,10 +8,10 @@ import { CTABanner } from "@/components/site/CTABanner";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About M. Webb Plumbing Co. — Brownwood, TX Plumber" },
-      { name: "description", content: "Learn about M. Webb Plumbing Co. LLC — a locally owned, family-run plumbing company serving Brownwood, TX with 35+ years of trusted, honest service." },
-      { property: "og:title", content: "About M. Webb Plumbing Co. — Brownwood, TX" },
-      { property: "og:description", content: "Family-owned plumber serving Brown County, TX since 35+ years. Honest workmanship, fast response, fair prices." },
+      { title: "About M. Webb Plumbing | Brownwood, TX" },
+      { name: "description", content: "Learn about M. Webb Plumbing, a family-owned plumbing company serving Brownwood, TX with honest workmanship, reliable service, and over 35 years of experience." },
+      { property: "og:title", content: "About M. Webb Plumbing | Brownwood, TX" },
+      { property: "og:description", content: "Learn about M. Webb Plumbing, a family-owned plumbing company serving Brownwood, TX with honest workmanship, reliable service, and over 35 years of experience." },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],

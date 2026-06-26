@@ -6,9 +6,9 @@ export const Route = createFileRoute("/faucet-repair")({
   head: () => ({
     meta: [
       { title: "Faucet Repair & Replacement in Brownwood, TX | M. Webb Plumbing" },
-      { name: "description", content: "Faucet repair and replacement in Brownwood, TX. Stop drips, upgrade fixtures and get professional installation from M. Webb Plumbing Co." },
-      { property: "og:title", content: "Faucet Repair & Replacement — Brownwood, TX" },
-      { property: "og:description", content: "Drip repair, faucet replacement and fixture upgrades by an experienced local plumber." },
+      { name: "description", content: "From dripping faucets to new fixture installation, M. Webb Plumbing provides professional faucet repair and replacement in Brownwood, TX." },
+      { property: "og:title", content: "Faucet Repair & Replacement in Brownwood, TX | M. Webb Plumbing" },
+      { property: "og:description", content: "From dripping faucets to new fixture installation, M. Webb Plumbing provides professional faucet repair and replacement in Brownwood, TX." },
       { property: "og:url", content: "/faucet-repair" },
     ],
     links: [{ rel: "canonical", href: "/faucet-repair" }],

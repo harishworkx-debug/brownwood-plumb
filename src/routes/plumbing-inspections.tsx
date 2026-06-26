@@ -5,10 +5,10 @@ import { CTABanner } from "@/components/site/CTABanner";
 export const Route = createFileRoute("/plumbing-inspections")({
   head: () => ({
     meta: [
-      { title: "Plumbing Inspections in Brownwood, TX | M. Webb Plumbing Co." },
-      { name: "description", content: "Thorough plumbing inspections in Brownwood, TX. Pre-purchase, preventive and diagnostic inspections by a 35+ year local plumber." },
-      { property: "og:title", content: "Plumbing Inspections in Brownwood, TX" },
-      { property: "og:description", content: "Detailed plumbing inspections for buyers, sellers and homeowners across Brown County." },
+      { title: "Plumbing Inspections in Brownwood, TX | M. Webb Plumbing" },
+      { name: "description", content: "Schedule a professional plumbing inspection in Brownwood, TX. We identify hidden plumbing issues before they become expensive repairs." },
+      { property: "og:title", content: "Plumbing Inspections in Brownwood, TX | M. Webb Plumbing" },
+      { property: "og:description", content: "Schedule a professional plumbing inspection in Brownwood, TX. We identify hidden plumbing issues before they become expensive repairs." },
       { property: "og:url", content: "/plumbing-inspections" },
     ],
     links: [{ rel: "canonical", href: "/plumbing-inspections" }],

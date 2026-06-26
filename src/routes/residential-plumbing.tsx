@@ -5,11 +5,11 @@ import { CTABanner } from "@/components/site/CTABanner";
 export const Route = createFileRoute("/residential-plumbing")({
   head: () => ({
     meta: [
-      { title: "Home Plumber Brownwood, TX | Repairs, Repipes, Fixtures | FREE Estimate" },
-      { name: "description", content: "Residential plumber in Brownwood, TX. Home repairs, water heaters, repipes, drain cleaning & fixtures. 35+ years experience. Call (325) 328-0435 for free estimate." },
+      { title: "Residential Plumber in Brownwood, TX | M. Webb Plumbing" },
+      { name: "description", content: "Trusted residential plumbing services in Brownwood, TX. We repair leaks, replace fixtures, install plumbing systems, and keep your home's plumbing running smoothly." },
       { name: "keywords", content: "residential plumber, home plumber, plumbing repair, water heater repair, drain cleaning, brownwood tx" },
-      { property: "og:title", content: "Residential Plumber in Brownwood, TX | FREE Estimate" },
-      { property: "og:description", content: "Honest, dependable home plumbing services in Brownwood and Brown County, TX. Fast, fair pricing." },
+      { property: "og:title", content: "Residential Plumber in Brownwood, TX | M. Webb Plumbing" },
+      { property: "og:description", content: "Trusted residential plumbing services in Brownwood, TX. We repair leaks, replace fixtures, install plumbing systems, and keep your home's plumbing running smoothly." },
       { property: "og:url", content: "/residential-plumbing" },
     ],
     links: [{ rel: "canonical", href: "/residential-plumbing" }],

@@ -8,10 +8,10 @@ import { CTABanner } from "@/components/site/CTABanner";
 export const Route = createFileRoute("/service-areas")({
   head: () => ({
     meta: [
-      { title: "Service Areas — Plumber Near You | M. Webb Plumbing Co." },
-      { name: "description", content: "Local plumbing service across Brownwood, Early, Bangs, Lake Brownwood and Zephyr, TX. 35+ years of trusted residential and commercial plumbing." },
-      { property: "og:title", content: "Plumbing Service Areas — Brown County, TX" },
-      { property: "og:description", content: "Serving Brownwood, Early, Bangs, Lake Brownwood and Zephyr with full-service plumbing." },
+      { title: "Service Areas | Brown County Plumber | M. Webb Plumbing" },
+      { name: "description", content: "M. Webb Plumbing proudly serves Brownwood, Early, Bangs, Lake Brownwood, Zephyr, and surrounding Brown County communities with reliable plumbing services." },
+      { property: "og:title", content: "Service Areas | Brown County Plumber | M. Webb Plumbing" },
+      { property: "og:description", content: "M. Webb Plumbing proudly serves Brownwood, Early, Bangs, Lake Brownwood, Zephyr, and surrounding Brown County communities with reliable plumbing services." },
       { property: "og:url", content: "/service-areas" },
     ],
     links: [{ rel: "canonical", href: "/service-areas" }],

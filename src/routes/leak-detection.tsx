@@ -5,10 +5,10 @@ import { CTABanner } from "@/components/site/CTABanner";
 export const Route = createFileRoute("/leak-detection")({
   head: () => ({
     meta: [
-      { title: "Leak Detection in Brownwood, TX | M. Webb Plumbing Co." },
-      { name: "description", content: "Expert leak detection in Brownwood, TX. Find and fix hidden water leaks fast before they cause expensive damage. (325) 328-0435." },
-      { property: "og:title", content: "Leak Detection in Brownwood, TX" },
-      { property: "og:description", content: "Non-invasive leak detection across Brown County — pinpoint hidden leaks before they damage your home." },
+      { title: "Leak Detection in Brownwood, TX | M. Webb Plumbing" },
+      { name: "description", content: "Expert leak detection in Brownwood, TX. We locate hidden water leaks quickly to prevent costly water damage and unnecessary repairs." },
+      { property: "og:title", content: "Leak Detection in Brownwood, TX | M. Webb Plumbing" },
+      { property: "og:description", content: "Expert leak detection in Brownwood, TX. We locate hidden water leaks quickly to prevent costly water damage and unnecessary repairs." },
       { property: "og:url", content: "/leak-detection" },
     ],
     links: [{ rel: "canonical", href: "/leak-detection" }],

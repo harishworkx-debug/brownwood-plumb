@@ -5,10 +5,10 @@ import { CTABanner } from "@/components/site/CTABanner";
 export const Route = createFileRoute("/hot-water-recirculation-pumps")({
   head: () => ({
     meta: [
-      { title: "Hot Water Recirculation Pump Installation | Brownwood, TX" },
-      { name: "description", content: "Hot water recirculation pump installation in Brownwood, TX. Instant hot water at every faucet — save water and time. (325) 328-0435." },
-      { property: "og:title", content: "Hot Water Recirculation Pumps — Brownwood, TX" },
-      { property: "og:description", content: "Professional installation of hot water recirculation pumps for Brown County homes." },
+      { title: "Hot Water Recirculation Pumps in Brownwood, TX | M. Webb Plumbing" },
+      { name: "description", content: "Enjoy instant hot water with professional hot water recirculation pump installation in Brownwood, TX. Improve comfort while reducing water waste." },
+      { property: "og:title", content: "Hot Water Recirculation Pumps in Brownwood, TX | M. Webb Plumbing" },
+      { property: "og:description", content: "Enjoy instant hot water with professional hot water recirculation pump installation in Brownwood, TX. Improve comfort while reducing water waste." },
       { property: "og:url", content: "/hot-water-recirculation-pumps" },
     ],
     links: [{ rel: "canonical", href: "/hot-water-recirculation-pumps" }],

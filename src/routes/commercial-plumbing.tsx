@@ -5,11 +5,11 @@ import { CTABanner } from "@/components/site/CTABanner";
 export const Route = createFileRoute("/commercial-plumbing")({
   head: () => ({
     meta: [
-      { title: "Commercial Plumber Brownwood, TX | Restaurants, Offices, Retail | 24 Hr Service" },
-      { name: "description", content: "Commercial plumber in Brownwood, TX. Restaurants, offices, retail & industrial plumbing. Fast response, minimal downtime. Call (325) 328-0435." },
+      { title: "Commercial Plumber in Brownwood, TX | M. Webb Plumbing" },
+      { name: "description", content: "Professional commercial plumbing services in Brownwood, TX for restaurants, offices, retail stores, and industrial properties. Fast, reliable service." },
       { name: "keywords", content: "commercial plumber, business plumbing, restaurant plumber, office plumbing, industrial plumbing, brownwood tx" },
-      { property: "og:title", content: "Commercial Plumber in Brownwood, TX | Fast Service" },
-      { property: "og:description", content: "Commercial plumbing for businesses across Brown County — installations, repairs and maintenance with minimal downtime." },
+      { property: "og:title", content: "Commercial Plumber in Brownwood, TX | M. Webb Plumbing" },
+      { property: "og:description", content: "Professional commercial plumbing services in Brownwood, TX for restaurants, offices, retail stores, and industrial properties. Fast, reliable service." },
       { property: "og:url", content: "/commercial-plumbing" },
     ],
     links: [{ rel: "canonical", href: "/commercial-plumbing" }],
