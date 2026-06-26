@@ -13,10 +13,10 @@ import { faqSchema, reviewSchema } from "@/lib/seo";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Plumber in Brownwood, TX | Emergency & Residential Plumbing | M. Webb Plumbing" },
+      { title: "Plumber in Brownwood, TX | Emergency & Residential Plumbing" },
       { name: "description", content: "M. Webb Plumbing provides residential, commercial, and 24-hour emergency plumbing services in Brownwood, TX. Trusted local plumbers with over 35 years of experience." },
       { name: "keywords", content: "plumber brownwood tx, emergency plumbing, residential plumbing, commercial plumbing, local plumber" },
-      { property: "og:title", content: "Plumber in Brownwood, TX | Emergency & Residential Plumbing | M. Webb Plumbing" },
+      { property: "og:title", content: "Plumber in Brownwood, TX | Emergency & Residential Plumbing" },
       { property: "og:description", content: "M. Webb Plumbing provides residential, commercial, and 24-hour emergency plumbing services in Brownwood, TX. Trusted local plumbers with over 35 years of experience." },
       { property: "og:url", content: "/" },
     ],
