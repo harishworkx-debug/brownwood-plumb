@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { faqSchema } from "@/lib/seo";
+
+const BASE_URL = `https://${business.website}`;
 
 const faqs = [
   { q: "What is a drain camera inspection?", a: "A specialized waterproof camera is inserted into your drain or sewer line, transmitting real-time video to a monitor. This allows us to see exactly what's causing problems without excavation." },
@@ -18,9 +21,9 @@ export const Route = createFileRoute("/drain-camera-inspection")({
       { name: "keywords", content: "drain camera inspection brownwood tx, sewer camera inspection, video pipe inspection, drain video inspection, sewer line inspection" },
       { property: "og:title", content: "Drain Camera Inspection in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "See inside your drains with video camera inspection in Brownwood, TX. Locate problems without digging. Call (325) 328-0435." },
-      { property: "og:url", content: "/drain-camera-inspection" },
+      { property: "og:url", content: `${BASE_URL}/drain-camera-inspection` },
     ],
-    links: [{ rel: "canonical", href: "/drain-camera-inspection" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/drain-camera-inspection` }],
   }),
   component: Page,
 });

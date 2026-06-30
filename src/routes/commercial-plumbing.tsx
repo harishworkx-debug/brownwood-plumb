@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/commercial-plumbing")({
   head: () => ({
@@ -10,9 +13,9 @@ export const Route = createFileRoute("/commercial-plumbing")({
       { name: "keywords", content: "commercial plumber, business plumbing, restaurant plumber, office plumbing, industrial plumbing, brownwood tx" },
       { property: "og:title", content: "Commercial Plumber in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Professional commercial plumbing services in Brownwood, TX for restaurants, offices, retail stores, and industrial properties. Fast, reliable service." },
-      { property: "og:url", content: "/commercial-plumbing" },
+      { property: "og:url", content: `${BASE_URL}/commercial-plumbing` },
     ],
-    links: [{ rel: "canonical", href: "/commercial-plumbing" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/commercial-plumbing` }],
   }),
   component: Page,
 });

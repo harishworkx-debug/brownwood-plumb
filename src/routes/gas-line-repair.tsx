@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { faqSchema } from "@/lib/seo";
+
+const BASE_URL = `https://${business.website}`;
 
 const faqs = [
   { q: "How do I know if I have a gas leak?", a: "Warning signs include a rotten egg smell (added to natural gas), hissing sounds near gas lines, dead vegetation near buried lines, or higher than expected gas bills. If you suspect a gas leak, leave the area and call your gas company immediately, then call us for repair." },
@@ -18,9 +21,9 @@ export const Route = createFileRoute("/gas-line-repair")({
       { name: "keywords", content: "gas line repair brownwood tx, gas pipe repair, gas line installation, water heater gas line, stove gas line brownwood" },
       { property: "og:title", content: "Gas Line Repair in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Licensed gas line repair and installation in Brownwood, TX. Safe, code-compliant service. Call (325) 328-0435." },
-      { property: "og:url", content: "/gas-line-repair" },
+      { property: "og:url", content: `${BASE_URL}/gas-line-repair` },
     ],
-    links: [{ rel: "canonical", href: "/gas-line-repair" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/gas-line-repair` }],
   }),
   component: Page,
 });

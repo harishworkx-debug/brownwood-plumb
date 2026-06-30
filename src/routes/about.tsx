@@ -5,6 +5,8 @@ import { Section, SectionEyebrow } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { CTABanner } from "@/components/site/CTABanner";
 
+const BASE_URL = `https://${business.website}`;
+
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
@@ -12,9 +14,9 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "Learn about M. Webb Plumbing, a family-owned plumbing company serving Brownwood, TX with honest workmanship, reliable service, and over 35 years of experience." },
       { property: "og:title", content: "About M. Webb Plumbing | Brownwood, TX" },
       { property: "og:description", content: "Learn about M. Webb Plumbing, a family-owned plumbing company serving Brownwood, TX with honest workmanship, reliable service, and over 35 years of experience." },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: `${BASE_URL}/about` },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/about` }],
   }),
   component: AboutPage,
 });

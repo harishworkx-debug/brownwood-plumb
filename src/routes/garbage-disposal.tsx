@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { faqSchema } from "@/lib/seo";
+
+const BASE_URL = `https://${business.website}`;
 
 const faqs = [
   { q: "What should I do if my garbage disposal jams?", a: "First, turn it off and never put your hand inside. Most units have a reset button on the bottom. If that doesn't work, use the Allen wrench (usually stored under the sink) in the center socket to manually free the jam." },
@@ -18,9 +21,9 @@ export const Route = createFileRoute("/garbage-disposal")({
       { name: "keywords", content: "garbage disposal repair brownwood tx, garbage disposal installation, disposer repair, kitchen disposal, garbage disposal replacement" },
       { property: "og:title", content: "Garbage Disposal Repair & Installation in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Garbage disposal repair and installation in Brownwood, TX. Fix jams and leaks. Call (325) 328-0435." },
-      { property: "og:url", content: "/garbage-disposal" },
+      { property: "og:url", content: `${BASE_URL}/garbage-disposal` },
     ],
-    links: [{ rel: "canonical", href: "/garbage-disposal" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/garbage-disposal` }],
   }),
   component: Page,
 });

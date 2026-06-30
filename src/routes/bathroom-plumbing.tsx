@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/bathroom-plumbing")({
   head: () => ({
@@ -10,9 +13,9 @@ export const Route = createFileRoute("/bathroom-plumbing")({
       { name: "keywords", content: "bathroom plumbing brownwood tx, toilet repair, shower installation brownwood, bathroom sink repair, bathtub plumbing" },
       { property: "og:title", content: "Bathroom Plumbing Services in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Expert bathroom plumbing in Brownwood, TX. Toilet, shower, tub, and sink services. Call (325) 328-0435." },
-      { property: "og:url", content: "/bathroom-plumbing" },
+      { property: "og:url", content: `${BASE_URL}/bathroom-plumbing` },
     ],
-    links: [{ rel: "canonical", href: "/bathroom-plumbing" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/bathroom-plumbing` }],
   }),
   component: Page,
 });

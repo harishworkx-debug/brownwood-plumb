@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { faqSchema } from "@/lib/seo";
+
+const BASE_URL = `https://${business.website}`;
 
 const faqs = [
   { q: "Why does my toilet keep running?", a: "Common causes include a worn flapper, faulty fill valve, or improperly adjusted float. These are usually simple fixes that save water and stop the annoyance." },
@@ -18,9 +21,9 @@ export const Route = createFileRoute("/toilet-repair")({
       { name: "keywords", content: "toilet repair brownwood tx, running toilet repair, clogged toilet, toilet installation brownwood, toilet replacement" },
       { property: "og:title", content: "Toilet Repair & Installation in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Fast toilet repair in Brownwood, TX. Fix running toilets, clogs, leaks. Call (325) 328-0435." },
-      { property: "og:url", content: "/toilet-repair" },
+      { property: "og:url", content: `${BASE_URL}/toilet-repair` },
     ],
-    links: [{ rel: "canonical", href: "/toilet-repair" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/toilet-repair` }],
   }),
   component: Page,
 });

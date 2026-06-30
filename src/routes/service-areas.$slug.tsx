@@ -9,6 +9,8 @@ import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { locationBusinessSchema } from "@/lib/seo";
 
+const BASE_URL = `https://${business.website}`;
+
 const areaContent: Record<string, { intro: string; long: string }> = {
   "brownwood-tx": {
     intro: "M. Webb Plumbing Co. is headquartered in Brownwood and has been the local plumber families and businesses count on for over 35 years.",
@@ -75,10 +77,10 @@ export const Route = createFileRoute("/service-areas/$slug")({
         { name: "keywords", content: `plumber ${area.name}, plumbing services ${area.name}, emergency plumber ${area.name}, local plumber ${area.name} tx` },
         { property: "og:title", content: title },
         { property: "og:description", content: desc },
-        { property: "og:url", content: `/service-areas/${area.slug}` },
+        { property: "og:url", content: `${BASE_URL}/service-areas/${area.slug}` },
         { property: "og:type", content: "website" },
       ],
-      links: [{ rel: "canonical", href: `/service-areas/${area.slug}` }],
+      links: [{ rel: "canonical", href: `${BASE_URL}/service-areas/${area.slug}` }],
     };
   },
   component: Page,

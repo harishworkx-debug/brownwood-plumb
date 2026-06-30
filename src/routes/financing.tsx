@@ -6,6 +6,8 @@ import { Section, SectionEyebrow } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { CTABanner } from "@/components/site/CTABanner";
 
+const BASE_URL = `https://${business.website}`;
+
 export const Route = createFileRoute("/financing")({
   head: () => ({
     meta: [
@@ -13,9 +15,9 @@ export const Route = createFileRoute("/financing")({
       { name: "description", content: "Flexible financing options for plumbing services in Brownwood, TX. Get the repairs you need now with affordable monthly payments. Call (325) 328-0435 to discuss options." },
       { property: "og:title", content: "Plumbing Financing | M. Webb Plumbing" },
       { property: "og:description", content: "Flexible financing options available. Get plumbing services now, pay over time." },
-      { property: "og:url", content: "/financing" },
+      { property: "og:url", content: `${BASE_URL}/financing` },
     ],
-    links: [{ rel: "canonical", href: "/financing" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/financing` }],
   }),
   component: Page,
 });

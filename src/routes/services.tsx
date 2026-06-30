@@ -1,10 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
-import { services } from "@/data/business";
+import { business, services } from "@/data/business";
 import { Section, SectionEyebrow } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { Icon } from "@/components/site/Icon";
 import { CTABanner } from "@/components/site/CTABanner";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -13,9 +15,9 @@ export const Route = createFileRoute("/services")({
       { name: "description", content: "Explore our complete plumbing services in Brownwood, TX, including residential, commercial, emergency plumbing, leak detection, water line repair, and more." },
       { property: "og:title", content: "Plumbing Services in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Explore our complete plumbing services in Brownwood, TX, including residential, commercial, emergency plumbing, leak detection, water line repair, and more." },
-      { property: "og:url", content: "/services" },
+      { property: "og:url", content: `${BASE_URL}/services` },
     ],
-    links: [{ rel: "canonical", href: "/services" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/services` }],
   }),
   component: ServicesPage,
 });

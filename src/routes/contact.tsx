@@ -5,6 +5,8 @@ import { Section, SectionEyebrow } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { QuoteForm } from "@/components/site/QuoteForm";
 
+const BASE_URL = `https://${business.website}`;
+
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
@@ -13,9 +15,9 @@ export const Route = createFileRoute("/contact")({
       { name: "keywords", content: "contact plumber, free plumbing estimate, plumbing quote, brownwood plumber, emergency plumber" },
       { property: "og:title", content: "Contact M. Webb Plumbing | Brownwood, TX" },
       { property: "og:description", content: "Contact M. Webb Plumbing for residential, commercial, and emergency plumbing services in Brownwood, TX. Call today or request a free estimate." },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: `${BASE_URL}/contact` },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/contact` }],
   }),
   component: Page,
 });

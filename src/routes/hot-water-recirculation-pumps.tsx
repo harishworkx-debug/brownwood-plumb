@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/hot-water-recirculation-pumps")({
   head: () => ({
@@ -9,9 +12,9 @@ export const Route = createFileRoute("/hot-water-recirculation-pumps")({
       { name: "description", content: "Enjoy instant hot water with professional hot water recirculation pump installation in Brownwood, TX. Improve comfort while reducing water waste." },
       { property: "og:title", content: "Hot Water Recirculation Pumps in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Enjoy instant hot water with professional hot water recirculation pump installation in Brownwood, TX. Improve comfort while reducing water waste." },
-      { property: "og:url", content: "/hot-water-recirculation-pumps" },
+      { property: "og:url", content: `${BASE_URL}/hot-water-recirculation-pumps` },
     ],
-    links: [{ rel: "canonical", href: "/hot-water-recirculation-pumps" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/hot-water-recirculation-pumps` }],
   }),
   component: Page,
 });

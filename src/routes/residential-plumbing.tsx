@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/residential-plumbing")({
   head: () => ({
@@ -10,9 +13,9 @@ export const Route = createFileRoute("/residential-plumbing")({
       { name: "keywords", content: "residential plumber, home plumber, plumbing repair, water heater repair, drain cleaning, brownwood tx" },
       { property: "og:title", content: "Residential Plumber in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Trusted residential plumbing services in Brownwood, TX. We repair leaks, replace fixtures, install plumbing systems, and keep your home's plumbing running smoothly." },
-      { property: "og:url", content: "/residential-plumbing" },
+      { property: "og:url", content: `${BASE_URL}/residential-plumbing` },
     ],
-    links: [{ rel: "canonical", href: "/residential-plumbing" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/residential-plumbing` }],
   }),
   component: Page,
 });

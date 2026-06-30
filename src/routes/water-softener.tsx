@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { faqSchema } from "@/lib/seo";
+
+const BASE_URL = `https://${business.website}`;
 
 const faqs = [
   { q: "Do I need a water softener in Brownwood, TX?", a: "Brown County water tends to be moderately hard. Signs you could benefit from a softener include white scale buildup on fixtures, soap that won't lather well, dry skin and hair after bathing, and spots on dishes after washing." },
@@ -18,9 +21,9 @@ export const Route = createFileRoute("/water-softener")({
       { name: "keywords", content: "water softener brownwood tx, water softener installation, hard water treatment, water softening system brownwood" },
       { property: "og:title", content: "Water Softener Installation & Repair in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Water softener installation and service in Brownwood, TX. Hard water solutions. Call (325) 328-0435." },
-      { property: "og:url", content: "/water-softener" },
+      { property: "og:url", content: `${BASE_URL}/water-softener` },
     ],
-    links: [{ rel: "canonical", href: "/water-softener" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/water-softener` }],
   }),
   component: Page,
 });

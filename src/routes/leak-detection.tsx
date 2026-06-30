@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/leak-detection")({
   head: () => ({
@@ -9,9 +12,9 @@ export const Route = createFileRoute("/leak-detection")({
       { name: "description", content: "Expert leak detection in Brownwood, TX. We locate hidden water leaks quickly to prevent costly water damage and unnecessary repairs." },
       { property: "og:title", content: "Leak Detection in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Expert leak detection in Brownwood, TX. We locate hidden water leaks quickly to prevent costly water damage and unnecessary repairs." },
-      { property: "og:url", content: "/leak-detection" },
+      { property: "og:url", content: `${BASE_URL}/leak-detection` },
     ],
-    links: [{ rel: "canonical", href: "/leak-detection" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/leak-detection` }],
   }),
   component: Page,
 });

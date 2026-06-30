@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { faqSchema } from "@/lib/seo";
+
+const BASE_URL = `https://${business.website}`;
 
 const faqs = [
   { q: "How do I know if my sewer line needs repair?", a: "Watch for multiple slow drains, sewage odors, lush patches of grass in your yard, gurgling toilets, or water backing up in floor drains. A camera inspection confirms the problem and location." },
@@ -18,9 +21,9 @@ export const Route = createFileRoute("/sewer-line-repair")({
       { name: "keywords", content: "sewer line repair brownwood tx, sewer pipe repair, sewer replacement, trenchless sewer repair, main sewer line repair" },
       { property: "og:title", content: "Sewer Line Repair in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Expert sewer line repair and replacement in Brownwood, TX. Fix cracks, blockages, and root intrusion. Call (325) 328-0435." },
-      { property: "og:url", content: "/sewer-line-repair" },
+      { property: "og:url", content: `${BASE_URL}/sewer-line-repair` },
     ],
-    links: [{ rel: "canonical", href: "/sewer-line-repair" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/sewer-line-repair` }],
   }),
   component: Page,
 });

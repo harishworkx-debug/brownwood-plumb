@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/plumbing-inspections")({
   head: () => ({
@@ -9,9 +12,9 @@ export const Route = createFileRoute("/plumbing-inspections")({
       { name: "description", content: "Schedule a professional plumbing inspection in Brownwood, TX. We identify hidden plumbing issues before they become expensive repairs." },
       { property: "og:title", content: "Plumbing Inspections in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Schedule a professional plumbing inspection in Brownwood, TX. We identify hidden plumbing issues before they become expensive repairs." },
-      { property: "og:url", content: "/plumbing-inspections" },
+      { property: "og:url", content: `${BASE_URL}/plumbing-inspections` },
     ],
-    links: [{ rel: "canonical", href: "/plumbing-inspections" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/plumbing-inspections` }],
   }),
   component: Page,
 });

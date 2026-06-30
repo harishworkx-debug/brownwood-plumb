@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { faqSchema } from "@/lib/seo";
+
+const BASE_URL = `https://${business.website}`;
 
 const faqs = [
   { q: "How often should I have my drains cleaned?", a: "For preventive maintenance, professional drain cleaning every 1-2 years helps prevent major clogs. If you have slow drains or frequent backups, schedule service sooner." },
@@ -18,9 +21,9 @@ export const Route = createFileRoute("/drain-cleaning")({
       { name: "keywords", content: "drain cleaning brownwood tx, clogged drain repair, drain unclogging, sewer drain cleaning, main line cleaning brownwood" },
       { property: "og:title", content: "Drain Cleaning in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Professional drain cleaning in Brownwood, TX. Clear clogged drains and sewer lines. Fast service. Call (325) 328-0435." },
-      { property: "og:url", content: "/drain-cleaning" },
+      { property: "og:url", content: `${BASE_URL}/drain-cleaning` },
     ],
-    links: [{ rel: "canonical", href: "/drain-cleaning" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/drain-cleaning` }],
   }),
   component: Page,
 });

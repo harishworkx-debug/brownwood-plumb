@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/water-line-repair")({
   head: () => ({
@@ -9,9 +12,9 @@ export const Route = createFileRoute("/water-line-repair")({
       { name: "description", content: "Water line repair and replacement in Brownwood, TX. We fix leaking, broken, and aging water lines with dependable, long-lasting solutions." },
       { property: "og:title", content: "Water Line Repair in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Water line repair and replacement in Brownwood, TX. We fix leaking, broken, and aging water lines with dependable, long-lasting solutions." },
-      { property: "og:url", content: "/water-line-repair" },
+      { property: "og:url", content: `${BASE_URL}/water-line-repair` },
     ],
-    links: [{ rel: "canonical", href: "/water-line-repair" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/water-line-repair` }],
   }),
   component: Page,
 });

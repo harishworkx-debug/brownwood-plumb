@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { faqSchema } from "@/lib/seo";
+
+const BASE_URL = `https://${business.website}`;
 
 const faqs = [
   { q: "Are tankless water heaters worth it in Brownwood?", a: "Tankless water heaters offer endless hot water, lower energy bills (up to 50% savings), and last longer than tank models. They're especially valuable for homes with high hot water demand or limited space." },
@@ -18,9 +21,9 @@ export const Route = createFileRoute("/tankless-water-heater")({
       { name: "keywords", content: "tankless water heater brownwood tx, tankless water heater installation, on demand water heater, instant hot water heater, tankless repair" },
       { property: "og:title", content: "Tankless Water Heater in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Endless hot water with tankless water heater installation in Brownwood, TX. Energy-efficient, expert installation. Call (325) 328-0435." },
-      { property: "og:url", content: "/tankless-water-heater" },
+      { property: "og:url", content: `${BASE_URL}/tankless-water-heater` },
     ],
-    links: [{ rel: "canonical", href: "/tankless-water-heater" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/tankless-water-heater` }],
   }),
   component: Page,
 });

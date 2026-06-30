@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/faucet-repair")({
   head: () => ({
@@ -9,9 +12,9 @@ export const Route = createFileRoute("/faucet-repair")({
       { name: "description", content: "From dripping faucets to new fixture installation, M. Webb Plumbing provides professional faucet repair and replacement in Brownwood, TX." },
       { property: "og:title", content: "Faucet Repair & Replacement in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "From dripping faucets to new fixture installation, M. Webb Plumbing provides professional faucet repair and replacement in Brownwood, TX." },
-      { property: "og:url", content: "/faucet-repair" },
+      { property: "og:url", content: `${BASE_URL}/faucet-repair` },
     ],
-    links: [{ rel: "canonical", href: "/faucet-repair" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/faucet-repair` }],
   }),
   component: Page,
 });

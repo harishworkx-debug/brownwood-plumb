@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { faqSchema } from "@/lib/seo";
+
+const BASE_URL = `https://${business.website}`;
 
 const faqs = [
   { q: "How do I know if I have a pipe leak?", a: "Signs include unexplained water bills, water stains on walls or ceilings, reduced water pressure, sounds of running water when nothing is on, and warm spots on floors (for hot water lines)." },
@@ -18,9 +21,9 @@ export const Route = createFileRoute("/pipe-repair")({
       { name: "keywords", content: "pipe repair brownwood tx, water pipe leak repair, drain pipe repair, plumbing pipe repair brownwood" },
       { property: "og:title", content: "Pipe Repair in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Professional pipe repair in Brownwood, TX. Fix leaks, cracks, and corrosion. Call (325) 328-0435." },
-      { property: "og:url", content: "/pipe-repair" },
+      { property: "og:url", content: `${BASE_URL}/pipe-repair` },
     ],
-    links: [{ rel: "canonical", href: "/pipe-repair" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/pipe-repair` }],
   }),
   component: Page,
 });

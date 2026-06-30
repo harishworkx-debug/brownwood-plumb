@@ -4,15 +4,17 @@ import { Reveal } from "@/components/site/Reveal";
 import { CTABanner } from "@/components/site/CTABanner";
 import { business } from "@/data/business";
 
+const BASE_URL = `https://${business.website}`;
+
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
     meta: [
       { title: "Privacy Policy | M. Webb Plumbing Co." },
       { name: "description", content: "Privacy policy for M. Webb Plumbing Co. LLC. Learn how we collect, use, and protect your personal information." },
       { property: "og:title", content: "Privacy Policy | M. Webb Plumbing Co." },
-      { property: "og:url", content: "/privacy-policy" },
+      { property: "og:url", content: `${BASE_URL}/privacy-policy` },
     ],
-    links: [{ rel: "canonical", href: "/privacy-policy" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/privacy-policy` }],
   }),
   component: Page,
 });

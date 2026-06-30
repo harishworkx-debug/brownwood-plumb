@@ -4,15 +4,17 @@ import { Reveal } from "@/components/site/Reveal";
 import { CTABanner } from "@/components/site/CTABanner";
 import { business } from "@/data/business";
 
+const BASE_URL = `https://${business.website}`;
+
 export const Route = createFileRoute("/terms-of-service")({
   head: () => ({
     meta: [
       { title: "Terms of Service | M. Webb Plumbing Co." },
       { name: "description", content: "Terms of service for M. Webb Plumbing Co. LLC. Understanding the terms of using our plumbing services in Brownwood, TX." },
       { property: "og:title", content: "Terms of Service | M. Webb Plumbing Co." },
-      { property: "og:url", content: "/terms-of-service" },
+      { property: "og:url", content: `${BASE_URL}/terms-of-service` },
     ],
-    links: [{ rel: "canonical", href: "/terms-of-service" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/terms-of-service` }],
   }),
   component: Page,
 });

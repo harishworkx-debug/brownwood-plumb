@@ -1,10 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Calendar } from "lucide-react";
-import { blogCategories } from "@/data/business";
-import { business } from "@/data/business";
+import { blogCategories, business } from "@/data/business";
 import { Section, SectionEyebrow } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { CTABanner } from "@/components/site/CTABanner";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/blog/")({
   head: () => ({
@@ -13,9 +14,9 @@ export const Route = createFileRoute("/blog/")({
       { name: "description", content: "Expert plumbing tips, guides, and news from M. Webb Plumbing Co. Learn about water heaters, drain maintenance, emergency plumbing, and more. Serving Brownwood, TX." },
       { property: "og:title", content: "Plumbing Blog | M. Webb Plumbing" },
       { property: "og:description", content: "Expert plumbing tips and guides for Texas homeowners." },
-      { property: "og:url", content: "/blog" },
+      { property: "og:url", content: `${BASE_URL}/blog` },
     ],
-    links: [{ rel: "canonical", href: "/blog" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/blog` }],
   }),
   component: BlogIndex,
 });

@@ -8,6 +8,8 @@ import { faqSchema } from "@/lib/seo";
 import { Link } from "@tanstack/react-router";
 import { Phone, ArrowRight } from "lucide-react";
 
+const BASE_URL = `https://${business.website}`;
+
 const additionalFaqs = [
   {
     question: "What payment methods do you accept?",
@@ -40,9 +42,9 @@ export const Route = createFileRoute("/faq")({
       { name: "description", content: "Answers to common plumbing questions about emergency service, pricing, warranties, service areas, and more. Serving Brownwood, TX and Brown County. Call (325) 328-0435." },
       { property: "og:title", content: "Plumbing FAQ | Brownwood TX | M. Webb Plumbing" },
       { property: "og:description", content: "Get answers to frequently asked plumbing questions. Serving Brownwood and Brown County, TX." },
-      { property: "og:url", content: "/faq" },
+      { property: "og:url", content: `${BASE_URL}/faq` },
     ],
-    links: [{ rel: "canonical", href: "/faq" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/faq` }],
   }),
   component: Page,
 });

@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { faqSchema } from "@/lib/seo";
+
+const BASE_URL = `https://${business.website}`;
 
 const faqs = [
   { q: "How long does a water heater typically last in Brownwood?", a: "Most tank water heaters last 10-15 years with proper maintenance. Tankless models can last 20+ years. If yours is over 10 years old and having issues, replacement often makes more financial sense than repair." },
@@ -18,9 +21,9 @@ export const Route = createFileRoute("/water-heater-repair")({
       { name: "keywords", content: "water heater repair brownwood tx, water heater installation, hot water heater, tankless water heater repair, water heater replacement brownwood" },
       { property: "og:title", content: "Water Heater Repair in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Fast water heater repair and installation in Brownwood, TX. Tank and tankless water heater service. Call (325) 328-0435." },
-      { property: "og:url", content: "/water-heater-repair" },
+      { property: "og:url", content: `${BASE_URL}/water-heater-repair` },
     ],
-    links: [{ rel: "canonical", href: "/water-heater-repair" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/water-heater-repair` }],
   }),
   component: Page,
 });

@@ -1,11 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Star } from "lucide-react";
-import { testimonials } from "@/data/business";
+import { business, testimonials } from "@/data/business";
 import { Section, SectionEyebrow } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { reviewSchema } from "@/lib/seo";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/reviews")({
   head: () => ({
@@ -14,9 +16,9 @@ export const Route = createFileRoute("/reviews")({
       { name: "description", content: "Read 5-star reviews from M. Webb Plumbing Co. customers across Brownwood, Early, Bangs, Lake Brownwood and Zephyr, TX." },
       { property: "og:title", content: "M. Webb Plumbing Co. Reviews — Brownwood, TX" },
       { property: "og:description", content: "What Brown County customers are saying about M. Webb Plumbing Co." },
-      { property: "og:url", content: "/reviews" },
+      { property: "og:url", content: `${BASE_URL}/reviews` },
     ],
-    links: [{ rel: "canonical", href: "/reviews" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/reviews` }],
   }),
   component: Page,
 });

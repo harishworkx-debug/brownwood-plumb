@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/kitchen-plumbing")({
   head: () => ({
@@ -10,9 +13,9 @@ export const Route = createFileRoute("/kitchen-plumbing")({
       { name: "keywords", content: "kitchen plumbing brownwood tx, kitchen sink installation, kitchen faucet repair, dishwasher installation brownwood" },
       { property: "og:title", content: "Kitchen Plumbing Services in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Complete kitchen plumbing services in Brownwood, TX. Sink, faucet, disposal, and more. Call (325) 328-0435." },
-      { property: "og:url", content: "/kitchen-plumbing" },
+      { property: "og:url", content: `${BASE_URL}/kitchen-plumbing` },
     ],
-    links: [{ rel: "canonical", href: "/kitchen-plumbing" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/kitchen-plumbing` }],
   }),
   component: Page,
 });

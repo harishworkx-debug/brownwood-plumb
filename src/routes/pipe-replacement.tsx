@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { faqSchema } from "@/lib/seo";
+
+const BASE_URL = `https://${business.website}`;
 
 const faqs = [
   { q: "How do I know if my house needs repiping?", a: "Signs include multiple leaks, discolored water, reduced water pressure throughout the house, water that smells metallic, pipes that have been repaired repeatedly, or a home with original galvanized pipes over 40 years old." },
@@ -18,9 +21,9 @@ export const Route = createFileRoute("/pipe-replacement")({
       { name: "keywords", content: "pipe replacement brownwood tx, whole house repiping, repipe specialist, pipe replacement cost brownwood" },
       { property: "og:title", content: "Pipe Replacement & Repiping in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Whole-house repiping and pipe replacement in Brownwood, TX. Replace old pipes with modern materials. Call (325) 328-0435." },
-      { property: "og:url", content: "/pipe-replacement" },
+      { property: "og:url", content: `${BASE_URL}/pipe-replacement` },
     ],
-    links: [{ rel: "canonical", href: "/pipe-replacement" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/pipe-replacement` }],
   }),
   component: Page,
 });

@@ -1,9 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { MapPin, ArrowRight } from "lucide-react";
-import { serviceAreas } from "@/data/business";
+import { business, serviceAreas } from "@/data/business";
 import { Section, SectionEyebrow } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { CTABanner } from "@/components/site/CTABanner";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/service-areas")({
   head: () => ({
@@ -13,9 +15,9 @@ export const Route = createFileRoute("/service-areas")({
       { name: "keywords", content: "plumber brown county tx, plumbing service areas, brownwood plumber, early tx plumber, bangs plumber, lake brownwood plumbing, zephyr tx plumber" },
       { property: "og:title", content: "Service Areas | Brown County & Central Texas Plumber | M. Webb Plumbing" },
       { property: "og:description", content: "M. Webb Plumbing proudly serves Brown County and Central Texas communities with reliable plumbing services. 35+ years experience." },
-      { property: "og:url", content: "/service-areas" },
+      { property: "og:url", content: `${BASE_URL}/service-areas` },
     ],
-    links: [{ rel: "canonical", href: "/service-areas" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/service-areas` }],
   }),
   component: Page,
 });

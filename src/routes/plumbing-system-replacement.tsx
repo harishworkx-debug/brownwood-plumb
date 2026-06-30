@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
+
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/plumbing-system-replacement")({
   head: () => ({
@@ -9,9 +12,9 @@ export const Route = createFileRoute("/plumbing-system-replacement")({
       { name: "description", content: "Replace outdated plumbing with complete plumbing system replacement services in Brownwood, TX. Quality workmanship backed by over 35 years of experience." },
       { property: "og:title", content: "Plumbing System Replacement in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Replace outdated plumbing with complete plumbing system replacement services in Brownwood, TX. Quality workmanship backed by over 35 years of experience." },
-      { property: "og:url", content: "/plumbing-system-replacement" },
+      { property: "og:url", content: `${BASE_URL}/plumbing-system-replacement` },
     ],
-    links: [{ rel: "canonical", href: "/plumbing-system-replacement" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/plumbing-system-replacement` }],
   }),
   component: Page,
 });

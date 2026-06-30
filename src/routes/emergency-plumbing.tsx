@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { business } from "@/data/business";
 import { ServicePageShell } from "@/components/site/ServicePageShell";
 import { CTABanner } from "@/components/site/CTABanner";
 import { JsonLd } from "@/components/site/JsonLd";
 import { faqSchema } from "@/lib/seo";
+
+const BASE_URL = `https://${business.website}`;
 
 const faqs = [
   { q: "Do you really answer the phone 24 hours a day?", a: "Yes. We maintain a true 24-hour on-call emergency line for plumbing emergencies throughout Brownwood, Early, Bangs, Lake Brownwood and Zephyr, TX." },
@@ -18,9 +21,9 @@ export const Route = createFileRoute("/emergency-plumbing")({
       { name: "keywords", content: "emergency plumber brownwood tx, 24 hour plumber, burst pipe, emergency plumbing service, plumbing emergency" },
       { property: "og:title", content: "24-Hour Emergency Plumber in Brownwood, TX | M. Webb Plumbing" },
       { property: "og:description", content: "Need an emergency plumber in Brownwood, TX? M. Webb Plumbing provides fast 24/7 plumbing repairs for burst pipes, leaks, sewer backups, and more. Call now." },
-      { property: "og:url", content: "/emergency-plumbing" },
+      { property: "og:url", content: `${BASE_URL}/emergency-plumbing` },
     ],
-    links: [{ rel: "canonical", href: "/emergency-plumbing" }],
+    links: [{ rel: "canonical", href: `${BASE_URL}/emergency-plumbing` }],
   }),
   component: Page,
 });
