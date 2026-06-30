@@ -11,7 +11,7 @@ export const business = {
   phone: "(325) 328-0435",
   phoneRaw: "+13256412662",
   email: "webbplumbing@verizon.net",
-  website: "mwebbplumbingco.com",
+  website: "www.mwebbplumbingco.com",
   hours: "Mon–Fri 8:00 AM – 5:00 PM · 24-Hour Emergency On-Call",
   experience: "35+ Years",
   foundedYear: 1990,
@@ -62,6 +62,8 @@ export const serviceAreas = [
   { slug: "brookesmith-tx", name: "Brookesmith, TX", lat: 31.7204, lng: -99.1226, population: "100+", isPrimary: false, description: "Brown County community with dedicated plumbing support." },
   { slug: "comanche-tx", name: "Comanche, TX", lat: 31.8968, lng: -98.6058, population: "4,200+", isPrimary: false, description: "Extended coverage into Comanche County for comprehensive plumbing services." },
   { slug: "coleman-tx", name: "Coleman, TX", lat: 31.8296, lng: -99.4259, population: "4,000+", isPrimary: false, description: "Coleman County residents can rely on trusted plumbing expertise." },
+  { slug: "santa-anna-tx", name: "Santa Anna, TX", lat: 31.7388, lng: -99.4595, population: "1,100+", isPrimary: false, description: "Serving Santa Anna and Coleman County with trusted plumbing expertise." },
+  { slug: "rising-star-tx", name: "Rising Star, TX", lat: 32.0965, lng: -98.9656, population: "800+", isPrimary: false, description: "Rising Star homeowners receive reliable residential and emergency plumbing services." },
 ];
 
 export const testimonials = [

@@ -52,6 +52,14 @@ const areaContent: Record<string, { intro: string; long: string }> = {
     intro: "Coleman, TX homeowners and businesses get reliable plumbing service from a company with 35+ years of experience.",
     long: "Serving Coleman County, we handle residential and commercial plumbing with the same care and professionalism we've brought to every job since 1990. Emergency service, repairs, and installations are all part of what we do.",
   },
+  "santa-anna-tx": {
+    intro: "Santa Anna, TX residents receive trusted plumbing services from the team that's served Central Texas for over 35 years.",
+    long: "We've expanded our service coverage to Santa Anna and throughout Coleman County, bringing the same honest workmanship and reliable service to every call. Whether you need emergency repairs, drain cleaning, or water heater service, we're here when you need us.",
+  },
+  "rising-star-tx": {
+    intro: "Rising Star, TX homeowners receive the same reliable plumbing service we've provided across Central Texas for over 35 years.",
+    long: "Serving Rising Star and Eastland County, we bring professional plumbing expertise to rural Texas properties. From emergency repairs to routine maintenance, our experienced team provides the same quality workmanship and fair pricing we're known for throughout the region.",
+  },
 };
 
 const defaultContent = {
