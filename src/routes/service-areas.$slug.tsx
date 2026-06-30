@@ -1,5 +1,5 @@
 import { createFileRoute, notFound, Link } from "@tanstack/react-router";
-import { MapPin, Phone, CheckCircle2, ArrowRight } from "lucide-react";
+import { MapPin, Phone, CircleCheck as CheckCircle2, ArrowRight } from "lucide-react";
 import { business, services, serviceAreas } from "@/data/business";
 import { Section, SectionEyebrow } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
@@ -30,13 +30,38 @@ const areaContent: Record<string, { intro: string; long: string }> = {
     intro: "Zephyr, TX residents trust M. Webb Plumbing Co. for prompt, professional plumbing service — rural, residential, or commercial.",
     long: "Out in Zephyr, having a plumber willing to come to you matters. We proudly serve Zephyr homes and properties with the full range of plumbing services — including 24-hour emergency response when you really need it.",
   },
+  "blanket-tx": {
+    intro: "Blanket, TX homeowners receive the same reliable plumbing service we've provided across Brown County for over 35 years.",
+    long: "We've extended our service coverage to include Blanket and surrounding rural areas. Whether you need emergency repairs, routine maintenance, or new installations, our experienced team brings professional plumbing services right to your door.",
+  },
+  "may-tx": {
+    intro: "Serving May, TX with professional plumbing services and emergency response for homes and businesses.",
+    long: "Our experienced plumbers service the May area with everything from fixing drips and clearing drains to full system installations. We understand rural Texas properties and provide dependable plumbing solutions.",
+  },
+  "brookesmith-tx": {
+    intro: "Brookesmith, TX receives dedicated plumbing support from M. Webb Plumbing Co.'s experienced team.",
+    long: "As part of the Brown County community, Brookesmith residents can rely on us for all their plumbing needs. We provide prompt service, fair pricing, and quality workmanship on every job.",
+  },
+  "comanche-tx": {
+    intro: "Comanche, TX residents receive trusted plumbing services from the team that's served Central Texas for over 35 years.",
+    long: "We've expanded our service area to include Comanche County, bringing the same quality workmanship and honest service to more Central Texas homes and businesses. From water heater repairs to commercial plumbing, we're here when you need us.",
+  },
+  "coleman-tx": {
+    intro: "Coleman, TX homeowners and businesses get reliable plumbing service from a company with 35+ years of experience.",
+    long: "Serving Coleman County, we handle residential and commercial plumbing with the same care and professionalism we've brought to every job since 1990. Emergency service, repairs, and installations are all part of what we do.",
+  },
+};
+
+const defaultContent = {
+  intro: "Trusted plumbing services for homes and businesses from M. Webb Plumbing Co. — over 35 years serving Central Texas.",
+  long: "We're proud to extend our professional plumbing services throughout Central Texas. Whether you need emergency repairs, routine maintenance, or new installations, our experienced team brings the same quality workmanship and fair pricing to every job.",
 };
 
 export const Route = createFileRoute("/service-areas/$slug")({
   loader: ({ params }) => {
     const area = serviceAreas.find((a) => a.slug === params.slug);
     if (!area) throw notFound();
-    return { area, content: areaContent[params.slug]! };
+    return { area, content: areaContent[params.slug] || defaultContent };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return {};

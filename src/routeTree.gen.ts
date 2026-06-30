@@ -9,32 +9,80 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WaterSoftenerRouteImport } from './routes/water-softener'
 import { Route as WaterLineRepairRouteImport } from './routes/water-line-repair'
+import { Route as WaterHeaterRepairRouteImport } from './routes/water-heater-repair'
+import { Route as ToiletRepairRouteImport } from './routes/toilet-repair'
+import { Route as TermsOfServiceRouteImport } from './routes/terms-of-service'
+import { Route as TanklessWaterHeaterRouteImport } from './routes/tankless-water-heater'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SewerLineRepairRouteImport } from './routes/sewer-line-repair'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ServiceAreasRouteImport } from './routes/service-areas'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as ResidentialPlumbingRouteImport } from './routes/residential-plumbing'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as PlumbingSystemReplacementRouteImport } from './routes/plumbing-system-replacement'
 import { Route as PlumbingInspectionsRouteImport } from './routes/plumbing-inspections'
+import { Route as PipeReplacementRouteImport } from './routes/pipe-replacement'
+import { Route as PipeRepairRouteImport } from './routes/pipe-repair'
 import { Route as LeakDetectionRouteImport } from './routes/leak-detection'
+import { Route as KitchenPlumbingRouteImport } from './routes/kitchen-plumbing'
 import { Route as HotWaterRecirculationPumpsRouteImport } from './routes/hot-water-recirculation-pumps'
+import { Route as GasLineRepairRouteImport } from './routes/gas-line-repair'
+import { Route as GarbageDisposalRouteImport } from './routes/garbage-disposal'
+import { Route as FinancingRouteImport } from './routes/financing'
 import { Route as FaucetRepairRouteImport } from './routes/faucet-repair'
+import { Route as FaqRouteImport } from './routes/faq'
 import { Route as EmergencyPlumbingRouteImport } from './routes/emergency-plumbing'
+import { Route as DrainCleaningRouteImport } from './routes/drain-cleaning'
+import { Route as DrainCameraInspectionRouteImport } from './routes/drain-camera-inspection'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CommercialPlumbingRouteImport } from './routes/commercial-plumbing'
+import { Route as BathroomPlumbingRouteImport } from './routes/bathroom-plumbing'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as ServiceAreasSlugRouteImport } from './routes/service-areas.$slug'
 
+const WaterSoftenerRoute = WaterSoftenerRouteImport.update({
+  id: '/water-softener',
+  path: '/water-softener',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WaterLineRepairRoute = WaterLineRepairRouteImport.update({
   id: '/water-line-repair',
   path: '/water-line-repair',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WaterHeaterRepairRoute = WaterHeaterRepairRouteImport.update({
+  id: '/water-heater-repair',
+  path: '/water-heater-repair',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToiletRepairRoute = ToiletRepairRouteImport.update({
+  id: '/toilet-repair',
+  path: '/toilet-repair',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsOfServiceRoute = TermsOfServiceRouteImport.update({
+  id: '/terms-of-service',
+  path: '/terms-of-service',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TanklessWaterHeaterRoute = TanklessWaterHeaterRouteImport.update({
+  id: '/tankless-water-heater',
+  path: '/tankless-water-heater',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SewerLineRepairRoute = SewerLineRepairRouteImport.update({
+  id: '/sewer-line-repair',
+  path: '/sewer-line-repair',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesRoute = ServicesRouteImport.update({
@@ -57,6 +105,11 @@ const ResidentialPlumbingRoute = ResidentialPlumbingRouteImport.update({
   path: '/residential-plumbing',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PlumbingSystemReplacementRoute =
   PlumbingSystemReplacementRouteImport.update({
     id: '/plumbing-system-replacement',
@@ -68,9 +121,24 @@ const PlumbingInspectionsRoute = PlumbingInspectionsRouteImport.update({
   path: '/plumbing-inspections',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PipeReplacementRoute = PipeReplacementRouteImport.update({
+  id: '/pipe-replacement',
+  path: '/pipe-replacement',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PipeRepairRoute = PipeRepairRouteImport.update({
+  id: '/pipe-repair',
+  path: '/pipe-repair',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LeakDetectionRoute = LeakDetectionRouteImport.update({
   id: '/leak-detection',
   path: '/leak-detection',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KitchenPlumbingRoute = KitchenPlumbingRouteImport.update({
+  id: '/kitchen-plumbing',
+  path: '/kitchen-plumbing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HotWaterRecirculationPumpsRoute =
@@ -79,14 +147,44 @@ const HotWaterRecirculationPumpsRoute =
     path: '/hot-water-recirculation-pumps',
     getParentRoute: () => rootRouteImport,
   } as any)
+const GasLineRepairRoute = GasLineRepairRouteImport.update({
+  id: '/gas-line-repair',
+  path: '/gas-line-repair',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GarbageDisposalRoute = GarbageDisposalRouteImport.update({
+  id: '/garbage-disposal',
+  path: '/garbage-disposal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FinancingRoute = FinancingRouteImport.update({
+  id: '/financing',
+  path: '/financing',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FaucetRepairRoute = FaucetRepairRouteImport.update({
   id: '/faucet-repair',
   path: '/faucet-repair',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EmergencyPlumbingRoute = EmergencyPlumbingRouteImport.update({
   id: '/emergency-plumbing',
   path: '/emergency-plumbing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DrainCleaningRoute = DrainCleaningRouteImport.update({
+  id: '/drain-cleaning',
+  path: '/drain-cleaning',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DrainCameraInspectionRoute = DrainCameraInspectionRouteImport.update({
+  id: '/drain-camera-inspection',
+  path: '/drain-camera-inspection',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -99,6 +197,11 @@ const CommercialPlumbingRoute = CommercialPlumbingRouteImport.update({
   path: '/commercial-plumbing',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BathroomPlumbingRoute = BathroomPlumbingRouteImport.update({
+  id: '/bathroom-plumbing',
+  path: '/bathroom-plumbing',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -107,6 +210,11 @@ const AboutRoute = AboutRouteImport.update({
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServiceAreasSlugRoute = ServiceAreasSlugRouteImport.update({
@@ -118,142 +226,275 @@ const ServiceAreasSlugRoute = ServiceAreasSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/bathroom-plumbing': typeof BathroomPlumbingRoute
   '/commercial-plumbing': typeof CommercialPlumbingRoute
   '/contact': typeof ContactRoute
+  '/drain-camera-inspection': typeof DrainCameraInspectionRoute
+  '/drain-cleaning': typeof DrainCleaningRoute
   '/emergency-plumbing': typeof EmergencyPlumbingRoute
+  '/faq': typeof FaqRoute
   '/faucet-repair': typeof FaucetRepairRoute
+  '/financing': typeof FinancingRoute
+  '/garbage-disposal': typeof GarbageDisposalRoute
+  '/gas-line-repair': typeof GasLineRepairRoute
   '/hot-water-recirculation-pumps': typeof HotWaterRecirculationPumpsRoute
+  '/kitchen-plumbing': typeof KitchenPlumbingRoute
   '/leak-detection': typeof LeakDetectionRoute
+  '/pipe-repair': typeof PipeRepairRoute
+  '/pipe-replacement': typeof PipeReplacementRoute
   '/plumbing-inspections': typeof PlumbingInspectionsRoute
   '/plumbing-system-replacement': typeof PlumbingSystemReplacementRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/residential-plumbing': typeof ResidentialPlumbingRoute
   '/reviews': typeof ReviewsRoute
   '/service-areas': typeof ServiceAreasRouteWithChildren
   '/services': typeof ServicesRoute
+  '/sewer-line-repair': typeof SewerLineRepairRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/tankless-water-heater': typeof TanklessWaterHeaterRoute
+  '/terms-of-service': typeof TermsOfServiceRoute
+  '/toilet-repair': typeof ToiletRepairRoute
+  '/water-heater-repair': typeof WaterHeaterRepairRoute
   '/water-line-repair': typeof WaterLineRepairRoute
+  '/water-softener': typeof WaterSoftenerRoute
   '/service-areas/$slug': typeof ServiceAreasSlugRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/bathroom-plumbing': typeof BathroomPlumbingRoute
   '/commercial-plumbing': typeof CommercialPlumbingRoute
   '/contact': typeof ContactRoute
+  '/drain-camera-inspection': typeof DrainCameraInspectionRoute
+  '/drain-cleaning': typeof DrainCleaningRoute
   '/emergency-plumbing': typeof EmergencyPlumbingRoute
+  '/faq': typeof FaqRoute
   '/faucet-repair': typeof FaucetRepairRoute
+  '/financing': typeof FinancingRoute
+  '/garbage-disposal': typeof GarbageDisposalRoute
+  '/gas-line-repair': typeof GasLineRepairRoute
   '/hot-water-recirculation-pumps': typeof HotWaterRecirculationPumpsRoute
+  '/kitchen-plumbing': typeof KitchenPlumbingRoute
   '/leak-detection': typeof LeakDetectionRoute
+  '/pipe-repair': typeof PipeRepairRoute
+  '/pipe-replacement': typeof PipeReplacementRoute
   '/plumbing-inspections': typeof PlumbingInspectionsRoute
   '/plumbing-system-replacement': typeof PlumbingSystemReplacementRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/residential-plumbing': typeof ResidentialPlumbingRoute
   '/reviews': typeof ReviewsRoute
   '/service-areas': typeof ServiceAreasRouteWithChildren
   '/services': typeof ServicesRoute
+  '/sewer-line-repair': typeof SewerLineRepairRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/tankless-water-heater': typeof TanklessWaterHeaterRoute
+  '/terms-of-service': typeof TermsOfServiceRoute
+  '/toilet-repair': typeof ToiletRepairRoute
+  '/water-heater-repair': typeof WaterHeaterRepairRoute
   '/water-line-repair': typeof WaterLineRepairRoute
+  '/water-softener': typeof WaterSoftenerRoute
   '/service-areas/$slug': typeof ServiceAreasSlugRoute
+  '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/bathroom-plumbing': typeof BathroomPlumbingRoute
   '/commercial-plumbing': typeof CommercialPlumbingRoute
   '/contact': typeof ContactRoute
+  '/drain-camera-inspection': typeof DrainCameraInspectionRoute
+  '/drain-cleaning': typeof DrainCleaningRoute
   '/emergency-plumbing': typeof EmergencyPlumbingRoute
+  '/faq': typeof FaqRoute
   '/faucet-repair': typeof FaucetRepairRoute
+  '/financing': typeof FinancingRoute
+  '/garbage-disposal': typeof GarbageDisposalRoute
+  '/gas-line-repair': typeof GasLineRepairRoute
   '/hot-water-recirculation-pumps': typeof HotWaterRecirculationPumpsRoute
+  '/kitchen-plumbing': typeof KitchenPlumbingRoute
   '/leak-detection': typeof LeakDetectionRoute
+  '/pipe-repair': typeof PipeRepairRoute
+  '/pipe-replacement': typeof PipeReplacementRoute
   '/plumbing-inspections': typeof PlumbingInspectionsRoute
   '/plumbing-system-replacement': typeof PlumbingSystemReplacementRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/residential-plumbing': typeof ResidentialPlumbingRoute
   '/reviews': typeof ReviewsRoute
   '/service-areas': typeof ServiceAreasRouteWithChildren
   '/services': typeof ServicesRoute
+  '/sewer-line-repair': typeof SewerLineRepairRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/tankless-water-heater': typeof TanklessWaterHeaterRoute
+  '/terms-of-service': typeof TermsOfServiceRoute
+  '/toilet-repair': typeof ToiletRepairRoute
+  '/water-heater-repair': typeof WaterHeaterRepairRoute
   '/water-line-repair': typeof WaterLineRepairRoute
+  '/water-softener': typeof WaterSoftenerRoute
   '/service-areas/$slug': typeof ServiceAreasSlugRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/about'
+    | '/bathroom-plumbing'
     | '/commercial-plumbing'
     | '/contact'
+    | '/drain-camera-inspection'
+    | '/drain-cleaning'
     | '/emergency-plumbing'
+    | '/faq'
     | '/faucet-repair'
+    | '/financing'
+    | '/garbage-disposal'
+    | '/gas-line-repair'
     | '/hot-water-recirculation-pumps'
+    | '/kitchen-plumbing'
     | '/leak-detection'
+    | '/pipe-repair'
+    | '/pipe-replacement'
     | '/plumbing-inspections'
     | '/plumbing-system-replacement'
+    | '/privacy-policy'
     | '/residential-plumbing'
     | '/reviews'
     | '/service-areas'
     | '/services'
+    | '/sewer-line-repair'
     | '/sitemap.xml'
+    | '/tankless-water-heater'
+    | '/terms-of-service'
+    | '/toilet-repair'
+    | '/water-heater-repair'
     | '/water-line-repair'
+    | '/water-softener'
     | '/service-areas/$slug'
+    | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
+    | '/bathroom-plumbing'
     | '/commercial-plumbing'
     | '/contact'
+    | '/drain-camera-inspection'
+    | '/drain-cleaning'
     | '/emergency-plumbing'
+    | '/faq'
     | '/faucet-repair'
+    | '/financing'
+    | '/garbage-disposal'
+    | '/gas-line-repair'
     | '/hot-water-recirculation-pumps'
+    | '/kitchen-plumbing'
     | '/leak-detection'
+    | '/pipe-repair'
+    | '/pipe-replacement'
     | '/plumbing-inspections'
     | '/plumbing-system-replacement'
+    | '/privacy-policy'
     | '/residential-plumbing'
     | '/reviews'
     | '/service-areas'
     | '/services'
+    | '/sewer-line-repair'
     | '/sitemap.xml'
+    | '/tankless-water-heater'
+    | '/terms-of-service'
+    | '/toilet-repair'
+    | '/water-heater-repair'
     | '/water-line-repair'
+    | '/water-softener'
     | '/service-areas/$slug'
+    | '/blog'
   id:
     | '__root__'
     | '/'
     | '/about'
+    | '/bathroom-plumbing'
     | '/commercial-plumbing'
     | '/contact'
+    | '/drain-camera-inspection'
+    | '/drain-cleaning'
     | '/emergency-plumbing'
+    | '/faq'
     | '/faucet-repair'
+    | '/financing'
+    | '/garbage-disposal'
+    | '/gas-line-repair'
     | '/hot-water-recirculation-pumps'
+    | '/kitchen-plumbing'
     | '/leak-detection'
+    | '/pipe-repair'
+    | '/pipe-replacement'
     | '/plumbing-inspections'
     | '/plumbing-system-replacement'
+    | '/privacy-policy'
     | '/residential-plumbing'
     | '/reviews'
     | '/service-areas'
     | '/services'
+    | '/sewer-line-repair'
     | '/sitemap.xml'
+    | '/tankless-water-heater'
+    | '/terms-of-service'
+    | '/toilet-repair'
+    | '/water-heater-repair'
     | '/water-line-repair'
+    | '/water-softener'
     | '/service-areas/$slug'
+    | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  BathroomPlumbingRoute: typeof BathroomPlumbingRoute
   CommercialPlumbingRoute: typeof CommercialPlumbingRoute
   ContactRoute: typeof ContactRoute
+  DrainCameraInspectionRoute: typeof DrainCameraInspectionRoute
+  DrainCleaningRoute: typeof DrainCleaningRoute
   EmergencyPlumbingRoute: typeof EmergencyPlumbingRoute
+  FaqRoute: typeof FaqRoute
   FaucetRepairRoute: typeof FaucetRepairRoute
+  FinancingRoute: typeof FinancingRoute
+  GarbageDisposalRoute: typeof GarbageDisposalRoute
+  GasLineRepairRoute: typeof GasLineRepairRoute
   HotWaterRecirculationPumpsRoute: typeof HotWaterRecirculationPumpsRoute
+  KitchenPlumbingRoute: typeof KitchenPlumbingRoute
   LeakDetectionRoute: typeof LeakDetectionRoute
+  PipeRepairRoute: typeof PipeRepairRoute
+  PipeReplacementRoute: typeof PipeReplacementRoute
   PlumbingInspectionsRoute: typeof PlumbingInspectionsRoute
   PlumbingSystemReplacementRoute: typeof PlumbingSystemReplacementRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ResidentialPlumbingRoute: typeof ResidentialPlumbingRoute
   ReviewsRoute: typeof ReviewsRoute
   ServiceAreasRoute: typeof ServiceAreasRouteWithChildren
   ServicesRoute: typeof ServicesRoute
+  SewerLineRepairRoute: typeof SewerLineRepairRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  TanklessWaterHeaterRoute: typeof TanklessWaterHeaterRoute
+  TermsOfServiceRoute: typeof TermsOfServiceRoute
+  ToiletRepairRoute: typeof ToiletRepairRoute
+  WaterHeaterRepairRoute: typeof WaterHeaterRepairRoute
   WaterLineRepairRoute: typeof WaterLineRepairRoute
+  WaterSoftenerRoute: typeof WaterSoftenerRoute
+  BlogIndexRoute: typeof BlogIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/water-softener': {
+      id: '/water-softener'
+      path: '/water-softener'
+      fullPath: '/water-softener'
+      preLoaderRoute: typeof WaterSoftenerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/water-line-repair': {
       id: '/water-line-repair'
       path: '/water-line-repair'
@@ -261,11 +502,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WaterLineRepairRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/water-heater-repair': {
+      id: '/water-heater-repair'
+      path: '/water-heater-repair'
+      fullPath: '/water-heater-repair'
+      preLoaderRoute: typeof WaterHeaterRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/toilet-repair': {
+      id: '/toilet-repair'
+      path: '/toilet-repair'
+      fullPath: '/toilet-repair'
+      preLoaderRoute: typeof ToiletRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms-of-service': {
+      id: '/terms-of-service'
+      path: '/terms-of-service'
+      fullPath: '/terms-of-service'
+      preLoaderRoute: typeof TermsOfServiceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tankless-water-heater': {
+      id: '/tankless-water-heater'
+      path: '/tankless-water-heater'
+      fullPath: '/tankless-water-heater'
+      preLoaderRoute: typeof TanklessWaterHeaterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sewer-line-repair': {
+      id: '/sewer-line-repair'
+      path: '/sewer-line-repair'
+      fullPath: '/sewer-line-repair'
+      preLoaderRoute: typeof SewerLineRepairRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services': {
@@ -296,6 +572,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ResidentialPlumbingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/plumbing-system-replacement': {
       id: '/plumbing-system-replacement'
       path: '/plumbing-system-replacement'
@@ -310,11 +593,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PlumbingInspectionsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pipe-replacement': {
+      id: '/pipe-replacement'
+      path: '/pipe-replacement'
+      fullPath: '/pipe-replacement'
+      preLoaderRoute: typeof PipeReplacementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pipe-repair': {
+      id: '/pipe-repair'
+      path: '/pipe-repair'
+      fullPath: '/pipe-repair'
+      preLoaderRoute: typeof PipeRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/leak-detection': {
       id: '/leak-detection'
       path: '/leak-detection'
       fullPath: '/leak-detection'
       preLoaderRoute: typeof LeakDetectionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kitchen-plumbing': {
+      id: '/kitchen-plumbing'
+      path: '/kitchen-plumbing'
+      fullPath: '/kitchen-plumbing'
+      preLoaderRoute: typeof KitchenPlumbingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/hot-water-recirculation-pumps': {
@@ -324,6 +628,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HotWaterRecirculationPumpsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/gas-line-repair': {
+      id: '/gas-line-repair'
+      path: '/gas-line-repair'
+      fullPath: '/gas-line-repair'
+      preLoaderRoute: typeof GasLineRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/garbage-disposal': {
+      id: '/garbage-disposal'
+      path: '/garbage-disposal'
+      fullPath: '/garbage-disposal'
+      preLoaderRoute: typeof GarbageDisposalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/financing': {
+      id: '/financing'
+      path: '/financing'
+      fullPath: '/financing'
+      preLoaderRoute: typeof FinancingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/faucet-repair': {
       id: '/faucet-repair'
       path: '/faucet-repair'
@@ -331,11 +656,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaucetRepairRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/emergency-plumbing': {
       id: '/emergency-plumbing'
       path: '/emergency-plumbing'
       fullPath: '/emergency-plumbing'
       preLoaderRoute: typeof EmergencyPlumbingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/drain-cleaning': {
+      id: '/drain-cleaning'
+      path: '/drain-cleaning'
+      fullPath: '/drain-cleaning'
+      preLoaderRoute: typeof DrainCleaningRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/drain-camera-inspection': {
+      id: '/drain-camera-inspection'
+      path: '/drain-camera-inspection'
+      fullPath: '/drain-camera-inspection'
+      preLoaderRoute: typeof DrainCameraInspectionRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -352,6 +698,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CommercialPlumbingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/bathroom-plumbing': {
+      id: '/bathroom-plumbing'
+      path: '/bathroom-plumbing'
+      fullPath: '/bathroom-plumbing'
+      preLoaderRoute: typeof BathroomPlumbingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -364,6 +717,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/service-areas/$slug': {
@@ -391,20 +751,38 @@ const ServiceAreasRouteWithChildren = ServiceAreasRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  BathroomPlumbingRoute: BathroomPlumbingRoute,
   CommercialPlumbingRoute: CommercialPlumbingRoute,
   ContactRoute: ContactRoute,
+  DrainCameraInspectionRoute: DrainCameraInspectionRoute,
+  DrainCleaningRoute: DrainCleaningRoute,
   EmergencyPlumbingRoute: EmergencyPlumbingRoute,
+  FaqRoute: FaqRoute,
   FaucetRepairRoute: FaucetRepairRoute,
+  FinancingRoute: FinancingRoute,
+  GarbageDisposalRoute: GarbageDisposalRoute,
+  GasLineRepairRoute: GasLineRepairRoute,
   HotWaterRecirculationPumpsRoute: HotWaterRecirculationPumpsRoute,
+  KitchenPlumbingRoute: KitchenPlumbingRoute,
   LeakDetectionRoute: LeakDetectionRoute,
+  PipeRepairRoute: PipeRepairRoute,
+  PipeReplacementRoute: PipeReplacementRoute,
   PlumbingInspectionsRoute: PlumbingInspectionsRoute,
   PlumbingSystemReplacementRoute: PlumbingSystemReplacementRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
   ResidentialPlumbingRoute: ResidentialPlumbingRoute,
   ReviewsRoute: ReviewsRoute,
   ServiceAreasRoute: ServiceAreasRouteWithChildren,
   ServicesRoute: ServicesRoute,
+  SewerLineRepairRoute: SewerLineRepairRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  TanklessWaterHeaterRoute: TanklessWaterHeaterRoute,
+  TermsOfServiceRoute: TermsOfServiceRoute,
+  ToiletRepairRoute: ToiletRepairRoute,
+  WaterHeaterRepairRoute: WaterHeaterRepairRoute,
   WaterLineRepairRoute: WaterLineRepairRoute,
+  WaterSoftenerRoute: WaterSoftenerRoute,
+  BlogIndexRoute: BlogIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

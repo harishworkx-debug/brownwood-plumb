@@ -5,11 +5,12 @@ import { business } from "@/data/business";
 
 const nav = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
   { to: "/emergency-plumbing", label: "Emergency" },
   { to: "/service-areas", label: "Areas" },
+  { to: "/about", label: "About" },
   { to: "/reviews", label: "Reviews" },
+  { to: "/blog", label: "Blog" },
   { to: "/contact", label: "Contact" },
 ] as const;
 

@@ -16,7 +16,16 @@ import { Footer } from "@/components/site/Footer";
 import { FloatingCTA } from "@/components/site/FloatingCTA";
 import { Toaster } from "@/components/ui/sonner";
 import { JsonLd } from "@/components/site/JsonLd";
-import { localBusinessSchema } from "@/lib/seo";
+import { localBusinessSchema, organizationSchema, websiteSchema, combineSchemas } from "@/lib/seo";
+import { business } from "@/data/business";
+
+const BASE_URL = `https://${business.website}`;
+
+const rootSchema = combineSchemas(
+  organizationSchema,
+  localBusinessSchema,
+  websiteSchema,
+);
 
 function NotFoundComponent() {
   return (
@@ -83,28 +92,44 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "M. Webb Plumbing Co. — Plumber in Brownwood, TX | 35+ Yrs Experience" },
-      { name: "description", content: "Trusted residential & commercial plumber in Brownwood, TX. 24-hour emergency plumbing, leak detection, water line repair & more. (325) 328-0435." },
+      { title: "M. Webb Plumbing Co. — Plumber Brownwood TX | 24-Hour Emergency Service | 35+ Years" },
+      { name: "description", content: "Brownwood's trusted plumber for 35+ years. 24-hour emergency plumbing, leak detection, water heater repair, drain cleaning, residential & commercial services. Call (325) 328-0435. Licensed & insured." },
+      { name: "keywords", content: "plumber brownwood tx, emergency plumber brownwood, 24 hour plumber, residential plumber, commercial plumber, water heater repair brownwood, drain cleaning brownwood tx, leak detection brownwood, m webb plumbing" },
       { name: "author", content: "M. Webb Plumbing Co. LLC" },
+      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
+      { name: "googlebot", content: "index, follow" },
       { property: "og:site_name", content: "M. Webb Plumbing Co." },
-      { property: "og:title", content: "M. Webb Plumbing Co. — Plumber in Brownwood, TX | 35+ Yrs Experience" },
-      { property: "og:description", content: "Trusted residential & commercial plumber in Brownwood, TX. 24-hour emergency plumbing, leak detection, water line repair & more. (325) 328-0435." },
+      { property: "og:title", content: "M. Webb Plumbing Co. — Plumber Brownwood TX | 24-Hour Emergency | 35+ Years" },
+      { property: "og:description", content: "Brownwood's trusted plumber for 35+ years. 24-hour emergency plumbing, leak detection, water heater repair, drain cleaning. Call (325) 328-0435." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
+      { property: "og:url", content: BASE_URL },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:image", content: `${BASE_URL}/og.jpg` },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "M. Webb Plumbing Co. - Trusted Brownwood Plumber Since 1990" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@mwebbplumbing" },
       { name: "theme-color", content: "#0e2747" },
-      { name: "twitter:title", content: "M. Webb Plumbing Co. — Plumber in Brownwood, TX | 35+ Yrs Experience" },
-      { name: "twitter:description", content: "Trusted residential & commercial plumber in Brownwood, TX. 24-hour emergency plumbing, leak detection, water line repair & more. (325) 328-0435." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c09f538b-c7ce-4af9-b34a-155583853762/id-preview-1265a79e--0285eb43-f9c9-41d0-9b25-5b35290a15f1.lovable.app-1781775300375.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c09f538b-c7ce-4af9-b34a-155583853762/id-preview-1265a79e--0285eb43-f9c9-41d0-9b25-5b35290a15f1.lovable.app-1781775300375.png" },
+      { name: "msapplication-TileColor", content: "#0e2747" },
+      { name: "twitter:title", content: "M. Webb Plumbing Co. — Plumber Brownwood TX | 24-Hour Emergency" },
+      { name: "twitter:description", content: "Brownwood's trusted plumber for 35+ years. 24-hour emergency plumbing, leak detection, water heater repair. Call (325) 328-0435." },
+      { name: "twitter:image", content: `${BASE_URL}/og.jpg` },
+      { name: "geo.region", content: "US-TX" },
+      { name: "geo.placename", content: "Brownwood" },
+      { name: "geo.position", content: "31.702854;-98.990455" },
+      { name: "ICBM", content: "31.702854, -98.990455" },
+      { name: "format-detection", content: "telephone=yes" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
+      { rel: "canonical", href: BASE_URL },
+      { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" },
+      { rel: "dns-prefetch", href: "https://www.googletagmanager.com" },
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
     ],
   }),
   shellComponent: RootShell,
@@ -141,7 +166,7 @@ function RootComponent() {
         <FloatingCTA />
       </div>
       <Toaster richColors position="top-center" />
-      <JsonLd data={localBusinessSchema} />
+      <JsonLd data={rootSchema} />
     </QueryClientProvider>
   );
 }
