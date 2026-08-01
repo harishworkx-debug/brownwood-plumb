@@ -52,7 +52,7 @@ function Page() {
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {serviceAreas.map((a, i) => (
             <Reveal key={a.slug} delay={i * 60}>
-              <Link to="/service-areas/$slug" params={{ slug: a.slug }} className="group block h-full rounded-2xl border border-border bg-card p-6 transition hover:-translate-y-1 hover:shadow-elegant">
+              <Link to={("/plumber-" + a.slug) as never} className="group block h-full rounded-2xl border border-border bg-card p-6 transition hover:-translate-y-1 hover:shadow-elegant">
                 <span className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-brand to-brand-deep text-white shadow-elegant">
                   <MapPin className="h-5 w-5" />
                 </span>

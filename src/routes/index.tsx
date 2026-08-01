@@ -223,7 +223,7 @@ function Index() {
                 <a href={`tel:${business.phoneRaw}`} className="inline-flex items-center gap-2 rounded-full bg-cta px-6 py-3.5 text-sm font-semibold text-cta-foreground shadow-cta">
                   <Phone className="h-4 w-4" /> Call Now {business.phone}
                 </a>
-                <Link to="/emergency-plumbing" className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur hover:bg-white/15">
+                <Link to="/emergency-plumbing-brownwood-tx" className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur hover:bg-white/15">
                   Emergency Details <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
@@ -292,7 +292,7 @@ function Index() {
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {serviceAreas.map((a, i) => (
             <Reveal key={a.slug} delay={i * 60}>
-              <Link to="/service-areas/$slug" params={{ slug: a.slug }} className="group block rounded-2xl border border-border bg-card p-5 text-center transition hover:-translate-y-1 hover:shadow-elegant">
+              <Link to={("/plumber-" + a.slug) as never} className="group block rounded-2xl border border-border bg-card p-5 text-center transition hover:-translate-y-1 hover:shadow-elegant">
                 <span className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-brand/10 text-brand-deep group-hover:bg-cta/15 group-hover:text-cta">
                   <MapPin className="h-5 w-5" />
                 </span>

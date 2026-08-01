@@ -38,7 +38,7 @@ export function Footer() {
           <ul className="mt-4 space-y-2 text-sm text-primary-foreground/70">
             {serviceAreas.slice(0, 6).map((a) => (
               <li key={a.slug}>
-                <Link to={"/service-areas/$slug"} params={{ slug: a.slug }} className="hover:text-cta transition">Plumber in {a.name}</Link>
+                <Link to={("/plumber-" + a.slug) as never} className="hover:text-cta transition">Plumber in {a.name}</Link>
               </li>
             ))}
             <li>

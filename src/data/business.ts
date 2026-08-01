@@ -27,28 +27,16 @@ export const business = {
 };
 
 export const services = [
-  { slug: "emergency-plumbing", title: "Emergency Plumbing", icon: "Siren", blurb: "24-hour urgent response for burst pipes, major leaks and plumbing disasters across Brownwood, TX.", category: "emergency" },
-  { slug: "residential-plumbing", title: "Residential Plumbing", icon: "Home", blurb: "Trusted home plumbing for repairs, replacements, fixtures and full-house service.", category: "residential" },
-  { slug: "commercial-plumbing", title: "Commercial Plumbing", icon: "Building2", blurb: "Reliable plumbing for offices, restaurants, retail and industrial properties.", category: "commercial" },
-  { slug: "water-heater-repair", title: "Water Heater Repair", icon: "Flame", blurb: "Fast water heater repairs and installations to restore hot water to your home.", category: "residential" },
-  { slug: "tankless-water-heater", title: "Tankless Water Heater", icon: "Zap", blurb: "Energy-efficient tankless water heater installation and service for endless hot water.", category: "residential" },
-  { slug: "drain-cleaning", title: "Drain Cleaning", icon: "Drill", blurb: "Professional drain cleaning to clear clogs and restore proper flow throughout your plumbing.", category: "residential" },
-  { slug: "drain-camera-inspection", title: "Drain Camera Inspection", icon: "Video", blurb: "Video inspection technology to diagnose drain problems without excavation.", category: "inspection" },
-  { slug: "leak-detection", title: "Leak Detection", icon: "Droplets", blurb: "Non-invasive leak location to stop hidden water damage before it spreads.", category: "inspection" },
-  { slug: "pipe-repair", title: "Pipe Repair", icon: "GitBranch", blurb: "Expert pipe repair services for leaks, corrosion, and damaged plumbing lines.", category: "repair" },
-  { slug: "pipe-replacement", title: "Pipe Replacement", icon: "Replace", blurb: "Complete pipe replacement and repiping services for aging plumbing systems.", category: "replacement" },
-  { slug: "sewer-line-repair", title: "Sewer Line Repair", icon: "ArrowDownToLine", blurb: "Sewer line repair and replacement to fix blockages, breaks, and aging infrastructure.", category: "repair" },
-  { slug: "toilet-repair", title: "Toilet Repair", icon: "Toilet", blurb: "Toilet repairs, installations, and replacements to restore proper function.", category: "residential" },
-  { slug: "faucet-repair", title: "Faucet Repair & Replacement", icon: "Wrench", blurb: "Stop drips, swap fixtures and upgrade faucets with professional results.", category: "residential" },
-  { slug: "garbage-disposal", title: "Garbage Disposal", icon: "Recycle", blurb: "Garbage disposal installation, repair and replacement for your kitchen.", category: "residential" },
-  { slug: "kitchen-plumbing", title: "Kitchen Plumbing", icon: "ChefHat", blurb: "Complete kitchen plumbing services from sink installation to drain cleaning.", category: "residential" },
-  { slug: "bathroom-plumbing", title: "Bathroom Plumbing", icon: "Bath", blurb: "Full bathroom plumbing services including fixtures, drains, and repairs.", category: "residential" },
-  { slug: "gas-line-repair", title: "Gas Line Repair", icon: "AlertTriangle", blurb: "Gas line repair and installation services with safety as the top priority.", category: "repair" },
-  { slug: "water-softener", title: "Water Softener", icon: "Droplet", blurb: "Water softener installation and service to address hard water issues.", category: "residential" },
-  { slug: "water-line-repair", title: "Water Line Repair", icon: "Pipette", blurb: "Diagnosis and repair of damaged, leaking or aging main water lines.", category: "repair" },
-  { slug: "plumbing-inspections", title: "Plumbing Inspections", icon: "ClipboardCheck", blurb: "Pre-purchase and preventive inspections that catch problems early.", category: "inspection" },
-  { slug: "plumbing-system-replacement", title: "Plumbing System Replacement", icon: "Hammer", blurb: "Full repipes and system upgrades for older homes and aging infrastructure.", category: "replacement" },
-  { slug: "hot-water-recirculation-pumps", title: "Hot Water Recirculation Pumps", icon: "Flame", blurb: "Instant hot water at every faucet with energy-efficient recirculation systems.", category: "residential" },
+  { slug: "emergency-plumbing-brownwood-tx", title: "Emergency Plumbing", icon: "Siren", blurb: "24-hour urgent response for burst pipes, major leaks and plumbing disasters across Brownwood, TX.", category: "emergency" },
+  { slug: "residential-plumbing-brownwood-tx", title: "Residential Plumbing", icon: "Home", blurb: "Trusted home plumbing for repairs, replacements, fixtures and full-house service.", category: "residential" },
+  { slug: "commercial-plumbing-brownwood-tx", title: "Commercial Plumbing", icon: "Building2", blurb: "Reliable plumbing for offices, restaurants, retail and industrial properties.", category: "commercial" },
+  { slug: "water-heaters-brownwood-tx", title: "Water Heaters", icon: "Flame", blurb: "Fast repairs, tankless upgrades, and recirculation pumps to restore your hot water.", category: "residential" },
+  { slug: "drain-and-sewer-brownwood-tx", title: "Drain & Sewer Services", icon: "Drill", blurb: "Professional drain cleaning, camera inspections, and sewer line repair.", category: "residential" },
+  { slug: "piping-and-leaks-brownwood-tx", title: "Piping & Leak Services", icon: "Droplets", blurb: "Non-invasive leak detection, pipe repair, and full system replacement.", category: "repair" },
+  { slug: "kitchen-and-bathroom-brownwood-tx", title: "Kitchen & Bathroom Plumbing", icon: "Bath", blurb: "Complete service for faucets, toilets, garbage disposals, and fixtures.", category: "residential" },
+  { slug: "gas-line-repair-brownwood-tx", title: "Gas Line Repair", icon: "AlertTriangle", blurb: "Gas line repair and installation services with safety as the top priority.", category: "repair" },
+  { slug: "water-softener-brownwood-tx", title: "Water Softeners", icon: "Droplet", blurb: "Water softener installation and service to address hard water issues.", category: "residential" },
+  { slug: "plumbing-inspections-brownwood-tx", title: "Plumbing Inspections", icon: "ClipboardCheck", blurb: "Pre-purchase and preventive inspections that catch problems early.", category: "inspection" },
 ];
 
 export const serviceAreas = [

@@ -1,12 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
-import { business } from "@/data/business";
+import { business, services, serviceAreas } from "@/data/business";
+import { ChevronDown } from "lucide-react";
 
 const nav = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
-  { to: "/emergency-plumbing", label: "Emergency" },
+  { to: "/emergency-plumbing-brownwood-tx", label: "Emergency" },
   { to: "/service-areas", label: "Areas" },
   { to: "/about", label: "About" },
   { to: "/reviews", label: "Reviews" },
@@ -44,17 +45,73 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
-          {nav.map((n) => (
-            <Link
-              key={n.to}
-              to={n.to}
-              className="rounded-full px-3.5 py-2 text-sm font-medium text-foreground/80 transition hover:bg-secondary hover:text-foreground"
-              activeProps={{ className: "text-foreground bg-secondary" }}
-              activeOptions={{ exact: n.to === "/" }}
-            >
-              {n.label}
-            </Link>
-          ))}
+          {nav.map((n) => {
+            if (n.label === "Services") {
+              return (
+                <div key={n.to} className="group relative py-2">
+                  <Link
+                    to={n.to}
+                    className="flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium text-foreground/80 transition hover:bg-secondary hover:text-foreground"
+                    activeProps={{ className: "text-foreground bg-secondary" }}
+                  >
+                    {n.label} <ChevronDown className="h-3 w-3 opacity-70 transition-transform group-hover:rotate-180" />
+                  </Link>
+                  <div className="absolute left-1/2 top-full hidden w-[550px] -translate-x-1/2 pt-2 group-hover:block">
+                    <div className="grid grid-cols-2 gap-0.5 rounded-xl border border-border bg-background p-2.5 shadow-elegant">
+                      {services.map((s) => (
+                        <Link
+                          key={s.slug}
+                          to={("/" + s.slug) as never}
+                          className="flex items-center gap-2 rounded-md px-3 py-1.5 text-sm text-foreground/80 transition hover:bg-secondary hover:text-foreground"
+                        >
+                          {s.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+
+            if (n.label === "Areas") {
+              return (
+                <div key={n.to} className="group relative py-2">
+                  <Link
+                    to={n.to}
+                    className="flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium text-foreground/80 transition hover:bg-secondary hover:text-foreground"
+                    activeProps={{ className: "text-foreground bg-secondary" }}
+                  >
+                    {n.label} <ChevronDown className="h-3 w-3 opacity-70 transition-transform group-hover:rotate-180" />
+                  </Link>
+                  <div className="absolute left-1/2 top-full hidden w-[400px] -translate-x-1/2 pt-2 group-hover:block">
+                    <div className="grid grid-cols-2 gap-0.5 rounded-xl border border-border bg-background p-2.5 shadow-elegant">
+                      {serviceAreas.map((a) => (
+                        <Link
+                          key={a.slug}
+                          to={("/plumber-" + a.slug) as never}
+                          className="flex items-center gap-2 rounded-md px-3 py-1.5 text-sm text-foreground/80 transition hover:bg-secondary hover:text-foreground"
+                        >
+                          {a.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+
+            return (
+              <Link
+                key={n.to}
+                to={n.to}
+                className="rounded-full px-3.5 py-2 text-sm font-medium text-foreground/80 transition hover:bg-secondary hover:text-foreground"
+                activeProps={{ className: "text-foreground bg-secondary" }}
+                activeOptions={{ exact: n.to === "/" }}
+              >
+                {n.label}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="flex items-center gap-2">

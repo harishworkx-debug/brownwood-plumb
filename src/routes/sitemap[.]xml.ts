@@ -29,7 +29,7 @@ export const Route = createFileRoute("/sitemap.xml")({
         }));
 
         const areaPages = serviceAreas.map((a) => ({
-          path: `/service-areas/${a.slug}`,
+          path: `/plumber-${a.slug}`,
           priority: "0.8",
           changefreq: "monthly",
         }));

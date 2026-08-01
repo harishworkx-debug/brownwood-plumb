@@ -249,10 +249,10 @@ export function locationBusinessSchema(locationName: string, latitude: number, l
   return {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "Plumber"],
-    "@id": `${BASE_URL}/service-areas/${slug}/#localbusiness`,
+    "@id": `${BASE_URL}/plumber-${slug}/#localbusiness`,
     name: `${business.name} - ${locationName}`,
     description: `Trusted plumber serving ${locationName}. ${business.experience} of experience with residential, commercial & 24-hour emergency plumbing services.`,
-    url: `${BASE_URL}/service-areas/${slug}`,
+    url: `${BASE_URL}/plumber-${slug}`,
     telephone: business.phone,
     email: business.email,
     priceRange: "$$",

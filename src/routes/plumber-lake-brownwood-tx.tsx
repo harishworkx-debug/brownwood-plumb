@@ -1,13 +1,6 @@
-import { createFileRoute, notFound, Link } from "@tanstack/react-router";
-import { MapPin, Phone, CircleCheck as CheckCircle2, ArrowRight } from "lucide-react";
-import { business, services, serviceAreas } from "@/data/business";
-import { Section, SectionEyebrow } from "@/components/site/Section";
-import { Reveal } from "@/components/site/Reveal";
-import { Icon } from "@/components/site/Icon";
-import { QuoteForm } from "@/components/site/QuoteForm";
-import { CTABanner } from "@/components/site/CTABanner";
-import { JsonLd } from "@/components/site/JsonLd";
-import { locationBusinessSchema } from "@/lib/seo";
+import { createFileRoute } from "@tanstack/react-router";
+import { AreaPageShell } from "@/components/site/AreaPageShell";
+import { business, serviceAreas } from "@/data/business";
 
 const BASE_URL = `https://${business.website}`;
 
@@ -67,15 +60,11 @@ const defaultContent = {
   long: "We're proud to extend our professional plumbing services throughout Central Texas. Whether you need emergency repairs, routine maintenance, or new installations, our experienced team brings the same quality workmanship and fair pricing to every job.",
 };
 
-export const Route = createFileRoute("/service-areas/$slug")({
-  loader: ({ params }) => {
-    const area = serviceAreas.find((a) => a.slug === params.slug);
-    if (!area) throw notFound();
-    return { area, content: areaContent[params.slug] || defaultContent };
-  },
-  head: ({ loaderData }) => {
-    if (!loaderData) return {};
-    const { area } = loaderData;
+const area = serviceAreas.find(a => a.slug === "lake-brownwood-tx")!;
+const content = areaContent["lake-brownwood-tx"] || defaultContent;
+
+export const Route = createFileRoute("/plumber-lake-brownwood-tx")({
+  head: () => {
     const title = `Plumber in ${area.name} | Emergency, Residential & Commercial | M. Webb`;
     const desc = `Expert plumber serving ${area.name}, TX. 35+ years. Residential, commercial & 24-hour emergency plumbing. Fast response, fair prices. Call (325) 328-0435 now.`;
     return {
@@ -85,85 +74,11 @@ export const Route = createFileRoute("/service-areas/$slug")({
         { name: "keywords", content: `plumber ${area.name}, plumbing services ${area.name}, emergency plumber ${area.name}, local plumber ${area.name} tx` },
         { property: "og:title", content: title },
         { property: "og:description", content: desc },
-        { property: "og:url", content: `${BASE_URL}/service-areas/${area.slug}` },
+        { property: "og:url", content: `${BASE_URL}/plumber-lake-brownwood-tx` },
         { property: "og:type", content: "website" },
       ],
-      links: [{ rel: "canonical", href: `${BASE_URL}/service-areas/${area.slug}` }],
+      links: [{ rel: "canonical", href: `${BASE_URL}/plumber-lake-brownwood-tx` }],
     };
   },
-  component: Page,
+  component: () => <AreaPageShell area={area} content={content} />,
 });
-
-function Page() {
-  const { area, content } = Route.useLoaderData();
-  return (
-    <>
-      <section className="relative overflow-hidden gradient-hero pb-16 pt-16 text-primary-foreground md:pt-24">
-        <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-cta/30 blur-3xl float-slow" />
-        <div className="absolute -bottom-32 -left-24 h-80 w-80 rounded-full bg-brand/40 blur-3xl" />
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1.4fr_1fr] lg:gap-14 lg:px-8">
-          <div>
-            <Reveal>
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white/80"><MapPin className="h-3.5 w-3.5 text-cta" /> Service Area</div>
-            </Reveal>
-            <Reveal delay={80}>
-              <h1 className="mt-5 font-display text-4xl font-bold leading-tight md:text-6xl">Plumber in <span className="text-gradient-brand">{area.name}</span></h1>
-            </Reveal>
-            <Reveal delay={160}>
-              <p className="mt-5 max-w-2xl text-lg text-white/80">{content.intro}</p>
-            </Reveal>
-            <Reveal delay={240}>
-              <div className="mt-7 flex flex-wrap gap-3">
-                <a href={`tel:${business.phoneRaw}`} className="inline-flex items-center gap-2 rounded-full bg-cta px-5 py-3 text-sm font-semibold text-cta-foreground shadow-cta"><Phone className="h-4 w-4" /> Call {business.phone}</a>
-                <Link to="/contact" className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/15">Get Free Estimate <ArrowRight className="h-4 w-4" /></Link>
-              </div>
-            </Reveal>
-          </div>
-          <Reveal delay={200}>
-            <div className="glass-dark rounded-2xl p-5 text-white">
-              <h2 className="font-display text-lg font-semibold">Request service in {area.name}</h2>
-              <p className="mt-1 text-sm text-white/70">Quick reply during business hours, 24/7 for emergencies.</p>
-              <div className="mt-4"><QuoteForm compact /></div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      <Section>
-        <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr]">
-          <Reveal>
-            <div>
-              <SectionEyebrow>Local plumbing in {area.name}</SectionEyebrow>
-              <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Why locals call us</h2>
-              <p className="mt-5 leading-relaxed text-foreground/80">{content.long}</p>
-              <ul className="mt-6 grid gap-2 sm:grid-cols-2">
-                {["35+ years of local experience", "Same-day appointments when possible", "True 24-hour emergency service", "Honest, upfront pricing", "Residential & commercial work", "Licensed and insured"].map((b) => (
-                  <li key={b} className="flex items-start gap-2 text-sm text-foreground/80"><CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-cta" /> {b}</li>
-                ))}
-              </ul>
-            </div>
-          </Reveal>
-          <Reveal delay={120}>
-            <aside className="rounded-2xl border border-border bg-card p-6 shadow-elegant">
-              <h3 className="font-display text-lg font-bold">Services available in {area.name}</h3>
-              <ul className="mt-4 grid gap-2">
-                {services.map((s) => (
-                  <li key={s.slug}>
-                    <Link to={("/" + s.slug) as never} className="group flex items-center justify-between rounded-lg border border-transparent px-3 py-2 text-sm font-medium text-foreground/80 hover:border-border hover:bg-secondary">
-                      <span className="inline-flex items-center gap-2"><Icon name={s.icon} className="h-4 w-4 text-brand-deep" /> {s.title}</span>
-                      <ArrowRight className="h-4 w-4 text-muted-foreground transition group-hover:translate-x-0.5 group-hover:text-cta" />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </aside>
-          </Reveal>
-        </div>
-      </Section>
-
-      <CTABanner title={`Need a plumber in ${area.name}?`} subtitle="We're local, fast, and easy to reach. Call now or request a free estimate." />
-      <div className="h-24" />
-      <JsonLd data={locationBusinessSchema(area.name, "lat" in area ? area.lat : 31.702854, "lat" in area ? area.lng : -98.990455)} />
-    </>
-  );
-}

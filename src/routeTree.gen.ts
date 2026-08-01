@@ -9,60 +9,50 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as WaterSoftenerRouteImport } from './routes/water-softener'
-import { Route as WaterLineRepairRouteImport } from './routes/water-line-repair'
-import { Route as WaterHeaterRepairRouteImport } from './routes/water-heater-repair'
-import { Route as ToiletRepairRouteImport } from './routes/toilet-repair'
+import { Route as WaterSoftenerBrownwoodTxRouteImport } from './routes/water-softener-brownwood-tx'
+import { Route as WaterHeatersBrownwoodTxRouteImport } from './routes/water-heaters-brownwood-tx'
 import { Route as TermsOfServiceRouteImport } from './routes/terms-of-service'
-import { Route as TanklessWaterHeaterRouteImport } from './routes/tankless-water-heater'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as SewerLineRepairRouteImport } from './routes/sewer-line-repair'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ServiceAreasRouteImport } from './routes/service-areas'
 import { Route as ReviewsRouteImport } from './routes/reviews'
-import { Route as ResidentialPlumbingRouteImport } from './routes/residential-plumbing'
+import { Route as ResidentialPlumbingBrownwoodTxRouteImport } from './routes/residential-plumbing-brownwood-tx'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
-import { Route as PlumbingSystemReplacementRouteImport } from './routes/plumbing-system-replacement'
-import { Route as PlumbingInspectionsRouteImport } from './routes/plumbing-inspections'
-import { Route as PipeReplacementRouteImport } from './routes/pipe-replacement'
-import { Route as PipeRepairRouteImport } from './routes/pipe-repair'
-import { Route as LeakDetectionRouteImport } from './routes/leak-detection'
-import { Route as KitchenPlumbingRouteImport } from './routes/kitchen-plumbing'
-import { Route as HotWaterRecirculationPumpsRouteImport } from './routes/hot-water-recirculation-pumps'
-import { Route as GasLineRepairRouteImport } from './routes/gas-line-repair'
-import { Route as GarbageDisposalRouteImport } from './routes/garbage-disposal'
+import { Route as PlumbingInspectionsBrownwoodTxRouteImport } from './routes/plumbing-inspections-brownwood-tx'
+import { Route as PlumberZephyrTxRouteImport } from './routes/plumber-zephyr-tx'
+import { Route as PlumberSantaAnnaTxRouteImport } from './routes/plumber-santa-anna-tx'
+import { Route as PlumberRisingStarTxRouteImport } from './routes/plumber-rising-star-tx'
+import { Route as PlumberMayTxRouteImport } from './routes/plumber-may-tx'
+import { Route as PlumberLakeBrownwoodTxRouteImport } from './routes/plumber-lake-brownwood-tx'
+import { Route as PlumberEarlyTxRouteImport } from './routes/plumber-early-tx'
+import { Route as PlumberComancheTxRouteImport } from './routes/plumber-comanche-tx'
+import { Route as PlumberColemanTxRouteImport } from './routes/plumber-coleman-tx'
+import { Route as PlumberBrownwoodTxRouteImport } from './routes/plumber-brownwood-tx'
+import { Route as PlumberBrookesmithTxRouteImport } from './routes/plumber-brookesmith-tx'
+import { Route as PlumberBlanketTxRouteImport } from './routes/plumber-blanket-tx'
+import { Route as PlumberBangsTxRouteImport } from './routes/plumber-bangs-tx'
+import { Route as PipingAndLeaksBrownwoodTxRouteImport } from './routes/piping-and-leaks-brownwood-tx'
+import { Route as KitchenAndBathroomBrownwoodTxRouteImport } from './routes/kitchen-and-bathroom-brownwood-tx'
+import { Route as GasLineRepairBrownwoodTxRouteImport } from './routes/gas-line-repair-brownwood-tx'
 import { Route as FinancingRouteImport } from './routes/financing'
-import { Route as FaucetRepairRouteImport } from './routes/faucet-repair'
 import { Route as FaqRouteImport } from './routes/faq'
-import { Route as EmergencyPlumbingRouteImport } from './routes/emergency-plumbing'
-import { Route as DrainCleaningRouteImport } from './routes/drain-cleaning'
-import { Route as DrainCameraInspectionRouteImport } from './routes/drain-camera-inspection'
+import { Route as EmergencyPlumbingBrownwoodTxRouteImport } from './routes/emergency-plumbing-brownwood-tx'
+import { Route as DrainAndSewerBrownwoodTxRouteImport } from './routes/drain-and-sewer-brownwood-tx'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as CommercialPlumbingRouteImport } from './routes/commercial-plumbing'
-import { Route as BathroomPlumbingRouteImport } from './routes/bathroom-plumbing'
+import { Route as CommercialPlumbingBrownwoodTxRouteImport } from './routes/commercial-plumbing-brownwood-tx'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
-import { Route as ServiceAreasSlugRouteImport } from './routes/service-areas.$slug'
 
-const WaterSoftenerRoute = WaterSoftenerRouteImport.update({
-  id: '/water-softener',
-  path: '/water-softener',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const WaterLineRepairRoute = WaterLineRepairRouteImport.update({
-  id: '/water-line-repair',
-  path: '/water-line-repair',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const WaterHeaterRepairRoute = WaterHeaterRepairRouteImport.update({
-  id: '/water-heater-repair',
-  path: '/water-heater-repair',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ToiletRepairRoute = ToiletRepairRouteImport.update({
-  id: '/toilet-repair',
-  path: '/toilet-repair',
+const WaterSoftenerBrownwoodTxRoute =
+  WaterSoftenerBrownwoodTxRouteImport.update({
+    id: '/water-softener-brownwood-tx',
+    path: '/water-softener-brownwood-tx',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const WaterHeatersBrownwoodTxRoute = WaterHeatersBrownwoodTxRouteImport.update({
+  id: '/water-heaters-brownwood-tx',
+  path: '/water-heaters-brownwood-tx',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TermsOfServiceRoute = TermsOfServiceRouteImport.update({
@@ -70,19 +60,9 @@ const TermsOfServiceRoute = TermsOfServiceRouteImport.update({
   path: '/terms-of-service',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TanklessWaterHeaterRoute = TanklessWaterHeaterRouteImport.update({
-  id: '/tankless-water-heater',
-  path: '/tankless-water-heater',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SewerLineRepairRoute = SewerLineRepairRouteImport.update({
-  id: '/sewer-line-repair',
-  path: '/sewer-line-repair',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesRoute = ServicesRouteImport.update({
@@ -100,71 +80,104 @@ const ReviewsRoute = ReviewsRouteImport.update({
   path: '/reviews',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ResidentialPlumbingRoute = ResidentialPlumbingRouteImport.update({
-  id: '/residential-plumbing',
-  path: '/residential-plumbing',
-  getParentRoute: () => rootRouteImport,
-} as any)
+const ResidentialPlumbingBrownwoodTxRoute =
+  ResidentialPlumbingBrownwoodTxRouteImport.update({
+    id: '/residential-plumbing-brownwood-tx',
+    path: '/residential-plumbing-brownwood-tx',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   id: '/privacy-policy',
   path: '/privacy-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PlumbingSystemReplacementRoute =
-  PlumbingSystemReplacementRouteImport.update({
-    id: '/plumbing-system-replacement',
-    path: '/plumbing-system-replacement',
+const PlumbingInspectionsBrownwoodTxRoute =
+  PlumbingInspectionsBrownwoodTxRouteImport.update({
+    id: '/plumbing-inspections-brownwood-tx',
+    path: '/plumbing-inspections-brownwood-tx',
     getParentRoute: () => rootRouteImport,
   } as any)
-const PlumbingInspectionsRoute = PlumbingInspectionsRouteImport.update({
-  id: '/plumbing-inspections',
-  path: '/plumbing-inspections',
+const PlumberZephyrTxRoute = PlumberZephyrTxRouteImport.update({
+  id: '/plumber-zephyr-tx',
+  path: '/plumber-zephyr-tx',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PipeReplacementRoute = PipeReplacementRouteImport.update({
-  id: '/pipe-replacement',
-  path: '/pipe-replacement',
+const PlumberSantaAnnaTxRoute = PlumberSantaAnnaTxRouteImport.update({
+  id: '/plumber-santa-anna-tx',
+  path: '/plumber-santa-anna-tx',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PipeRepairRoute = PipeRepairRouteImport.update({
-  id: '/pipe-repair',
-  path: '/pipe-repair',
+const PlumberRisingStarTxRoute = PlumberRisingStarTxRouteImport.update({
+  id: '/plumber-rising-star-tx',
+  path: '/plumber-rising-star-tx',
   getParentRoute: () => rootRouteImport,
 } as any)
-const LeakDetectionRoute = LeakDetectionRouteImport.update({
-  id: '/leak-detection',
-  path: '/leak-detection',
+const PlumberMayTxRoute = PlumberMayTxRouteImport.update({
+  id: '/plumber-may-tx',
+  path: '/plumber-may-tx',
   getParentRoute: () => rootRouteImport,
 } as any)
-const KitchenPlumbingRoute = KitchenPlumbingRouteImport.update({
-  id: '/kitchen-plumbing',
-  path: '/kitchen-plumbing',
+const PlumberLakeBrownwoodTxRoute = PlumberLakeBrownwoodTxRouteImport.update({
+  id: '/plumber-lake-brownwood-tx',
+  path: '/plumber-lake-brownwood-tx',
   getParentRoute: () => rootRouteImport,
 } as any)
-const HotWaterRecirculationPumpsRoute =
-  HotWaterRecirculationPumpsRouteImport.update({
-    id: '/hot-water-recirculation-pumps',
-    path: '/hot-water-recirculation-pumps',
+const PlumberEarlyTxRoute = PlumberEarlyTxRouteImport.update({
+  id: '/plumber-early-tx',
+  path: '/plumber-early-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberComancheTxRoute = PlumberComancheTxRouteImport.update({
+  id: '/plumber-comanche-tx',
+  path: '/plumber-comanche-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberColemanTxRoute = PlumberColemanTxRouteImport.update({
+  id: '/plumber-coleman-tx',
+  path: '/plumber-coleman-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberBrownwoodTxRoute = PlumberBrownwoodTxRouteImport.update({
+  id: '/plumber-brownwood-tx',
+  path: '/plumber-brownwood-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberBrookesmithTxRoute = PlumberBrookesmithTxRouteImport.update({
+  id: '/plumber-brookesmith-tx',
+  path: '/plumber-brookesmith-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberBlanketTxRoute = PlumberBlanketTxRouteImport.update({
+  id: '/plumber-blanket-tx',
+  path: '/plumber-blanket-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberBangsTxRoute = PlumberBangsTxRouteImport.update({
+  id: '/plumber-bangs-tx',
+  path: '/plumber-bangs-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PipingAndLeaksBrownwoodTxRoute =
+  PipingAndLeaksBrownwoodTxRouteImport.update({
+    id: '/piping-and-leaks-brownwood-tx',
+    path: '/piping-and-leaks-brownwood-tx',
     getParentRoute: () => rootRouteImport,
   } as any)
-const GasLineRepairRoute = GasLineRepairRouteImport.update({
-  id: '/gas-line-repair',
-  path: '/gas-line-repair',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GarbageDisposalRoute = GarbageDisposalRouteImport.update({
-  id: '/garbage-disposal',
-  path: '/garbage-disposal',
-  getParentRoute: () => rootRouteImport,
-} as any)
+const KitchenAndBathroomBrownwoodTxRoute =
+  KitchenAndBathroomBrownwoodTxRouteImport.update({
+    id: '/kitchen-and-bathroom-brownwood-tx',
+    path: '/kitchen-and-bathroom-brownwood-tx',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const GasLineRepairBrownwoodTxRoute =
+  GasLineRepairBrownwoodTxRouteImport.update({
+    id: '/gas-line-repair-brownwood-tx',
+    path: '/gas-line-repair-brownwood-tx',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const FinancingRoute = FinancingRouteImport.update({
   id: '/financing',
   path: '/financing',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaucetRepairRoute = FaucetRepairRouteImport.update({
-  id: '/faucet-repair',
-  path: '/faucet-repair',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FaqRoute = FaqRouteImport.update({
@@ -172,36 +185,29 @@ const FaqRoute = FaqRouteImport.update({
   path: '/faq',
   getParentRoute: () => rootRouteImport,
 } as any)
-const EmergencyPlumbingRoute = EmergencyPlumbingRouteImport.update({
-  id: '/emergency-plumbing',
-  path: '/emergency-plumbing',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DrainCleaningRoute = DrainCleaningRouteImport.update({
-  id: '/drain-cleaning',
-  path: '/drain-cleaning',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DrainCameraInspectionRoute = DrainCameraInspectionRouteImport.update({
-  id: '/drain-camera-inspection',
-  path: '/drain-camera-inspection',
-  getParentRoute: () => rootRouteImport,
-} as any)
+const EmergencyPlumbingBrownwoodTxRoute =
+  EmergencyPlumbingBrownwoodTxRouteImport.update({
+    id: '/emergency-plumbing-brownwood-tx',
+    path: '/emergency-plumbing-brownwood-tx',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DrainAndSewerBrownwoodTxRoute =
+  DrainAndSewerBrownwoodTxRouteImport.update({
+    id: '/drain-and-sewer-brownwood-tx',
+    path: '/drain-and-sewer-brownwood-tx',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CommercialPlumbingRoute = CommercialPlumbingRouteImport.update({
-  id: '/commercial-plumbing',
-  path: '/commercial-plumbing',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BathroomPlumbingRoute = BathroomPlumbingRouteImport.update({
-  id: '/bathroom-plumbing',
-  path: '/bathroom-plumbing',
-  getParentRoute: () => rootRouteImport,
-} as any)
+const CommercialPlumbingBrownwoodTxRoute =
+  CommercialPlumbingBrownwoodTxRouteImport.update({
+    id: '/commercial-plumbing-brownwood-tx',
+    path: '/commercial-plumbing-brownwood-tx',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -217,122 +223,114 @@ const BlogIndexRoute = BlogIndexRouteImport.update({
   path: '/blog/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ServiceAreasSlugRoute = ServiceAreasSlugRouteImport.update({
-  id: '/$slug',
-  path: '/$slug',
-  getParentRoute: () => ServiceAreasRoute,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/bathroom-plumbing': typeof BathroomPlumbingRoute
-  '/commercial-plumbing': typeof CommercialPlumbingRoute
+  '/commercial-plumbing-brownwood-tx': typeof CommercialPlumbingBrownwoodTxRoute
   '/contact': typeof ContactRoute
-  '/drain-camera-inspection': typeof DrainCameraInspectionRoute
-  '/drain-cleaning': typeof DrainCleaningRoute
-  '/emergency-plumbing': typeof EmergencyPlumbingRoute
+  '/drain-and-sewer-brownwood-tx': typeof DrainAndSewerBrownwoodTxRoute
+  '/emergency-plumbing-brownwood-tx': typeof EmergencyPlumbingBrownwoodTxRoute
   '/faq': typeof FaqRoute
-  '/faucet-repair': typeof FaucetRepairRoute
   '/financing': typeof FinancingRoute
-  '/garbage-disposal': typeof GarbageDisposalRoute
-  '/gas-line-repair': typeof GasLineRepairRoute
-  '/hot-water-recirculation-pumps': typeof HotWaterRecirculationPumpsRoute
-  '/kitchen-plumbing': typeof KitchenPlumbingRoute
-  '/leak-detection': typeof LeakDetectionRoute
-  '/pipe-repair': typeof PipeRepairRoute
-  '/pipe-replacement': typeof PipeReplacementRoute
-  '/plumbing-inspections': typeof PlumbingInspectionsRoute
-  '/plumbing-system-replacement': typeof PlumbingSystemReplacementRoute
+  '/gas-line-repair-brownwood-tx': typeof GasLineRepairBrownwoodTxRoute
+  '/kitchen-and-bathroom-brownwood-tx': typeof KitchenAndBathroomBrownwoodTxRoute
+  '/piping-and-leaks-brownwood-tx': typeof PipingAndLeaksBrownwoodTxRoute
+  '/plumber-bangs-tx': typeof PlumberBangsTxRoute
+  '/plumber-blanket-tx': typeof PlumberBlanketTxRoute
+  '/plumber-brookesmith-tx': typeof PlumberBrookesmithTxRoute
+  '/plumber-brownwood-tx': typeof PlumberBrownwoodTxRoute
+  '/plumber-coleman-tx': typeof PlumberColemanTxRoute
+  '/plumber-comanche-tx': typeof PlumberComancheTxRoute
+  '/plumber-early-tx': typeof PlumberEarlyTxRoute
+  '/plumber-lake-brownwood-tx': typeof PlumberLakeBrownwoodTxRoute
+  '/plumber-may-tx': typeof PlumberMayTxRoute
+  '/plumber-rising-star-tx': typeof PlumberRisingStarTxRoute
+  '/plumber-santa-anna-tx': typeof PlumberSantaAnnaTxRoute
+  '/plumber-zephyr-tx': typeof PlumberZephyrTxRoute
+  '/plumbing-inspections-brownwood-tx': typeof PlumbingInspectionsBrownwoodTxRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
-  '/residential-plumbing': typeof ResidentialPlumbingRoute
+  '/residential-plumbing-brownwood-tx': typeof ResidentialPlumbingBrownwoodTxRoute
   '/reviews': typeof ReviewsRoute
-  '/service-areas': typeof ServiceAreasRouteWithChildren
+  '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
-  '/sewer-line-repair': typeof SewerLineRepairRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/tankless-water-heater': typeof TanklessWaterHeaterRoute
   '/terms-of-service': typeof TermsOfServiceRoute
-  '/toilet-repair': typeof ToiletRepairRoute
-  '/water-heater-repair': typeof WaterHeaterRepairRoute
-  '/water-line-repair': typeof WaterLineRepairRoute
-  '/water-softener': typeof WaterSoftenerRoute
-  '/service-areas/$slug': typeof ServiceAreasSlugRoute
+  '/water-heaters-brownwood-tx': typeof WaterHeatersBrownwoodTxRoute
+  '/water-softener-brownwood-tx': typeof WaterSoftenerBrownwoodTxRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/bathroom-plumbing': typeof BathroomPlumbingRoute
-  '/commercial-plumbing': typeof CommercialPlumbingRoute
+  '/commercial-plumbing-brownwood-tx': typeof CommercialPlumbingBrownwoodTxRoute
   '/contact': typeof ContactRoute
-  '/drain-camera-inspection': typeof DrainCameraInspectionRoute
-  '/drain-cleaning': typeof DrainCleaningRoute
-  '/emergency-plumbing': typeof EmergencyPlumbingRoute
+  '/drain-and-sewer-brownwood-tx': typeof DrainAndSewerBrownwoodTxRoute
+  '/emergency-plumbing-brownwood-tx': typeof EmergencyPlumbingBrownwoodTxRoute
   '/faq': typeof FaqRoute
-  '/faucet-repair': typeof FaucetRepairRoute
   '/financing': typeof FinancingRoute
-  '/garbage-disposal': typeof GarbageDisposalRoute
-  '/gas-line-repair': typeof GasLineRepairRoute
-  '/hot-water-recirculation-pumps': typeof HotWaterRecirculationPumpsRoute
-  '/kitchen-plumbing': typeof KitchenPlumbingRoute
-  '/leak-detection': typeof LeakDetectionRoute
-  '/pipe-repair': typeof PipeRepairRoute
-  '/pipe-replacement': typeof PipeReplacementRoute
-  '/plumbing-inspections': typeof PlumbingInspectionsRoute
-  '/plumbing-system-replacement': typeof PlumbingSystemReplacementRoute
+  '/gas-line-repair-brownwood-tx': typeof GasLineRepairBrownwoodTxRoute
+  '/kitchen-and-bathroom-brownwood-tx': typeof KitchenAndBathroomBrownwoodTxRoute
+  '/piping-and-leaks-brownwood-tx': typeof PipingAndLeaksBrownwoodTxRoute
+  '/plumber-bangs-tx': typeof PlumberBangsTxRoute
+  '/plumber-blanket-tx': typeof PlumberBlanketTxRoute
+  '/plumber-brookesmith-tx': typeof PlumberBrookesmithTxRoute
+  '/plumber-brownwood-tx': typeof PlumberBrownwoodTxRoute
+  '/plumber-coleman-tx': typeof PlumberColemanTxRoute
+  '/plumber-comanche-tx': typeof PlumberComancheTxRoute
+  '/plumber-early-tx': typeof PlumberEarlyTxRoute
+  '/plumber-lake-brownwood-tx': typeof PlumberLakeBrownwoodTxRoute
+  '/plumber-may-tx': typeof PlumberMayTxRoute
+  '/plumber-rising-star-tx': typeof PlumberRisingStarTxRoute
+  '/plumber-santa-anna-tx': typeof PlumberSantaAnnaTxRoute
+  '/plumber-zephyr-tx': typeof PlumberZephyrTxRoute
+  '/plumbing-inspections-brownwood-tx': typeof PlumbingInspectionsBrownwoodTxRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
-  '/residential-plumbing': typeof ResidentialPlumbingRoute
+  '/residential-plumbing-brownwood-tx': typeof ResidentialPlumbingBrownwoodTxRoute
   '/reviews': typeof ReviewsRoute
-  '/service-areas': typeof ServiceAreasRouteWithChildren
+  '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
-  '/sewer-line-repair': typeof SewerLineRepairRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/tankless-water-heater': typeof TanklessWaterHeaterRoute
   '/terms-of-service': typeof TermsOfServiceRoute
-  '/toilet-repair': typeof ToiletRepairRoute
-  '/water-heater-repair': typeof WaterHeaterRepairRoute
-  '/water-line-repair': typeof WaterLineRepairRoute
-  '/water-softener': typeof WaterSoftenerRoute
-  '/service-areas/$slug': typeof ServiceAreasSlugRoute
+  '/water-heaters-brownwood-tx': typeof WaterHeatersBrownwoodTxRoute
+  '/water-softener-brownwood-tx': typeof WaterSoftenerBrownwoodTxRoute
   '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/bathroom-plumbing': typeof BathroomPlumbingRoute
-  '/commercial-plumbing': typeof CommercialPlumbingRoute
+  '/commercial-plumbing-brownwood-tx': typeof CommercialPlumbingBrownwoodTxRoute
   '/contact': typeof ContactRoute
-  '/drain-camera-inspection': typeof DrainCameraInspectionRoute
-  '/drain-cleaning': typeof DrainCleaningRoute
-  '/emergency-plumbing': typeof EmergencyPlumbingRoute
+  '/drain-and-sewer-brownwood-tx': typeof DrainAndSewerBrownwoodTxRoute
+  '/emergency-plumbing-brownwood-tx': typeof EmergencyPlumbingBrownwoodTxRoute
   '/faq': typeof FaqRoute
-  '/faucet-repair': typeof FaucetRepairRoute
   '/financing': typeof FinancingRoute
-  '/garbage-disposal': typeof GarbageDisposalRoute
-  '/gas-line-repair': typeof GasLineRepairRoute
-  '/hot-water-recirculation-pumps': typeof HotWaterRecirculationPumpsRoute
-  '/kitchen-plumbing': typeof KitchenPlumbingRoute
-  '/leak-detection': typeof LeakDetectionRoute
-  '/pipe-repair': typeof PipeRepairRoute
-  '/pipe-replacement': typeof PipeReplacementRoute
-  '/plumbing-inspections': typeof PlumbingInspectionsRoute
-  '/plumbing-system-replacement': typeof PlumbingSystemReplacementRoute
+  '/gas-line-repair-brownwood-tx': typeof GasLineRepairBrownwoodTxRoute
+  '/kitchen-and-bathroom-brownwood-tx': typeof KitchenAndBathroomBrownwoodTxRoute
+  '/piping-and-leaks-brownwood-tx': typeof PipingAndLeaksBrownwoodTxRoute
+  '/plumber-bangs-tx': typeof PlumberBangsTxRoute
+  '/plumber-blanket-tx': typeof PlumberBlanketTxRoute
+  '/plumber-brookesmith-tx': typeof PlumberBrookesmithTxRoute
+  '/plumber-brownwood-tx': typeof PlumberBrownwoodTxRoute
+  '/plumber-coleman-tx': typeof PlumberColemanTxRoute
+  '/plumber-comanche-tx': typeof PlumberComancheTxRoute
+  '/plumber-early-tx': typeof PlumberEarlyTxRoute
+  '/plumber-lake-brownwood-tx': typeof PlumberLakeBrownwoodTxRoute
+  '/plumber-may-tx': typeof PlumberMayTxRoute
+  '/plumber-rising-star-tx': typeof PlumberRisingStarTxRoute
+  '/plumber-santa-anna-tx': typeof PlumberSantaAnnaTxRoute
+  '/plumber-zephyr-tx': typeof PlumberZephyrTxRoute
+  '/plumbing-inspections-brownwood-tx': typeof PlumbingInspectionsBrownwoodTxRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
-  '/residential-plumbing': typeof ResidentialPlumbingRoute
+  '/residential-plumbing-brownwood-tx': typeof ResidentialPlumbingBrownwoodTxRoute
   '/reviews': typeof ReviewsRoute
-  '/service-areas': typeof ServiceAreasRouteWithChildren
+  '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
-  '/sewer-line-repair': typeof SewerLineRepairRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/tankless-water-heater': typeof TanklessWaterHeaterRoute
   '/terms-of-service': typeof TermsOfServiceRoute
-  '/toilet-repair': typeof ToiletRepairRoute
-  '/water-heater-repair': typeof WaterHeaterRepairRoute
-  '/water-line-repair': typeof WaterLineRepairRoute
-  '/water-softener': typeof WaterSoftenerRoute
-  '/service-areas/$slug': typeof ServiceAreasSlugRoute
+  '/water-heaters-brownwood-tx': typeof WaterHeatersBrownwoodTxRoute
+  '/water-softener-brownwood-tx': typeof WaterSoftenerBrownwoodTxRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
@@ -340,180 +338,163 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
-    | '/bathroom-plumbing'
-    | '/commercial-plumbing'
+    | '/commercial-plumbing-brownwood-tx'
     | '/contact'
-    | '/drain-camera-inspection'
-    | '/drain-cleaning'
-    | '/emergency-plumbing'
+    | '/drain-and-sewer-brownwood-tx'
+    | '/emergency-plumbing-brownwood-tx'
     | '/faq'
-    | '/faucet-repair'
     | '/financing'
-    | '/garbage-disposal'
-    | '/gas-line-repair'
-    | '/hot-water-recirculation-pumps'
-    | '/kitchen-plumbing'
-    | '/leak-detection'
-    | '/pipe-repair'
-    | '/pipe-replacement'
-    | '/plumbing-inspections'
-    | '/plumbing-system-replacement'
+    | '/gas-line-repair-brownwood-tx'
+    | '/kitchen-and-bathroom-brownwood-tx'
+    | '/piping-and-leaks-brownwood-tx'
+    | '/plumber-bangs-tx'
+    | '/plumber-blanket-tx'
+    | '/plumber-brookesmith-tx'
+    | '/plumber-brownwood-tx'
+    | '/plumber-coleman-tx'
+    | '/plumber-comanche-tx'
+    | '/plumber-early-tx'
+    | '/plumber-lake-brownwood-tx'
+    | '/plumber-may-tx'
+    | '/plumber-rising-star-tx'
+    | '/plumber-santa-anna-tx'
+    | '/plumber-zephyr-tx'
+    | '/plumbing-inspections-brownwood-tx'
     | '/privacy-policy'
-    | '/residential-plumbing'
+    | '/residential-plumbing-brownwood-tx'
     | '/reviews'
     | '/service-areas'
     | '/services'
-    | '/sewer-line-repair'
     | '/sitemap.xml'
-    | '/tankless-water-heater'
     | '/terms-of-service'
-    | '/toilet-repair'
-    | '/water-heater-repair'
-    | '/water-line-repair'
-    | '/water-softener'
-    | '/service-areas/$slug'
+    | '/water-heaters-brownwood-tx'
+    | '/water-softener-brownwood-tx'
     | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
-    | '/bathroom-plumbing'
-    | '/commercial-plumbing'
+    | '/commercial-plumbing-brownwood-tx'
     | '/contact'
-    | '/drain-camera-inspection'
-    | '/drain-cleaning'
-    | '/emergency-plumbing'
+    | '/drain-and-sewer-brownwood-tx'
+    | '/emergency-plumbing-brownwood-tx'
     | '/faq'
-    | '/faucet-repair'
     | '/financing'
-    | '/garbage-disposal'
-    | '/gas-line-repair'
-    | '/hot-water-recirculation-pumps'
-    | '/kitchen-plumbing'
-    | '/leak-detection'
-    | '/pipe-repair'
-    | '/pipe-replacement'
-    | '/plumbing-inspections'
-    | '/plumbing-system-replacement'
+    | '/gas-line-repair-brownwood-tx'
+    | '/kitchen-and-bathroom-brownwood-tx'
+    | '/piping-and-leaks-brownwood-tx'
+    | '/plumber-bangs-tx'
+    | '/plumber-blanket-tx'
+    | '/plumber-brookesmith-tx'
+    | '/plumber-brownwood-tx'
+    | '/plumber-coleman-tx'
+    | '/plumber-comanche-tx'
+    | '/plumber-early-tx'
+    | '/plumber-lake-brownwood-tx'
+    | '/plumber-may-tx'
+    | '/plumber-rising-star-tx'
+    | '/plumber-santa-anna-tx'
+    | '/plumber-zephyr-tx'
+    | '/plumbing-inspections-brownwood-tx'
     | '/privacy-policy'
-    | '/residential-plumbing'
+    | '/residential-plumbing-brownwood-tx'
     | '/reviews'
     | '/service-areas'
     | '/services'
-    | '/sewer-line-repair'
     | '/sitemap.xml'
-    | '/tankless-water-heater'
     | '/terms-of-service'
-    | '/toilet-repair'
-    | '/water-heater-repair'
-    | '/water-line-repair'
-    | '/water-softener'
-    | '/service-areas/$slug'
+    | '/water-heaters-brownwood-tx'
+    | '/water-softener-brownwood-tx'
     | '/blog'
   id:
     | '__root__'
     | '/'
     | '/about'
-    | '/bathroom-plumbing'
-    | '/commercial-plumbing'
+    | '/commercial-plumbing-brownwood-tx'
     | '/contact'
-    | '/drain-camera-inspection'
-    | '/drain-cleaning'
-    | '/emergency-plumbing'
+    | '/drain-and-sewer-brownwood-tx'
+    | '/emergency-plumbing-brownwood-tx'
     | '/faq'
-    | '/faucet-repair'
     | '/financing'
-    | '/garbage-disposal'
-    | '/gas-line-repair'
-    | '/hot-water-recirculation-pumps'
-    | '/kitchen-plumbing'
-    | '/leak-detection'
-    | '/pipe-repair'
-    | '/pipe-replacement'
-    | '/plumbing-inspections'
-    | '/plumbing-system-replacement'
+    | '/gas-line-repair-brownwood-tx'
+    | '/kitchen-and-bathroom-brownwood-tx'
+    | '/piping-and-leaks-brownwood-tx'
+    | '/plumber-bangs-tx'
+    | '/plumber-blanket-tx'
+    | '/plumber-brookesmith-tx'
+    | '/plumber-brownwood-tx'
+    | '/plumber-coleman-tx'
+    | '/plumber-comanche-tx'
+    | '/plumber-early-tx'
+    | '/plumber-lake-brownwood-tx'
+    | '/plumber-may-tx'
+    | '/plumber-rising-star-tx'
+    | '/plumber-santa-anna-tx'
+    | '/plumber-zephyr-tx'
+    | '/plumbing-inspections-brownwood-tx'
     | '/privacy-policy'
-    | '/residential-plumbing'
+    | '/residential-plumbing-brownwood-tx'
     | '/reviews'
     | '/service-areas'
     | '/services'
-    | '/sewer-line-repair'
     | '/sitemap.xml'
-    | '/tankless-water-heater'
     | '/terms-of-service'
-    | '/toilet-repair'
-    | '/water-heater-repair'
-    | '/water-line-repair'
-    | '/water-softener'
-    | '/service-areas/$slug'
+    | '/water-heaters-brownwood-tx'
+    | '/water-softener-brownwood-tx'
     | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  BathroomPlumbingRoute: typeof BathroomPlumbingRoute
-  CommercialPlumbingRoute: typeof CommercialPlumbingRoute
+  CommercialPlumbingBrownwoodTxRoute: typeof CommercialPlumbingBrownwoodTxRoute
   ContactRoute: typeof ContactRoute
-  DrainCameraInspectionRoute: typeof DrainCameraInspectionRoute
-  DrainCleaningRoute: typeof DrainCleaningRoute
-  EmergencyPlumbingRoute: typeof EmergencyPlumbingRoute
+  DrainAndSewerBrownwoodTxRoute: typeof DrainAndSewerBrownwoodTxRoute
+  EmergencyPlumbingBrownwoodTxRoute: typeof EmergencyPlumbingBrownwoodTxRoute
   FaqRoute: typeof FaqRoute
-  FaucetRepairRoute: typeof FaucetRepairRoute
   FinancingRoute: typeof FinancingRoute
-  GarbageDisposalRoute: typeof GarbageDisposalRoute
-  GasLineRepairRoute: typeof GasLineRepairRoute
-  HotWaterRecirculationPumpsRoute: typeof HotWaterRecirculationPumpsRoute
-  KitchenPlumbingRoute: typeof KitchenPlumbingRoute
-  LeakDetectionRoute: typeof LeakDetectionRoute
-  PipeRepairRoute: typeof PipeRepairRoute
-  PipeReplacementRoute: typeof PipeReplacementRoute
-  PlumbingInspectionsRoute: typeof PlumbingInspectionsRoute
-  PlumbingSystemReplacementRoute: typeof PlumbingSystemReplacementRoute
+  GasLineRepairBrownwoodTxRoute: typeof GasLineRepairBrownwoodTxRoute
+  KitchenAndBathroomBrownwoodTxRoute: typeof KitchenAndBathroomBrownwoodTxRoute
+  PipingAndLeaksBrownwoodTxRoute: typeof PipingAndLeaksBrownwoodTxRoute
+  PlumberBangsTxRoute: typeof PlumberBangsTxRoute
+  PlumberBlanketTxRoute: typeof PlumberBlanketTxRoute
+  PlumberBrookesmithTxRoute: typeof PlumberBrookesmithTxRoute
+  PlumberBrownwoodTxRoute: typeof PlumberBrownwoodTxRoute
+  PlumberColemanTxRoute: typeof PlumberColemanTxRoute
+  PlumberComancheTxRoute: typeof PlumberComancheTxRoute
+  PlumberEarlyTxRoute: typeof PlumberEarlyTxRoute
+  PlumberLakeBrownwoodTxRoute: typeof PlumberLakeBrownwoodTxRoute
+  PlumberMayTxRoute: typeof PlumberMayTxRoute
+  PlumberRisingStarTxRoute: typeof PlumberRisingStarTxRoute
+  PlumberSantaAnnaTxRoute: typeof PlumberSantaAnnaTxRoute
+  PlumberZephyrTxRoute: typeof PlumberZephyrTxRoute
+  PlumbingInspectionsBrownwoodTxRoute: typeof PlumbingInspectionsBrownwoodTxRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
-  ResidentialPlumbingRoute: typeof ResidentialPlumbingRoute
+  ResidentialPlumbingBrownwoodTxRoute: typeof ResidentialPlumbingBrownwoodTxRoute
   ReviewsRoute: typeof ReviewsRoute
-  ServiceAreasRoute: typeof ServiceAreasRouteWithChildren
+  ServiceAreasRoute: typeof ServiceAreasRoute
   ServicesRoute: typeof ServicesRoute
-  SewerLineRepairRoute: typeof SewerLineRepairRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
-  TanklessWaterHeaterRoute: typeof TanklessWaterHeaterRoute
   TermsOfServiceRoute: typeof TermsOfServiceRoute
-  ToiletRepairRoute: typeof ToiletRepairRoute
-  WaterHeaterRepairRoute: typeof WaterHeaterRepairRoute
-  WaterLineRepairRoute: typeof WaterLineRepairRoute
-  WaterSoftenerRoute: typeof WaterSoftenerRoute
+  WaterHeatersBrownwoodTxRoute: typeof WaterHeatersBrownwoodTxRoute
+  WaterSoftenerBrownwoodTxRoute: typeof WaterSoftenerBrownwoodTxRoute
   BlogIndexRoute: typeof BlogIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/water-softener': {
-      id: '/water-softener'
-      path: '/water-softener'
-      fullPath: '/water-softener'
-      preLoaderRoute: typeof WaterSoftenerRouteImport
+    '/water-softener-brownwood-tx': {
+      id: '/water-softener-brownwood-tx'
+      path: '/water-softener-brownwood-tx'
+      fullPath: '/water-softener-brownwood-tx'
+      preLoaderRoute: typeof WaterSoftenerBrownwoodTxRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/water-line-repair': {
-      id: '/water-line-repair'
-      path: '/water-line-repair'
-      fullPath: '/water-line-repair'
-      preLoaderRoute: typeof WaterLineRepairRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/water-heater-repair': {
-      id: '/water-heater-repair'
-      path: '/water-heater-repair'
-      fullPath: '/water-heater-repair'
-      preLoaderRoute: typeof WaterHeaterRepairRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/toilet-repair': {
-      id: '/toilet-repair'
-      path: '/toilet-repair'
-      fullPath: '/toilet-repair'
-      preLoaderRoute: typeof ToiletRepairRouteImport
+    '/water-heaters-brownwood-tx': {
+      id: '/water-heaters-brownwood-tx'
+      path: '/water-heaters-brownwood-tx'
+      fullPath: '/water-heaters-brownwood-tx'
+      preLoaderRoute: typeof WaterHeatersBrownwoodTxRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/terms-of-service': {
@@ -523,25 +504,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TermsOfServiceRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tankless-water-heater': {
-      id: '/tankless-water-heater'
-      path: '/tankless-water-heater'
-      fullPath: '/tankless-water-heater'
-      preLoaderRoute: typeof TanklessWaterHeaterRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sewer-line-repair': {
-      id: '/sewer-line-repair'
-      path: '/sewer-line-repair'
-      fullPath: '/sewer-line-repair'
-      preLoaderRoute: typeof SewerLineRepairRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services': {
@@ -565,11 +532,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ReviewsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/residential-plumbing': {
-      id: '/residential-plumbing'
-      path: '/residential-plumbing'
-      fullPath: '/residential-plumbing'
-      preLoaderRoute: typeof ResidentialPlumbingRouteImport
+    '/residential-plumbing-brownwood-tx': {
+      id: '/residential-plumbing-brownwood-tx'
+      path: '/residential-plumbing-brownwood-tx'
+      fullPath: '/residential-plumbing-brownwood-tx'
+      preLoaderRoute: typeof ResidentialPlumbingBrownwoodTxRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy-policy': {
@@ -579,67 +546,116 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivacyPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/plumbing-system-replacement': {
-      id: '/plumbing-system-replacement'
-      path: '/plumbing-system-replacement'
-      fullPath: '/plumbing-system-replacement'
-      preLoaderRoute: typeof PlumbingSystemReplacementRouteImport
+    '/plumbing-inspections-brownwood-tx': {
+      id: '/plumbing-inspections-brownwood-tx'
+      path: '/plumbing-inspections-brownwood-tx'
+      fullPath: '/plumbing-inspections-brownwood-tx'
+      preLoaderRoute: typeof PlumbingInspectionsBrownwoodTxRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/plumbing-inspections': {
-      id: '/plumbing-inspections'
-      path: '/plumbing-inspections'
-      fullPath: '/plumbing-inspections'
-      preLoaderRoute: typeof PlumbingInspectionsRouteImport
+    '/plumber-zephyr-tx': {
+      id: '/plumber-zephyr-tx'
+      path: '/plumber-zephyr-tx'
+      fullPath: '/plumber-zephyr-tx'
+      preLoaderRoute: typeof PlumberZephyrTxRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/pipe-replacement': {
-      id: '/pipe-replacement'
-      path: '/pipe-replacement'
-      fullPath: '/pipe-replacement'
-      preLoaderRoute: typeof PipeReplacementRouteImport
+    '/plumber-santa-anna-tx': {
+      id: '/plumber-santa-anna-tx'
+      path: '/plumber-santa-anna-tx'
+      fullPath: '/plumber-santa-anna-tx'
+      preLoaderRoute: typeof PlumberSantaAnnaTxRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/pipe-repair': {
-      id: '/pipe-repair'
-      path: '/pipe-repair'
-      fullPath: '/pipe-repair'
-      preLoaderRoute: typeof PipeRepairRouteImport
+    '/plumber-rising-star-tx': {
+      id: '/plumber-rising-star-tx'
+      path: '/plumber-rising-star-tx'
+      fullPath: '/plumber-rising-star-tx'
+      preLoaderRoute: typeof PlumberRisingStarTxRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/leak-detection': {
-      id: '/leak-detection'
-      path: '/leak-detection'
-      fullPath: '/leak-detection'
-      preLoaderRoute: typeof LeakDetectionRouteImport
+    '/plumber-may-tx': {
+      id: '/plumber-may-tx'
+      path: '/plumber-may-tx'
+      fullPath: '/plumber-may-tx'
+      preLoaderRoute: typeof PlumberMayTxRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/kitchen-plumbing': {
-      id: '/kitchen-plumbing'
-      path: '/kitchen-plumbing'
-      fullPath: '/kitchen-plumbing'
-      preLoaderRoute: typeof KitchenPlumbingRouteImport
+    '/plumber-lake-brownwood-tx': {
+      id: '/plumber-lake-brownwood-tx'
+      path: '/plumber-lake-brownwood-tx'
+      fullPath: '/plumber-lake-brownwood-tx'
+      preLoaderRoute: typeof PlumberLakeBrownwoodTxRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/hot-water-recirculation-pumps': {
-      id: '/hot-water-recirculation-pumps'
-      path: '/hot-water-recirculation-pumps'
-      fullPath: '/hot-water-recirculation-pumps'
-      preLoaderRoute: typeof HotWaterRecirculationPumpsRouteImport
+    '/plumber-early-tx': {
+      id: '/plumber-early-tx'
+      path: '/plumber-early-tx'
+      fullPath: '/plumber-early-tx'
+      preLoaderRoute: typeof PlumberEarlyTxRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/gas-line-repair': {
-      id: '/gas-line-repair'
-      path: '/gas-line-repair'
-      fullPath: '/gas-line-repair'
-      preLoaderRoute: typeof GasLineRepairRouteImport
+    '/plumber-comanche-tx': {
+      id: '/plumber-comanche-tx'
+      path: '/plumber-comanche-tx'
+      fullPath: '/plumber-comanche-tx'
+      preLoaderRoute: typeof PlumberComancheTxRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/garbage-disposal': {
-      id: '/garbage-disposal'
-      path: '/garbage-disposal'
-      fullPath: '/garbage-disposal'
-      preLoaderRoute: typeof GarbageDisposalRouteImport
+    '/plumber-coleman-tx': {
+      id: '/plumber-coleman-tx'
+      path: '/plumber-coleman-tx'
+      fullPath: '/plumber-coleman-tx'
+      preLoaderRoute: typeof PlumberColemanTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-brownwood-tx': {
+      id: '/plumber-brownwood-tx'
+      path: '/plumber-brownwood-tx'
+      fullPath: '/plumber-brownwood-tx'
+      preLoaderRoute: typeof PlumberBrownwoodTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-brookesmith-tx': {
+      id: '/plumber-brookesmith-tx'
+      path: '/plumber-brookesmith-tx'
+      fullPath: '/plumber-brookesmith-tx'
+      preLoaderRoute: typeof PlumberBrookesmithTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-blanket-tx': {
+      id: '/plumber-blanket-tx'
+      path: '/plumber-blanket-tx'
+      fullPath: '/plumber-blanket-tx'
+      preLoaderRoute: typeof PlumberBlanketTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-bangs-tx': {
+      id: '/plumber-bangs-tx'
+      path: '/plumber-bangs-tx'
+      fullPath: '/plumber-bangs-tx'
+      preLoaderRoute: typeof PlumberBangsTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/piping-and-leaks-brownwood-tx': {
+      id: '/piping-and-leaks-brownwood-tx'
+      path: '/piping-and-leaks-brownwood-tx'
+      fullPath: '/piping-and-leaks-brownwood-tx'
+      preLoaderRoute: typeof PipingAndLeaksBrownwoodTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kitchen-and-bathroom-brownwood-tx': {
+      id: '/kitchen-and-bathroom-brownwood-tx'
+      path: '/kitchen-and-bathroom-brownwood-tx'
+      fullPath: '/kitchen-and-bathroom-brownwood-tx'
+      preLoaderRoute: typeof KitchenAndBathroomBrownwoodTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gas-line-repair-brownwood-tx': {
+      id: '/gas-line-repair-brownwood-tx'
+      path: '/gas-line-repair-brownwood-tx'
+      fullPath: '/gas-line-repair-brownwood-tx'
+      preLoaderRoute: typeof GasLineRepairBrownwoodTxRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/financing': {
@@ -649,13 +665,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FinancingRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/faucet-repair': {
-      id: '/faucet-repair'
-      path: '/faucet-repair'
-      fullPath: '/faucet-repair'
-      preLoaderRoute: typeof FaucetRepairRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/faq': {
       id: '/faq'
       path: '/faq'
@@ -663,25 +672,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaqRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/emergency-plumbing': {
-      id: '/emergency-plumbing'
-      path: '/emergency-plumbing'
-      fullPath: '/emergency-plumbing'
-      preLoaderRoute: typeof EmergencyPlumbingRouteImport
+    '/emergency-plumbing-brownwood-tx': {
+      id: '/emergency-plumbing-brownwood-tx'
+      path: '/emergency-plumbing-brownwood-tx'
+      fullPath: '/emergency-plumbing-brownwood-tx'
+      preLoaderRoute: typeof EmergencyPlumbingBrownwoodTxRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/drain-cleaning': {
-      id: '/drain-cleaning'
-      path: '/drain-cleaning'
-      fullPath: '/drain-cleaning'
-      preLoaderRoute: typeof DrainCleaningRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/drain-camera-inspection': {
-      id: '/drain-camera-inspection'
-      path: '/drain-camera-inspection'
-      fullPath: '/drain-camera-inspection'
-      preLoaderRoute: typeof DrainCameraInspectionRouteImport
+    '/drain-and-sewer-brownwood-tx': {
+      id: '/drain-and-sewer-brownwood-tx'
+      path: '/drain-and-sewer-brownwood-tx'
+      fullPath: '/drain-and-sewer-brownwood-tx'
+      preLoaderRoute: typeof DrainAndSewerBrownwoodTxRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -691,18 +693,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/commercial-plumbing': {
-      id: '/commercial-plumbing'
-      path: '/commercial-plumbing'
-      fullPath: '/commercial-plumbing'
-      preLoaderRoute: typeof CommercialPlumbingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/bathroom-plumbing': {
-      id: '/bathroom-plumbing'
-      path: '/bathroom-plumbing'
-      fullPath: '/bathroom-plumbing'
-      preLoaderRoute: typeof BathroomPlumbingRouteImport
+    '/commercial-plumbing-brownwood-tx': {
+      id: '/commercial-plumbing-brownwood-tx'
+      path: '/commercial-plumbing-brownwood-tx'
+      fullPath: '/commercial-plumbing-brownwood-tx'
+      preLoaderRoute: typeof CommercialPlumbingBrownwoodTxRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -726,62 +721,43 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/service-areas/$slug': {
-      id: '/service-areas/$slug'
-      path: '/$slug'
-      fullPath: '/service-areas/$slug'
-      preLoaderRoute: typeof ServiceAreasSlugRouteImport
-      parentRoute: typeof ServiceAreasRoute
-    }
   }
 }
-
-interface ServiceAreasRouteChildren {
-  ServiceAreasSlugRoute: typeof ServiceAreasSlugRoute
-}
-
-const ServiceAreasRouteChildren: ServiceAreasRouteChildren = {
-  ServiceAreasSlugRoute: ServiceAreasSlugRoute,
-}
-
-const ServiceAreasRouteWithChildren = ServiceAreasRoute._addFileChildren(
-  ServiceAreasRouteChildren,
-)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  BathroomPlumbingRoute: BathroomPlumbingRoute,
-  CommercialPlumbingRoute: CommercialPlumbingRoute,
+  CommercialPlumbingBrownwoodTxRoute: CommercialPlumbingBrownwoodTxRoute,
   ContactRoute: ContactRoute,
-  DrainCameraInspectionRoute: DrainCameraInspectionRoute,
-  DrainCleaningRoute: DrainCleaningRoute,
-  EmergencyPlumbingRoute: EmergencyPlumbingRoute,
+  DrainAndSewerBrownwoodTxRoute: DrainAndSewerBrownwoodTxRoute,
+  EmergencyPlumbingBrownwoodTxRoute: EmergencyPlumbingBrownwoodTxRoute,
   FaqRoute: FaqRoute,
-  FaucetRepairRoute: FaucetRepairRoute,
   FinancingRoute: FinancingRoute,
-  GarbageDisposalRoute: GarbageDisposalRoute,
-  GasLineRepairRoute: GasLineRepairRoute,
-  HotWaterRecirculationPumpsRoute: HotWaterRecirculationPumpsRoute,
-  KitchenPlumbingRoute: KitchenPlumbingRoute,
-  LeakDetectionRoute: LeakDetectionRoute,
-  PipeRepairRoute: PipeRepairRoute,
-  PipeReplacementRoute: PipeReplacementRoute,
-  PlumbingInspectionsRoute: PlumbingInspectionsRoute,
-  PlumbingSystemReplacementRoute: PlumbingSystemReplacementRoute,
+  GasLineRepairBrownwoodTxRoute: GasLineRepairBrownwoodTxRoute,
+  KitchenAndBathroomBrownwoodTxRoute: KitchenAndBathroomBrownwoodTxRoute,
+  PipingAndLeaksBrownwoodTxRoute: PipingAndLeaksBrownwoodTxRoute,
+  PlumberBangsTxRoute: PlumberBangsTxRoute,
+  PlumberBlanketTxRoute: PlumberBlanketTxRoute,
+  PlumberBrookesmithTxRoute: PlumberBrookesmithTxRoute,
+  PlumberBrownwoodTxRoute: PlumberBrownwoodTxRoute,
+  PlumberColemanTxRoute: PlumberColemanTxRoute,
+  PlumberComancheTxRoute: PlumberComancheTxRoute,
+  PlumberEarlyTxRoute: PlumberEarlyTxRoute,
+  PlumberLakeBrownwoodTxRoute: PlumberLakeBrownwoodTxRoute,
+  PlumberMayTxRoute: PlumberMayTxRoute,
+  PlumberRisingStarTxRoute: PlumberRisingStarTxRoute,
+  PlumberSantaAnnaTxRoute: PlumberSantaAnnaTxRoute,
+  PlumberZephyrTxRoute: PlumberZephyrTxRoute,
+  PlumbingInspectionsBrownwoodTxRoute: PlumbingInspectionsBrownwoodTxRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
-  ResidentialPlumbingRoute: ResidentialPlumbingRoute,
+  ResidentialPlumbingBrownwoodTxRoute: ResidentialPlumbingBrownwoodTxRoute,
   ReviewsRoute: ReviewsRoute,
-  ServiceAreasRoute: ServiceAreasRouteWithChildren,
+  ServiceAreasRoute: ServiceAreasRoute,
   ServicesRoute: ServicesRoute,
-  SewerLineRepairRoute: SewerLineRepairRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
-  TanklessWaterHeaterRoute: TanklessWaterHeaterRoute,
   TermsOfServiceRoute: TermsOfServiceRoute,
-  ToiletRepairRoute: ToiletRepairRoute,
-  WaterHeaterRepairRoute: WaterHeaterRepairRoute,
-  WaterLineRepairRoute: WaterLineRepairRoute,
-  WaterSoftenerRoute: WaterSoftenerRoute,
+  WaterHeatersBrownwoodTxRoute: WaterHeatersBrownwoodTxRoute,
+  WaterSoftenerBrownwoodTxRoute: WaterSoftenerBrownwoodTxRoute,
   BlogIndexRoute: BlogIndexRoute,
 }
 export const routeTree = rootRouteImport
