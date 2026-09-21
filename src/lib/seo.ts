@@ -15,7 +15,7 @@ export const organizationSchema = {
     width: 300,
     height: 100,
   },
-  description: `Trusted residential and commercial plumber in ${business.city}, ${business.state}. ${business.experience} of experience. 24-hour emergency plumbing services.`,
+  description: `Connecting you with trusted residential plumbing services in ${business.city}, ${business.state}. 24-hour emergency plumbing response.`,
   address: {
     "@type": "PostalAddress",
     streetAddress: business.street,
@@ -116,14 +116,6 @@ export const localBusinessSchema = {
           "@type": "Service",
           name: "Residential Plumbing",
           description: "Complete home plumbing services",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Commercial Plumbing",
-          description: "Business and commercial plumbing services",
         },
       },
     ],
@@ -251,7 +243,7 @@ export function locationBusinessSchema(locationName: string, latitude: number, l
     "@type": ["LocalBusiness", "Plumber"],
     "@id": `${BASE_URL}/plumber-${slug}/#localbusiness`,
     name: `${business.name} - ${locationName}`,
-    description: `Trusted plumber serving ${locationName}. ${business.experience} of experience with residential, commercial & 24-hour emergency plumbing services.`,
+    description: `Find trusted residential plumbers serving ${locationName}. Available for residential & 24-hour emergency plumbing services.`,
     url: `${BASE_URL}/plumber-${slug}`,
     telephone: business.phone,
     email: business.email,

@@ -5,7 +5,7 @@ import { Reveal } from "./Reveal";
 
 export function CTABanner({
   title = "Need a Plumber in Brownwood, TX?",
-  subtitle = "Call now or request a free estimate — we respond fast, 24/7 for emergencies.",
+  subtitle = "Call now or request an estimate — we respond fast, 24/7 for emergencies.",
 }: {
   title?: string;
   subtitle?: string;
@@ -27,7 +27,7 @@ export function CTABanner({
                   <Phone className="h-4 w-4" /> {business.phone}
                 </a>
                 <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-primary">
-                  Free Estimate
+                  Request Estimate
                 </Link>
               </div>
             </div>

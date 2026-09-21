@@ -11,9 +11,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About M. Webb Plumbing | Brownwood, TX" },
-      { name: "description", content: "Learn about M. Webb Plumbing, a family-owned plumbing company serving Brownwood, TX with honest workmanship, reliable service, and over 35 years of experience." },
+      { name: "description", content: "Learn about M. Webb Plumbing, a free service connecting Brownwood, TX homeowners with reliable residential plumbers who provide honest workmanship." },
       { property: "og:title", content: "About M. Webb Plumbing | Brownwood, TX" },
-      { property: "og:description", content: "Learn about M. Webb Plumbing, a family-owned plumbing company serving Brownwood, TX with honest workmanship, reliable service, and over 35 years of experience." },
+      { property: "og:description", content: "Learn about M. Webb Plumbing, a free service connecting Brownwood, TX homeowners with reliable residential plumbers who provide honest workmanship." },
       { property: "og:url", content: `${BASE_URL}/about` },
     ],
     links: [{ rel: "canonical", href: `${BASE_URL}/about` }],
@@ -29,13 +29,13 @@ function AboutPage() {
         <div className="absolute -bottom-32 -left-20 h-96 w-96 rounded-full bg-brand/40 blur-3xl" />
         <div className="relative mx-auto max-w-4xl px-5 text-center lg:px-8">
           <Reveal>
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white/80">About Us</div>
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white/80">About Our Connection Service</div>
           </Reveal>
           <Reveal delay={80}>
-            <h1 className="mt-6 font-display text-4xl font-bold leading-tight md:text-6xl">A local plumber Brownwood has trusted for <span className="text-gradient-brand">35+ years</span></h1>
+            <h1 className="mt-6 font-display text-4xl font-bold leading-tight md:text-6xl">Connecting Brownwood to trusted plumbers for <span className="text-gradient-brand">35+ years</span></h1>
           </Reveal>
           <Reveal delay={160}>
-            <p className="mx-auto mt-5 max-w-2xl text-lg text-white/80">Honest workmanship. Fair pricing. Real local roots. That's M. Webb Plumbing Co.</p>
+            <p className="mx-auto mt-5 max-w-2xl text-lg text-white/80">Honest workmanship. Fair pricing. Real local roots. Find it all with M. Webb Plumbing.</p>
           </Reveal>
         </div>
       </section>
@@ -44,12 +44,12 @@ function AboutPage() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <Reveal>
             <div>
-              <SectionEyebrow>Our Story</SectionEyebrow>
-              <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Built on honesty and good work — one call at a time.</h2>
+              <SectionEyebrow>Our Mission</SectionEyebrow>
+              <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Connecting you with honest and dependable plumbing services.</h2>
               <div className="mt-6 space-y-4 text-foreground/80 leading-relaxed">
-                <p>M. Webb Plumbing Co. LLC was founded by Mike Webb right here in Brownwood, Texas. For more than three and a half decades, Mike and his team have served homeowners, landlords and business owners across Brown County with the kind of straightforward, dependable plumbing service that's harder and harder to find these days.</p>
-                <p>We're not a faceless franchise. When you call us, you're calling a local family-run company that genuinely cares about doing right by our neighbors. We show up when we say we will, we explain the problem in plain English, we quote fair prices upfront, and we leave your home cleaner than we found it.</p>
-                <p>From a small dripping faucet to a complete repipe, from a midnight emergency to a planned commercial build-out — the same standard of care goes into every job.</p>
+                <p>M. Webb Plumbing is a dedicated connection service based in Brownwood, Texas. We help homeowners across Brown County find the kind of straightforward, dependable residential plumbing service that's harder and harder to find these days.</p>
+                <p>We're not a faceless franchise. When you use our service, you're getting connected to local providers who genuinely care about doing right by our neighbors. They show up when they say they will, explain the problem in plain English, quote fair prices upfront, and treat your home with respect.</p>
+                <p>From a small dripping faucet to a complete repipe, or a midnight residential emergency — we ensure you can find the right professional for the job.</p>
               </div>
               <div className="mt-7 flex flex-wrap gap-3">
                 <Link to="/services" className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground">Our Services</Link>
@@ -61,9 +61,9 @@ function AboutPage() {
             <div className="grid gap-4 sm:grid-cols-2">
               {[
                 { icon: Award, t: "Local Expertise", d: "Decades of experience with Brown County's homes, soils, and plumbing systems." },
-                { icon: Heart, t: "Honest Workmanship", d: "We tell you what's wrong, what it'll cost, and what your options are — no upsell games." },
-                { icon: Clock4, t: "Reliable Service", d: "We show up on time and finish the job to a standard we'd want in our own home." },
-                { icon: Users, t: "Customer Satisfaction", d: "Most of our work comes from repeat customers and word-of-mouth referrals." },
+                { icon: Heart, t: "Honest Workmanship", d: "Get connected with professionals who tell you what's wrong, what it'll cost, and what your options are." },
+                { icon: Clock4, t: "Reliable Service", d: "Local providers show up on time and finish the job right." },
+                { icon: Users, t: "Customer Satisfaction", d: "A network of providers trusted by repeat customers and word-of-mouth referrals." },
                 { icon: ShieldCheck, t: "Fast Response", d: "Same-day appointments and true 24-hour emergency availability." },
                 { icon: MapPin, t: "Community First", d: "Family-owned, deeply rooted, and proud to serve our Brownwood neighbors." },
               ].map((v, i) => (
@@ -96,7 +96,7 @@ function AboutPage() {
         </div>
       </Section>
 
-      <CTABanner title={`Talk to ${business.owner} directly`} subtitle="No call centers. No runaround. Just an experienced local plumber on the other end of the line." />
+      <CTABanner title="Talk to a local professional" subtitle="No runaround. Just an experienced local plumber on the other end of the line." />
       <div className="h-24" />
     </>
   );

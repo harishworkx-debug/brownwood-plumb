@@ -10,7 +10,7 @@ const BASE_URL = `https://${business.website}`;
 const faqs = [
   {
     "q": "Do you really offer 24/7 service?",
-    "a": "Yes, we have plumbers on call 24 hours a day, 7 days a week, 365 days a year for true emergencies."
+    "a": "Yes, we can connect you with plumbers on call 24 hours a day, 7 days a week, 365 days a year for true emergencies."
   }
 ];
 
@@ -18,9 +18,9 @@ export const Route = createFileRoute("/emergency-plumbing-brownwood-tx")({
   head: () => ({
     meta: [
       { title: "24/7 Emergency Plumbing in Brownwood | M. Webb Plumbing" },
-      { name: "description", content: "Burst pipe? Major leak? Overflowing toilet? M. Webb Plumbing Co. provides rapid 24-hour emergency response across Brownwood and Brown County." },
+      { name: "description", content: "Burst pipe? Major leak? Overflowing toilet? Find rapid 24-hour emergency plumbing response across Brownwood and Brown County." },
       { property: "og:title", content: "24/7 Emergency Plumbing in Brownwood | M. Webb Plumbing" },
-      { property: "og:description", content: "Burst pipe? Major leak? Overflowing toilet? M. Webb Plumbing Co. provides rapid 24-hour emergency response across Brownwood and Brown County." },
+      { property: "og:description", content: "Burst pipe? Major leak? Overflowing toilet? Find rapid 24-hour emergency plumbing response across Brownwood and Brown County." },
       { property: "og:url", content: `${BASE_URL}/emergency-plumbing-brownwood-tx` },
     ],
     links: [{ rel: "canonical", href: `${BASE_URL}/emergency-plumbing-brownwood-tx` }],
@@ -36,11 +36,11 @@ function Page() {
         title="24/7 Emergency Plumbing in Brownwood"
         icon="Siren"
         serviceName="Emergency Plumbing"
-        intro="Burst pipe? Major leak? Overflowing toilet? M. Webb Plumbing Co. provides rapid 24-hour emergency response across Brownwood and Brown County."
+        intro="Burst pipe? Major leak? Overflowing toilet? Find rapid 24-hour emergency plumbing response across Brownwood and Brown County."
         bullets={["24/7 Availability","Fast Response Times","Burst Pipe Repair","Severe Leak Stopping","Gas Leak Checks","Sewer Backups"]}
         body={
           <>
-            <p>Plumbing emergencies don't wait for business hours. We offer true 24-hour emergency plumbing service to stop the damage and fix the problem fast. Serving <strong>Brownwood, Early, Bangs, Lake Brownwood, Zephyr</strong> and all of Brown County.</p>
+            <p>Plumbing emergencies don't wait for business hours. Get connected with true 24-hour emergency plumbing service to stop the damage and fix the problem fast. Connecting <strong>Brownwood, Early, Bangs, Lake Brownwood, Zephyr</strong> and all of Brown County.</p>
           </>
         }
       />

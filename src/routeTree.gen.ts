@@ -9,158 +9,81 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as WaterSoftenerBrownwoodTxRouteImport } from './routes/water-softener-brownwood-tx'
-import { Route as WaterHeatersBrownwoodTxRouteImport } from './routes/water-heaters-brownwood-tx'
-import { Route as TermsOfServiceRouteImport } from './routes/terms-of-service'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as ServicesRouteImport } from './routes/services'
-import { Route as ServiceAreasRouteImport } from './routes/service-areas'
-import { Route as ReviewsRouteImport } from './routes/reviews'
-import { Route as ResidentialPlumbingBrownwoodTxRouteImport } from './routes/residential-plumbing-brownwood-tx'
-import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
-import { Route as PlumbingInspectionsBrownwoodTxRouteImport } from './routes/plumbing-inspections-brownwood-tx'
-import { Route as PlumberZephyrTxRouteImport } from './routes/plumber-zephyr-tx'
-import { Route as PlumberSantaAnnaTxRouteImport } from './routes/plumber-santa-anna-tx'
-import { Route as PlumberRisingStarTxRouteImport } from './routes/plumber-rising-star-tx'
-import { Route as PlumberMayTxRouteImport } from './routes/plumber-may-tx'
-import { Route as PlumberLakeBrownwoodTxRouteImport } from './routes/plumber-lake-brownwood-tx'
-import { Route as PlumberEarlyTxRouteImport } from './routes/plumber-early-tx'
-import { Route as PlumberComancheTxRouteImport } from './routes/plumber-comanche-tx'
-import { Route as PlumberColemanTxRouteImport } from './routes/plumber-coleman-tx'
-import { Route as PlumberBrownwoodTxRouteImport } from './routes/plumber-brownwood-tx'
-import { Route as PlumberBrookesmithTxRouteImport } from './routes/plumber-brookesmith-tx'
-import { Route as PlumberBlanketTxRouteImport } from './routes/plumber-blanket-tx'
-import { Route as PlumberBangsTxRouteImport } from './routes/plumber-bangs-tx'
-import { Route as PipingAndLeaksBrownwoodTxRouteImport } from './routes/piping-and-leaks-brownwood-tx'
-import { Route as KitchenAndBathroomBrownwoodTxRouteImport } from './routes/kitchen-and-bathroom-brownwood-tx'
-import { Route as GasLineRepairBrownwoodTxRouteImport } from './routes/gas-line-repair-brownwood-tx'
-import { Route as FinancingRouteImport } from './routes/financing'
-import { Route as FaqRouteImport } from './routes/faq'
-import { Route as EmergencyPlumbingBrownwoodTxRouteImport } from './routes/emergency-plumbing-brownwood-tx'
-import { Route as DrainAndSewerBrownwoodTxRouteImport } from './routes/drain-and-sewer-brownwood-tx'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as CommercialPlumbingBrownwoodTxRouteImport } from './routes/commercial-plumbing-brownwood-tx'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DrainAndSewerBrownwoodTxRouteImport } from './routes/drain-and-sewer-brownwood-tx'
+import { Route as EmergencyPlumbingBrownwoodTxRouteImport } from './routes/emergency-plumbing-brownwood-tx'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as FinancingRouteImport } from './routes/financing'
+import { Route as GasLineRepairBrownwoodTxRouteImport } from './routes/gas-line-repair-brownwood-tx'
+import { Route as KitchenAndBathroomBrownwoodTxRouteImport } from './routes/kitchen-and-bathroom-brownwood-tx'
+import { Route as PipingAndLeaksBrownwoodTxRouteImport } from './routes/piping-and-leaks-brownwood-tx'
+import { Route as PlumberBangsTxRouteImport } from './routes/plumber-bangs-tx'
+import { Route as PlumberBlanketTxRouteImport } from './routes/plumber-blanket-tx'
+import { Route as PlumberBrookesmithTxRouteImport } from './routes/plumber-brookesmith-tx'
+import { Route as PlumberBrownwoodTxRouteImport } from './routes/plumber-brownwood-tx'
+import { Route as PlumberColemanTxRouteImport } from './routes/plumber-coleman-tx'
+import { Route as PlumberComancheTxRouteImport } from './routes/plumber-comanche-tx'
+import { Route as PlumberEarlyTxRouteImport } from './routes/plumber-early-tx'
+import { Route as PlumberLakeBrownwoodTxRouteImport } from './routes/plumber-lake-brownwood-tx'
+import { Route as PlumberMayTxRouteImport } from './routes/plumber-may-tx'
+import { Route as PlumberRisingStarTxRouteImport } from './routes/plumber-rising-star-tx'
+import { Route as PlumberSantaAnnaTxRouteImport } from './routes/plumber-santa-anna-tx'
+import { Route as PlumberZephyrTxRouteImport } from './routes/plumber-zephyr-tx'
+import { Route as PlumbingInspectionsBrownwoodTxRouteImport } from './routes/plumbing-inspections-brownwood-tx'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as ResidentialPlumbingBrownwoodTxRouteImport } from './routes/residential-plumbing-brownwood-tx'
+import { Route as ReviewsRouteImport } from './routes/reviews'
+import { Route as ServiceAreasRouteImport } from './routes/service-areas'
+import { Route as ServicesRouteImport } from './routes/services'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as TermsOfServiceRouteImport } from './routes/terms-of-service'
+import { Route as WaterHeatersBrownwoodTxRouteImport } from './routes/water-heaters-brownwood-tx'
+import { Route as WaterSoftenerBrownwoodTxRouteImport } from './routes/water-softener-brownwood-tx'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 
-const WaterSoftenerBrownwoodTxRoute =
-  WaterSoftenerBrownwoodTxRouteImport.update({
-    id: '/water-softener-brownwood-tx',
-    path: '/water-softener-brownwood-tx',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DrainAndSewerBrownwoodTxRoute =
+  DrainAndSewerBrownwoodTxRouteImport.update({
+    id: '/drain-and-sewer-brownwood-tx',
+    path: '/drain-and-sewer-brownwood-tx',
     getParentRoute: () => rootRouteImport,
   } as any)
-const WaterHeatersBrownwoodTxRoute = WaterHeatersBrownwoodTxRouteImport.update({
-  id: '/water-heaters-brownwood-tx',
-  path: '/water-heaters-brownwood-tx',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TermsOfServiceRoute = TermsOfServiceRouteImport.update({
-  id: '/terms-of-service',
-  path: '/terms-of-service',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ServicesRoute = ServicesRouteImport.update({
-  id: '/services',
-  path: '/services',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ServiceAreasRoute = ServiceAreasRouteImport.update({
-  id: '/service-areas',
-  path: '/service-areas',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ReviewsRoute = ReviewsRouteImport.update({
-  id: '/reviews',
-  path: '/reviews',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ResidentialPlumbingBrownwoodTxRoute =
-  ResidentialPlumbingBrownwoodTxRouteImport.update({
-    id: '/residential-plumbing-brownwood-tx',
-    path: '/residential-plumbing-brownwood-tx',
+const EmergencyPlumbingBrownwoodTxRoute =
+  EmergencyPlumbingBrownwoodTxRouteImport.update({
+    id: '/emergency-plumbing-brownwood-tx',
+    path: '/emergency-plumbing-brownwood-tx',
     getParentRoute: () => rootRouteImport,
   } as any)
-const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
-  id: '/privacy-policy',
-  path: '/privacy-policy',
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PlumbingInspectionsBrownwoodTxRoute =
-  PlumbingInspectionsBrownwoodTxRouteImport.update({
-    id: '/plumbing-inspections-brownwood-tx',
-    path: '/plumbing-inspections-brownwood-tx',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const PlumberZephyrTxRoute = PlumberZephyrTxRouteImport.update({
-  id: '/plumber-zephyr-tx',
-  path: '/plumber-zephyr-tx',
+const FinancingRoute = FinancingRouteImport.update({
+  id: '/financing',
+  path: '/financing',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PlumberSantaAnnaTxRoute = PlumberSantaAnnaTxRouteImport.update({
-  id: '/plumber-santa-anna-tx',
-  path: '/plumber-santa-anna-tx',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PlumberRisingStarTxRoute = PlumberRisingStarTxRouteImport.update({
-  id: '/plumber-rising-star-tx',
-  path: '/plumber-rising-star-tx',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PlumberMayTxRoute = PlumberMayTxRouteImport.update({
-  id: '/plumber-may-tx',
-  path: '/plumber-may-tx',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PlumberLakeBrownwoodTxRoute = PlumberLakeBrownwoodTxRouteImport.update({
-  id: '/plumber-lake-brownwood-tx',
-  path: '/plumber-lake-brownwood-tx',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PlumberEarlyTxRoute = PlumberEarlyTxRouteImport.update({
-  id: '/plumber-early-tx',
-  path: '/plumber-early-tx',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PlumberComancheTxRoute = PlumberComancheTxRouteImport.update({
-  id: '/plumber-comanche-tx',
-  path: '/plumber-comanche-tx',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PlumberColemanTxRoute = PlumberColemanTxRouteImport.update({
-  id: '/plumber-coleman-tx',
-  path: '/plumber-coleman-tx',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PlumberBrownwoodTxRoute = PlumberBrownwoodTxRouteImport.update({
-  id: '/plumber-brownwood-tx',
-  path: '/plumber-brownwood-tx',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PlumberBrookesmithTxRoute = PlumberBrookesmithTxRouteImport.update({
-  id: '/plumber-brookesmith-tx',
-  path: '/plumber-brookesmith-tx',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PlumberBlanketTxRoute = PlumberBlanketTxRouteImport.update({
-  id: '/plumber-blanket-tx',
-  path: '/plumber-blanket-tx',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PlumberBangsTxRoute = PlumberBangsTxRouteImport.update({
-  id: '/plumber-bangs-tx',
-  path: '/plumber-bangs-tx',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PipingAndLeaksBrownwoodTxRoute =
-  PipingAndLeaksBrownwoodTxRouteImport.update({
-    id: '/piping-and-leaks-brownwood-tx',
-    path: '/piping-and-leaks-brownwood-tx',
+const GasLineRepairBrownwoodTxRoute =
+  GasLineRepairBrownwoodTxRouteImport.update({
+    id: '/gas-line-repair-brownwood-tx',
+    path: '/gas-line-repair-brownwood-tx',
     getParentRoute: () => rootRouteImport,
   } as any)
 const KitchenAndBathroomBrownwoodTxRoute =
@@ -169,55 +92,125 @@ const KitchenAndBathroomBrownwoodTxRoute =
     path: '/kitchen-and-bathroom-brownwood-tx',
     getParentRoute: () => rootRouteImport,
   } as any)
-const GasLineRepairBrownwoodTxRoute =
-  GasLineRepairBrownwoodTxRouteImport.update({
-    id: '/gas-line-repair-brownwood-tx',
-    path: '/gas-line-repair-brownwood-tx',
+const PipingAndLeaksBrownwoodTxRoute =
+  PipingAndLeaksBrownwoodTxRouteImport.update({
+    id: '/piping-and-leaks-brownwood-tx',
+    path: '/piping-and-leaks-brownwood-tx',
     getParentRoute: () => rootRouteImport,
   } as any)
-const FinancingRoute = FinancingRouteImport.update({
-  id: '/financing',
-  path: '/financing',
+const PlumberBangsTxRoute = PlumberBangsTxRouteImport.update({
+  id: '/plumber-bangs-tx',
+  path: '/plumber-bangs-tx',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FaqRoute = FaqRouteImport.update({
-  id: '/faq',
-  path: '/faq',
+const PlumberBlanketTxRoute = PlumberBlanketTxRouteImport.update({
+  id: '/plumber-blanket-tx',
+  path: '/plumber-blanket-tx',
   getParentRoute: () => rootRouteImport,
 } as any)
-const EmergencyPlumbingBrownwoodTxRoute =
-  EmergencyPlumbingBrownwoodTxRouteImport.update({
-    id: '/emergency-plumbing-brownwood-tx',
-    path: '/emergency-plumbing-brownwood-tx',
+const PlumberBrookesmithTxRoute = PlumberBrookesmithTxRouteImport.update({
+  id: '/plumber-brookesmith-tx',
+  path: '/plumber-brookesmith-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberBrownwoodTxRoute = PlumberBrownwoodTxRouteImport.update({
+  id: '/plumber-brownwood-tx',
+  path: '/plumber-brownwood-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberColemanTxRoute = PlumberColemanTxRouteImport.update({
+  id: '/plumber-coleman-tx',
+  path: '/plumber-coleman-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberComancheTxRoute = PlumberComancheTxRouteImport.update({
+  id: '/plumber-comanche-tx',
+  path: '/plumber-comanche-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberEarlyTxRoute = PlumberEarlyTxRouteImport.update({
+  id: '/plumber-early-tx',
+  path: '/plumber-early-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberLakeBrownwoodTxRoute = PlumberLakeBrownwoodTxRouteImport.update({
+  id: '/plumber-lake-brownwood-tx',
+  path: '/plumber-lake-brownwood-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberMayTxRoute = PlumberMayTxRouteImport.update({
+  id: '/plumber-may-tx',
+  path: '/plumber-may-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberRisingStarTxRoute = PlumberRisingStarTxRouteImport.update({
+  id: '/plumber-rising-star-tx',
+  path: '/plumber-rising-star-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberSantaAnnaTxRoute = PlumberSantaAnnaTxRouteImport.update({
+  id: '/plumber-santa-anna-tx',
+  path: '/plumber-santa-anna-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumberZephyrTxRoute = PlumberZephyrTxRouteImport.update({
+  id: '/plumber-zephyr-tx',
+  path: '/plumber-zephyr-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumbingInspectionsBrownwoodTxRoute =
+  PlumbingInspectionsBrownwoodTxRouteImport.update({
+    id: '/plumbing-inspections-brownwood-tx',
+    path: '/plumbing-inspections-brownwood-tx',
     getParentRoute: () => rootRouteImport,
   } as any)
-const DrainAndSewerBrownwoodTxRoute =
-  DrainAndSewerBrownwoodTxRouteImport.update({
-    id: '/drain-and-sewer-brownwood-tx',
-    path: '/drain-and-sewer-brownwood-tx',
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResidentialPlumbingBrownwoodTxRoute =
+  ResidentialPlumbingBrownwoodTxRouteImport.update({
+    id: '/residential-plumbing-brownwood-tx',
+    path: '/residential-plumbing-brownwood-tx',
     getParentRoute: () => rootRouteImport,
   } as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
+const ReviewsRoute = ReviewsRouteImport.update({
+  id: '/reviews',
+  path: '/reviews',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CommercialPlumbingBrownwoodTxRoute =
-  CommercialPlumbingBrownwoodTxRouteImport.update({
-    id: '/commercial-plumbing-brownwood-tx',
-    path: '/commercial-plumbing-brownwood-tx',
+const ServiceAreasRoute = ServiceAreasRouteImport.update({
+  id: '/service-areas',
+  path: '/service-areas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsOfServiceRoute = TermsOfServiceRouteImport.update({
+  id: '/terms-of-service',
+  path: '/terms-of-service',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WaterHeatersBrownwoodTxRoute = WaterHeatersBrownwoodTxRouteImport.update({
+  id: '/water-heaters-brownwood-tx',
+  path: '/water-heaters-brownwood-tx',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WaterSoftenerBrownwoodTxRoute =
+  WaterSoftenerBrownwoodTxRouteImport.update({
+    id: '/water-softener-brownwood-tx',
+    path: '/water-softener-brownwood-tx',
     getParentRoute: () => rootRouteImport,
   } as any)
-const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/blog/',
   path: '/blog/',
@@ -227,7 +220,6 @@ const BlogIndexRoute = BlogIndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/commercial-plumbing-brownwood-tx': typeof CommercialPlumbingBrownwoodTxRoute
   '/contact': typeof ContactRoute
   '/drain-and-sewer-brownwood-tx': typeof DrainAndSewerBrownwoodTxRoute
   '/emergency-plumbing-brownwood-tx': typeof EmergencyPlumbingBrownwoodTxRoute
@@ -263,7 +255,6 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/commercial-plumbing-brownwood-tx': typeof CommercialPlumbingBrownwoodTxRoute
   '/contact': typeof ContactRoute
   '/drain-and-sewer-brownwood-tx': typeof DrainAndSewerBrownwoodTxRoute
   '/emergency-plumbing-brownwood-tx': typeof EmergencyPlumbingBrownwoodTxRoute
@@ -300,7 +291,6 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/commercial-plumbing-brownwood-tx': typeof CommercialPlumbingBrownwoodTxRoute
   '/contact': typeof ContactRoute
   '/drain-and-sewer-brownwood-tx': typeof DrainAndSewerBrownwoodTxRoute
   '/emergency-plumbing-brownwood-tx': typeof EmergencyPlumbingBrownwoodTxRoute
@@ -338,7 +328,6 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
-    | '/commercial-plumbing-brownwood-tx'
     | '/contact'
     | '/drain-and-sewer-brownwood-tx'
     | '/emergency-plumbing-brownwood-tx'
@@ -374,7 +363,6 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
-    | '/commercial-plumbing-brownwood-tx'
     | '/contact'
     | '/drain-and-sewer-brownwood-tx'
     | '/emergency-plumbing-brownwood-tx'
@@ -410,7 +398,6 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
-    | '/commercial-plumbing-brownwood-tx'
     | '/contact'
     | '/drain-and-sewer-brownwood-tx'
     | '/emergency-plumbing-brownwood-tx'
@@ -447,7 +434,6 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  CommercialPlumbingBrownwoodTxRoute: typeof CommercialPlumbingBrownwoodTxRoute
   ContactRoute: typeof ContactRoute
   DrainAndSewerBrownwoodTxRoute: typeof DrainAndSewerBrownwoodTxRoute
   EmergencyPlumbingBrownwoodTxRoute: typeof EmergencyPlumbingBrownwoodTxRoute
@@ -483,221 +469,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/water-softener-brownwood-tx': {
-      id: '/water-softener-brownwood-tx'
-      path: '/water-softener-brownwood-tx'
-      fullPath: '/water-softener-brownwood-tx'
-      preLoaderRoute: typeof WaterSoftenerBrownwoodTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/water-heaters-brownwood-tx': {
-      id: '/water-heaters-brownwood-tx'
-      path: '/water-heaters-brownwood-tx'
-      fullPath: '/water-heaters-brownwood-tx'
-      preLoaderRoute: typeof WaterHeatersBrownwoodTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/terms-of-service': {
-      id: '/terms-of-service'
-      path: '/terms-of-service'
-      fullPath: '/terms-of-service'
-      preLoaderRoute: typeof TermsOfServiceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/services': {
-      id: '/services'
-      path: '/services'
-      fullPath: '/services'
-      preLoaderRoute: typeof ServicesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/service-areas': {
-      id: '/service-areas'
-      path: '/service-areas'
-      fullPath: '/service-areas'
-      preLoaderRoute: typeof ServiceAreasRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reviews': {
-      id: '/reviews'
-      path: '/reviews'
-      fullPath: '/reviews'
-      preLoaderRoute: typeof ReviewsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/residential-plumbing-brownwood-tx': {
-      id: '/residential-plumbing-brownwood-tx'
-      path: '/residential-plumbing-brownwood-tx'
-      fullPath: '/residential-plumbing-brownwood-tx'
-      preLoaderRoute: typeof ResidentialPlumbingBrownwoodTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacy-policy': {
-      id: '/privacy-policy'
-      path: '/privacy-policy'
-      fullPath: '/privacy-policy'
-      preLoaderRoute: typeof PrivacyPolicyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumbing-inspections-brownwood-tx': {
-      id: '/plumbing-inspections-brownwood-tx'
-      path: '/plumbing-inspections-brownwood-tx'
-      fullPath: '/plumbing-inspections-brownwood-tx'
-      preLoaderRoute: typeof PlumbingInspectionsBrownwoodTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumber-zephyr-tx': {
-      id: '/plumber-zephyr-tx'
-      path: '/plumber-zephyr-tx'
-      fullPath: '/plumber-zephyr-tx'
-      preLoaderRoute: typeof PlumberZephyrTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumber-santa-anna-tx': {
-      id: '/plumber-santa-anna-tx'
-      path: '/plumber-santa-anna-tx'
-      fullPath: '/plumber-santa-anna-tx'
-      preLoaderRoute: typeof PlumberSantaAnnaTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumber-rising-star-tx': {
-      id: '/plumber-rising-star-tx'
-      path: '/plumber-rising-star-tx'
-      fullPath: '/plumber-rising-star-tx'
-      preLoaderRoute: typeof PlumberRisingStarTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumber-may-tx': {
-      id: '/plumber-may-tx'
-      path: '/plumber-may-tx'
-      fullPath: '/plumber-may-tx'
-      preLoaderRoute: typeof PlumberMayTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumber-lake-brownwood-tx': {
-      id: '/plumber-lake-brownwood-tx'
-      path: '/plumber-lake-brownwood-tx'
-      fullPath: '/plumber-lake-brownwood-tx'
-      preLoaderRoute: typeof PlumberLakeBrownwoodTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumber-early-tx': {
-      id: '/plumber-early-tx'
-      path: '/plumber-early-tx'
-      fullPath: '/plumber-early-tx'
-      preLoaderRoute: typeof PlumberEarlyTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumber-comanche-tx': {
-      id: '/plumber-comanche-tx'
-      path: '/plumber-comanche-tx'
-      fullPath: '/plumber-comanche-tx'
-      preLoaderRoute: typeof PlumberComancheTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumber-coleman-tx': {
-      id: '/plumber-coleman-tx'
-      path: '/plumber-coleman-tx'
-      fullPath: '/plumber-coleman-tx'
-      preLoaderRoute: typeof PlumberColemanTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumber-brownwood-tx': {
-      id: '/plumber-brownwood-tx'
-      path: '/plumber-brownwood-tx'
-      fullPath: '/plumber-brownwood-tx'
-      preLoaderRoute: typeof PlumberBrownwoodTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumber-brookesmith-tx': {
-      id: '/plumber-brookesmith-tx'
-      path: '/plumber-brookesmith-tx'
-      fullPath: '/plumber-brookesmith-tx'
-      preLoaderRoute: typeof PlumberBrookesmithTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumber-blanket-tx': {
-      id: '/plumber-blanket-tx'
-      path: '/plumber-blanket-tx'
-      fullPath: '/plumber-blanket-tx'
-      preLoaderRoute: typeof PlumberBlanketTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumber-bangs-tx': {
-      id: '/plumber-bangs-tx'
-      path: '/plumber-bangs-tx'
-      fullPath: '/plumber-bangs-tx'
-      preLoaderRoute: typeof PlumberBangsTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/piping-and-leaks-brownwood-tx': {
-      id: '/piping-and-leaks-brownwood-tx'
-      path: '/piping-and-leaks-brownwood-tx'
-      fullPath: '/piping-and-leaks-brownwood-tx'
-      preLoaderRoute: typeof PipingAndLeaksBrownwoodTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/kitchen-and-bathroom-brownwood-tx': {
-      id: '/kitchen-and-bathroom-brownwood-tx'
-      path: '/kitchen-and-bathroom-brownwood-tx'
-      fullPath: '/kitchen-and-bathroom-brownwood-tx'
-      preLoaderRoute: typeof KitchenAndBathroomBrownwoodTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gas-line-repair-brownwood-tx': {
-      id: '/gas-line-repair-brownwood-tx'
-      path: '/gas-line-repair-brownwood-tx'
-      fullPath: '/gas-line-repair-brownwood-tx'
-      preLoaderRoute: typeof GasLineRepairBrownwoodTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/financing': {
-      id: '/financing'
-      path: '/financing'
-      fullPath: '/financing'
-      preLoaderRoute: typeof FinancingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/faq': {
-      id: '/faq'
-      path: '/faq'
-      fullPath: '/faq'
-      preLoaderRoute: typeof FaqRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/emergency-plumbing-brownwood-tx': {
-      id: '/emergency-plumbing-brownwood-tx'
-      path: '/emergency-plumbing-brownwood-tx'
-      fullPath: '/emergency-plumbing-brownwood-tx'
-      preLoaderRoute: typeof EmergencyPlumbingBrownwoodTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/drain-and-sewer-brownwood-tx': {
-      id: '/drain-and-sewer-brownwood-tx'
-      path: '/drain-and-sewer-brownwood-tx'
-      fullPath: '/drain-and-sewer-brownwood-tx'
-      preLoaderRoute: typeof DrainAndSewerBrownwoodTxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/commercial-plumbing-brownwood-tx': {
-      id: '/commercial-plumbing-brownwood-tx'
-      path: '/commercial-plumbing-brownwood-tx'
-      fullPath: '/commercial-plumbing-brownwood-tx'
-      preLoaderRoute: typeof CommercialPlumbingBrownwoodTxRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -707,11 +483,214 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/drain-and-sewer-brownwood-tx': {
+      id: '/drain-and-sewer-brownwood-tx'
+      path: '/drain-and-sewer-brownwood-tx'
+      fullPath: '/drain-and-sewer-brownwood-tx'
+      preLoaderRoute: typeof DrainAndSewerBrownwoodTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/emergency-plumbing-brownwood-tx': {
+      id: '/emergency-plumbing-brownwood-tx'
+      path: '/emergency-plumbing-brownwood-tx'
+      fullPath: '/emergency-plumbing-brownwood-tx'
+      preLoaderRoute: typeof EmergencyPlumbingBrownwoodTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/financing': {
+      id: '/financing'
+      path: '/financing'
+      fullPath: '/financing'
+      preLoaderRoute: typeof FinancingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gas-line-repair-brownwood-tx': {
+      id: '/gas-line-repair-brownwood-tx'
+      path: '/gas-line-repair-brownwood-tx'
+      fullPath: '/gas-line-repair-brownwood-tx'
+      preLoaderRoute: typeof GasLineRepairBrownwoodTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kitchen-and-bathroom-brownwood-tx': {
+      id: '/kitchen-and-bathroom-brownwood-tx'
+      path: '/kitchen-and-bathroom-brownwood-tx'
+      fullPath: '/kitchen-and-bathroom-brownwood-tx'
+      preLoaderRoute: typeof KitchenAndBathroomBrownwoodTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/piping-and-leaks-brownwood-tx': {
+      id: '/piping-and-leaks-brownwood-tx'
+      path: '/piping-and-leaks-brownwood-tx'
+      fullPath: '/piping-and-leaks-brownwood-tx'
+      preLoaderRoute: typeof PipingAndLeaksBrownwoodTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-bangs-tx': {
+      id: '/plumber-bangs-tx'
+      path: '/plumber-bangs-tx'
+      fullPath: '/plumber-bangs-tx'
+      preLoaderRoute: typeof PlumberBangsTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-blanket-tx': {
+      id: '/plumber-blanket-tx'
+      path: '/plumber-blanket-tx'
+      fullPath: '/plumber-blanket-tx'
+      preLoaderRoute: typeof PlumberBlanketTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-brookesmith-tx': {
+      id: '/plumber-brookesmith-tx'
+      path: '/plumber-brookesmith-tx'
+      fullPath: '/plumber-brookesmith-tx'
+      preLoaderRoute: typeof PlumberBrookesmithTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-brownwood-tx': {
+      id: '/plumber-brownwood-tx'
+      path: '/plumber-brownwood-tx'
+      fullPath: '/plumber-brownwood-tx'
+      preLoaderRoute: typeof PlumberBrownwoodTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-coleman-tx': {
+      id: '/plumber-coleman-tx'
+      path: '/plumber-coleman-tx'
+      fullPath: '/plumber-coleman-tx'
+      preLoaderRoute: typeof PlumberColemanTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-comanche-tx': {
+      id: '/plumber-comanche-tx'
+      path: '/plumber-comanche-tx'
+      fullPath: '/plumber-comanche-tx'
+      preLoaderRoute: typeof PlumberComancheTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-early-tx': {
+      id: '/plumber-early-tx'
+      path: '/plumber-early-tx'
+      fullPath: '/plumber-early-tx'
+      preLoaderRoute: typeof PlumberEarlyTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-lake-brownwood-tx': {
+      id: '/plumber-lake-brownwood-tx'
+      path: '/plumber-lake-brownwood-tx'
+      fullPath: '/plumber-lake-brownwood-tx'
+      preLoaderRoute: typeof PlumberLakeBrownwoodTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-may-tx': {
+      id: '/plumber-may-tx'
+      path: '/plumber-may-tx'
+      fullPath: '/plumber-may-tx'
+      preLoaderRoute: typeof PlumberMayTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-rising-star-tx': {
+      id: '/plumber-rising-star-tx'
+      path: '/plumber-rising-star-tx'
+      fullPath: '/plumber-rising-star-tx'
+      preLoaderRoute: typeof PlumberRisingStarTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-santa-anna-tx': {
+      id: '/plumber-santa-anna-tx'
+      path: '/plumber-santa-anna-tx'
+      fullPath: '/plumber-santa-anna-tx'
+      preLoaderRoute: typeof PlumberSantaAnnaTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumber-zephyr-tx': {
+      id: '/plumber-zephyr-tx'
+      path: '/plumber-zephyr-tx'
+      fullPath: '/plumber-zephyr-tx'
+      preLoaderRoute: typeof PlumberZephyrTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumbing-inspections-brownwood-tx': {
+      id: '/plumbing-inspections-brownwood-tx'
+      path: '/plumbing-inspections-brownwood-tx'
+      fullPath: '/plumbing-inspections-brownwood-tx'
+      preLoaderRoute: typeof PlumbingInspectionsBrownwoodTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/residential-plumbing-brownwood-tx': {
+      id: '/residential-plumbing-brownwood-tx'
+      path: '/residential-plumbing-brownwood-tx'
+      fullPath: '/residential-plumbing-brownwood-tx'
+      preLoaderRoute: typeof ResidentialPlumbingBrownwoodTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reviews': {
+      id: '/reviews'
+      path: '/reviews'
+      fullPath: '/reviews'
+      preLoaderRoute: typeof ReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/service-areas': {
+      id: '/service-areas'
+      path: '/service-areas'
+      fullPath: '/service-areas'
+      preLoaderRoute: typeof ServiceAreasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms-of-service': {
+      id: '/terms-of-service'
+      path: '/terms-of-service'
+      fullPath: '/terms-of-service'
+      preLoaderRoute: typeof TermsOfServiceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/water-heaters-brownwood-tx': {
+      id: '/water-heaters-brownwood-tx'
+      path: '/water-heaters-brownwood-tx'
+      fullPath: '/water-heaters-brownwood-tx'
+      preLoaderRoute: typeof WaterHeatersBrownwoodTxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/water-softener-brownwood-tx': {
+      id: '/water-softener-brownwood-tx'
+      path: '/water-softener-brownwood-tx'
+      fullPath: '/water-softener-brownwood-tx'
+      preLoaderRoute: typeof WaterSoftenerBrownwoodTxRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/': {
@@ -727,7 +706,6 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  CommercialPlumbingBrownwoodTxRoute: CommercialPlumbingBrownwoodTxRoute,
   ContactRoute: ContactRoute,
   DrainAndSewerBrownwoodTxRoute: DrainAndSewerBrownwoodTxRoute,
   EmergencyPlumbingBrownwoodTxRoute: EmergencyPlumbingBrownwoodTxRoute,
@@ -763,13 +741,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

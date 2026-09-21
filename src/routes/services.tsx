@@ -12,9 +12,9 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       { title: "Plumbing Services in Brownwood, TX | M. Webb Plumbing" },
-      { name: "description", content: "Explore our complete plumbing services in Brownwood, TX, including residential, commercial, emergency plumbing, leak detection, water line repair, and more." },
+      { name: "description", content: "Explore complete residential plumbing services in Brownwood, TX, including emergency plumbing, leak detection, water line repair, and more." },
       { property: "og:title", content: "Plumbing Services in Brownwood, TX | M. Webb Plumbing" },
-      { property: "og:description", content: "Explore our complete plumbing services in Brownwood, TX, including residential, commercial, emergency plumbing, leak detection, water line repair, and more." },
+      { property: "og:description", content: "Explore complete residential plumbing services in Brownwood, TX, including emergency plumbing, leak detection, water line repair, and more." },
       { property: "og:url", content: `${BASE_URL}/services` },
     ],
     links: [{ rel: "canonical", href: `${BASE_URL}/services` }],

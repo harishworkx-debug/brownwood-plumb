@@ -11,10 +11,10 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact M. Webb Plumbing | Brownwood, TX" },
-      { name: "description", content: "Contact M. Webb Plumbing for residential, commercial, and emergency plumbing services in Brownwood, TX. Call today or request a free estimate." },
-      { name: "keywords", content: "contact plumber, free plumbing estimate, plumbing quote, brownwood plumber, emergency plumber" },
+      { name: "description", content: "Contact M. Webb Plumbing to connect with residential and emergency plumbing services in Brownwood, TX. Call today to request an estimate." },
+      { name: "keywords", content: "contact plumber, plumbing quote, brownwood plumber, emergency plumber" },
       { property: "og:title", content: "Contact M. Webb Plumbing | Brownwood, TX" },
-      { property: "og:description", content: "Contact M. Webb Plumbing for residential, commercial, and emergency plumbing services in Brownwood, TX. Call today or request a free estimate." },
+      { property: "og:description", content: "Contact M. Webb Plumbing to connect with residential and emergency plumbing services in Brownwood, TX. Call today to request an estimate." },
       { property: "og:url", content: `${BASE_URL}/contact` },
     ],
     links: [{ rel: "canonical", href: `${BASE_URL}/contact` }],
@@ -84,7 +84,7 @@ function Page() {
 
           <Reveal delay={120}>
             <div className="rounded-2xl border border-border bg-card p-6 shadow-elegant md:p-8">
-              <h2 className="font-display text-2xl font-bold">Request a free estimate</h2>
+              <h2 className="font-display text-2xl font-bold">Request an estimate</h2>
               <p className="mt-1 text-sm text-muted-foreground">Tell us about your plumbing project and we'll get right back to you.</p>
               <div className="mt-6">
                 <QuoteForm />

@@ -29,7 +29,6 @@ export const business = {
 export const services = [
   { slug: "emergency-plumbing-brownwood-tx", title: "Emergency Plumbing", icon: "Siren", blurb: "24-hour urgent response for burst pipes, major leaks and plumbing disasters across Brownwood, TX.", category: "emergency" },
   { slug: "residential-plumbing-brownwood-tx", title: "Residential Plumbing", icon: "Home", blurb: "Trusted home plumbing for repairs, replacements, fixtures and full-house service.", category: "residential" },
-  { slug: "commercial-plumbing-brownwood-tx", title: "Commercial Plumbing", icon: "Building2", blurb: "Reliable plumbing for offices, restaurants, retail and industrial properties.", category: "commercial" },
   { slug: "water-heaters-brownwood-tx", title: "Water Heaters", icon: "Flame", blurb: "Fast repairs, tankless upgrades, and recirculation pumps to restore your hot water.", category: "residential" },
   { slug: "drain-and-sewer-brownwood-tx", title: "Drain & Sewer Services", icon: "Drill", blurb: "Professional drain cleaning, camera inspections, and sewer line repair.", category: "residential" },
   { slug: "piping-and-leaks-brownwood-tx", title: "Piping & Leak Services", icon: "Droplets", blurb: "Non-invasive leak detection, pipe repair, and full system replacement.", category: "repair" },
@@ -55,12 +54,11 @@ export const serviceAreas = [
 ];
 
 export const testimonials = [
-  { name: "Sarah J.", city: "Brownwood, TX", rating: 5, text: "Mike and his team came out the same day for a major leak under our slab. Honest pricing, clean work and they treated our home with respect. Hands down the best plumber in Brownwood.", date: "2024-03-15", service: "Slab Leak Repair" },
-  { name: "David R.", city: "Early, TX", rating: 5, text: "Called late at night with a burst pipe. They answered immediately and were at the house within the hour. 35 years of experience really shows — fixed right the first time.", date: "2024-02-20", service: "Emergency Plumbing" },
-  { name: "Linda M.", city: "Lake Brownwood, TX", rating: 5, text: "We had M. Webb replace our entire water line. Professional from quote to cleanup. Fair price and zero surprises. Highly recommend.", date: "2024-01-10", service: "Water Line Replacement" },
+  { name: "Sarah J.", city: "Brownwood, TX", rating: 5, text: "A local provider came out the same day for a major leak under our slab. Honest pricing, clean work and they treated our home with respect. Highly recommend this service for finding a great plumber.", date: "2024-03-15", service: "Slab Leak Repair" },
+  { name: "David R.", city: "Early, TX", rating: 5, text: "Called late at night with a burst pipe. The connected plumber answered immediately and was at the house within the hour. Great experience — fixed right the first time.", date: "2024-02-20", service: "Emergency Plumbing" },
+  { name: "Linda M.", city: "Lake Brownwood, TX", rating: 5, text: "We had a local plumber replace our entire water line. Professional from quote to cleanup. Fair price and zero surprises. Highly recommend.", date: "2024-01-10", service: "Water Line Replacement" },
   { name: "James T.", city: "Bangs, TX", rating: 5, text: "Installed a hot water recirculation pump and now we have instant hot water everywhere. Couldn't be happier with the service.", date: "2023-12-05", service: "Hot Water Recirculation" },
-  { name: "Karen W.", city: "Zephyr, TX", rating: 5, text: "Knowledgeable, on time, and reasonably priced. Mike explained everything in plain English. Our go-to plumber from now on.", date: "2023-11-18", service: "General Plumbing" },
-  { name: "Robert P.", city: "Brownwood, TX", rating: 5, text: "Commercial plumbing for our restaurant — got us back open quickly with minimal disruption. Truly a local company you can count on.", date: "2023-10-22", service: "Commercial Plumbing" },
+  { name: "Karen W.", city: "Zephyr, TX", rating: 5, text: "Knowledgeable, on time, and reasonably priced. The plumber explained everything in plain English. Will definitely use this service to find a plumber again.", date: "2023-11-18", service: "General Plumbing" },
   { name: "Mary S.", city: "Early, TX", rating: 5, text: "They installed our new tankless water heater and the difference is amazing. Professional, clean, and knowledgeable about all the options.", date: "2023-09-14", service: "Tankless Water Heater" },
   { name: "Tom H.", city: "Brownwood, TX", rating: 5, text: "Had them out for a drain camera inspection before buying our house. Found issues the seller had to fix. Saved us thousands.", date: "2023-08-30", service: "Plumbing Inspection" },
 ];
@@ -68,42 +66,32 @@ export const testimonials = [
 export const faqs = [
   {
     question: "Do you offer 24-hour emergency plumbing in Brownwood, TX?",
-    answer: "Yes. M. Webb Plumbing Co. provides 24-hour on-call emergency plumbing services for burst pipes, major leaks, overflowing fixtures and other urgent issues across Brownwood, Early, Bangs, Lake Brownwood, Zephyr and all of Brown County, TX. Call (325) 328-0435 anytime.",
+    answer: "Yes. We can connect you with local plumbers providing 24-hour on-call emergency plumbing services for burst pipes, major leaks, overflowing fixtures and other urgent issues across Brownwood, Early, Bangs, Lake Brownwood, Zephyr and all of Brown County, TX. Call (325) 328-0435 anytime.",
     category: "Emergency",
   },
   {
     question: "How quickly can a plumber arrive at my home?",
-    answer: "We pride ourselves on fast response times. Most emergency calls in Brownwood and surrounding areas are answered the same day, with many serviced within the hour. For scheduled appointments, we offer convenient time windows.",
+    answer: "Local providers pride themselves on fast response times. Most emergency calls in Brownwood and surrounding areas are answered the same day, with many serviced within the hour. For scheduled appointments, convenient time windows are often available.",
     category: "Service",
   },
   {
     question: "Are you licensed and insured?",
-    answer: "Yes — M. Webb Plumbing Co. LLC is fully licensed and insured for both residential and commercial plumbing work in Texas. We've been serving Brown County for over 35 years with an impeccable safety and quality record.",
+    answer: "All local professionals we connect you with are fully licensed and insured for residential plumbing work in Texas.",
     category: "Company",
   },
   {
     question: "How much does a plumbing repair cost?",
-    answer: "Pricing depends on the issue. We give honest, upfront estimates before any work begins — no surprises. For simple repairs, we can often provide a quote over the phone. For complex issues, we offer free in-home estimates. Call (325) 328-0435 for a free estimate.",
+    answer: "Pricing depends on the issue. Most contractors give honest, upfront estimates before any work begins — no surprises. Call (325) 328-0435 to request an estimate.",
     category: "Pricing",
   },
   {
-    question: "Do you handle commercial plumbing?",
-    answer: "Absolutely. We service offices, restaurants, retail spaces and industrial properties throughout Brownwood and Brown County. We understand that commercial downtime costs money, so we respond quickly and work efficiently.",
-    category: "Commercial",
-  },
-  {
     question: "What areas do you serve?",
-    answer: "We proudly serve Brownwood, Early, Bangs, Lake Brownwood, Zephyr, Blanket, May, Brookesmith, Comanche, Coleman, and surrounding communities in Brown County and beyond. If you're unsure if we service your area, give us a call at (325) 328-0435.",
+    answer: "Local providers proudly serve Brownwood, Early, Bangs, Lake Brownwood, Zephyr, Blanket, May, Brookesmith, Comanche, Coleman, and surrounding communities. If you're unsure if providers are available in your area, give us a call at (325) 328-0435.",
     category: "Service Areas",
   },
   {
-    question: "Do you offer warranties on your work?",
-    answer: "Yes, we stand behind our work. All repairs come with a workmanship warranty, and manufacturer warranties apply to parts and fixtures we install. We'll explain exactly what's covered before we begin any work.",
-    category: "Guarantees",
-  },
-  {
     question: "What payment methods do you accept?",
-    answer: "We accept cash, checks, and all major credit cards. For larger projects, we can discuss financing options. We always provide a clear, written estimate before starting any work.",
+    answer: "Local providers typically accept cash, checks, and major credit cards. Your chosen provider will provide a clear estimate before starting any work.",
     category: "Payment",
   },
 ];
@@ -113,6 +101,5 @@ export const blogCategories = [
   { slug: "water-heaters", name: "Water Heaters", description: "Everything you need to know about water heater maintenance, repair, and replacement." },
   { slug: "drain-cleaning", name: "Drain Cleaning", description: "Prevent clogs and keep your drains flowing smoothly with these helpful tips." },
   { slug: "home-plumbing-tips", name: "Home Plumbing Tips", description: "Practical advice for maintaining your home's plumbing system." },
-  { slug: "commercial-plumbing", name: "Commercial Plumbing", description: "Plumbing considerations for businesses and commercial properties." },
   { slug: "texas-plumbing", name: "Texas Plumbing Tips", description: "Region-specific plumbing advice for Texas homeowners." },
 ];

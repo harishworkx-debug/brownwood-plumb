@@ -59,7 +59,7 @@ function Page() {
             <Reveal delay={120}>
               <h2 className="font-display text-xl font-bold text-foreground">Data Security</h2>
               <p className="mt-2">
-                We implement reasonable security measures to protect your personal information. However, no electronic transmission or storage is 100% secure. We cannot guarantee absolute security of information transmitted through this website.
+                We implement reasonable security measures to protect your personal information. However, no electronic transmission or storage is 100% secure.
               </p>
             </Reveal>
 

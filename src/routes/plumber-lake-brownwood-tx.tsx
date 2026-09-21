@@ -65,8 +65,8 @@ const content = areaContent["lake-brownwood-tx"] || defaultContent;
 
 export const Route = createFileRoute("/plumber-lake-brownwood-tx")({
   head: () => {
-    const title = `Plumber in ${area.name} | Emergency, Residential & Commercial | M. Webb`;
-    const desc = `Expert plumber serving ${area.name}, TX. 35+ years. Residential, commercial & 24-hour emergency plumbing. Fast response, fair prices. Call (325) 328-0435 now.`;
+    const title = `Plumber in ${area.name} | Emergency & Residential | M. Webb`;
+    const desc = `Expert plumbers serving ${area.name}, TX. 35+ years. Residential & 24-hour emergency plumbing connection service. Fast response, fair prices. Call (325) 328-0435 now.`;
     return {
       meta: [
         { title },
