@@ -38,7 +38,7 @@ const faqs = [
   { q: "Do you offer 24-hour emergency plumbing in Brownwood, TX?", a: "Yes. M. Webb Plumbing Co. provides 24-hour on-call emergency plumbing services for burst pipes, major leaks, overflowing fixtures and other urgent issues across Brownwood, Early, Bangs, Lake Brownwood and Zephyr, TX." },
   { q: "How quickly can a plumber arrive at my home?", a: "Local providers pride themselves on fast response times. Most emergency calls in Brownwood and surrounding areas are answered the same day, with many serviced within the hour." },
   { q: "Are you licensed and insured?", a: "All local professionals we connect you with are fully licensed and insured for residential plumbing work in Texas." },
-  { q: "How much does a plumbing repair cost?", a: "Pricing depends on the issue. Most contractors give honest, upfront estimates before any work begins — no surprises. Call (325) 328-0435 to request an estimate." },
+  { q: "How much does a plumbing repair cost?", a: "Pricing depends on the issue. Most contractors give honest, upfront estimates before any work begins — no surprises. Call (325) 728-4690 to request an estimate." },
 ];
 
 function Index() {

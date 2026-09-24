@@ -12,7 +12,7 @@ export const Route = createFileRoute("/financing")({
   head: () => ({
     meta: [
       { title: "Plumbing Financing | Affordable Payment Plans | M. Webb Plumbing Brownwood TX" },
-      { name: "description", content: "Flexible financing options for plumbing services in Brownwood, TX. Get the repairs you need now with affordable monthly payments. Call (325) 328-0435 to discuss options." },
+      { name: "description", content: "Flexible financing options for plumbing services in Brownwood, TX. Get the repairs you need now with affordable monthly payments. Call (325) 728-4690 to discuss options." },
       { property: "og:title", content: "Plumbing Financing | M. Webb Plumbing" },
       { property: "og:description", content: "Flexible financing options available. Get plumbing services now, pay over time." },
       { property: "og:url", content: `${BASE_URL}/financing` },
