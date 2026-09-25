@@ -53,7 +53,7 @@ function Index() {
             </Reveal>
             <Reveal delay={80}>
               <h1 className="mt-6 font-display text-5xl font-bold leading-[1.02] tracking-tight md:text-6xl lg:text-7xl">
-                Plumber in <span className="text-gradient-brand">Brownwood, TX</span> | M. Webb Plumbing Co.
+                Plumber in <span className="text-gradient-brand">Brownwood, TX</span>
               </h1>
             </Reveal>
             <Reveal delay={160}>
@@ -246,7 +246,7 @@ function Index() {
             <div>
               <SectionEyebrow>Local Plumbing Repair</SectionEyebrow>
               <h2 className="mt-4 font-display text-3xl font-bold leading-tight md:text-4xl">
-                Plumbing Repair in Brownwood
+                Plumbing Repair in Brownwood, TX
               </h2>
               <p className="mt-5 text-foreground/75 leading-relaxed">
                 When you need <Link to="/residential-plumbing-brownwood-tx" className="font-medium text-brand-deep underline-offset-4 hover:underline">residential plumbing repair</Link>, you want it done right the first time. M. Webb Plumbing Co. handles all types of repairs for homeowners. From <Link to="/piping-and-leaks-brownwood-tx" className="font-medium text-brand-deep underline-offset-4 hover:underline">fixing leaking pipes</Link> and <Link to="/water-heaters-brownwood-tx" className="font-medium text-brand-deep underline-offset-4 hover:underline">water heater issues</Link> to resolving low water pressure and clogged drains, our local plumbing company brings over 35 years of experience to every job.
@@ -288,7 +288,7 @@ function Index() {
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
             <SectionEyebrow>Why Choose M. Webb Plumbing Co.</SectionEyebrow>
-            <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Professional plumbing you can trust</h2>
+            <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Why Choose M. Webb Plumbing Co.</h2>
           </div>
         </Reveal>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -319,7 +319,7 @@ function Index() {
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
             <div>
               <SectionEyebrow>Service Areas</SectionEyebrow>
-              <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Proudly serving Brown County, Texas</h2>
+              <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Areas We Serve</h2>
               <p className="mt-3 max-w-xl text-foreground/70">Local, dependable plumbing across Brownwood and the surrounding communities we call home.</p>
             </div>
             <Link to="/service-areas" className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground">
@@ -381,7 +381,7 @@ function Index() {
           <Reveal>
             <div>
               <SectionEyebrow>FAQs</SectionEyebrow>
-              <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Common plumbing questions in Brownwood, TX</h2>
+              <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Frequently Asked Questions</h2>
               <p className="mt-4 text-foreground/70">Still have questions? Call Mike directly at <a href={`tel:${business.phoneRaw}`} className="font-semibold text-brand-deep underline-offset-4 hover:underline">{business.phone}</a>.</p>
             </div>
           </Reveal>
