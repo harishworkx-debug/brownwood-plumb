@@ -45,6 +45,8 @@ function Page() {
         body={
           <>
             <p>Whether your traditional water heater is leaking, or you're ready to upgrade to a high-efficiency tankless system for endless hot water, our experts can help. We also install hot water recirculation pumps so you have instant hot water at every tap, saving time and water.</p>
+
+            <p className="mt-4">From hot water heater repair for traditional units to tankless water heater installation, our team provides comprehensive water heater service. If you have no hot water, a water heater not heating, or a leaking water heater, we can quickly diagnose and perform the necessary water heater replacement or maintenance.</p>
           </>
         }
       />

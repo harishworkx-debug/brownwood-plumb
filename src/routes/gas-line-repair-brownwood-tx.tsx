@@ -41,6 +41,8 @@ function Page() {
         body={
           <>
             <p>Gas line work requires a licensed professional. We take gas safety extremely seriously, offering comprehensive pressure testing, leak detection, and repair services for both natural gas and propane lines.</p>
+
+            <p className="mt-4">Safety is our top priority when it comes to residential gas line repair and gas pipe repair. If you suspect a gas leak, our certified professionals can perform a thorough gas line inspection, gas appliance line repair, and new gas line installation.</p>
           </>
         }
       />

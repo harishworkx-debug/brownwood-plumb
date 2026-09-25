@@ -239,6 +239,50 @@ function Index() {
         </div>
       </Section>
 
+      {/* PLUMBING REPAIR SECTION */}
+      <Section className="bg-surface">
+        <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <Reveal>
+            <div>
+              <SectionEyebrow>Local Plumbing Repair</SectionEyebrow>
+              <h2 className="mt-4 font-display text-3xl font-bold leading-tight md:text-4xl">
+                Plumbing Repair in Brownwood
+              </h2>
+              <p className="mt-5 text-foreground/75 leading-relaxed">
+                When you need <Link to="/residential-plumbing-brownwood-tx" className="font-medium text-brand-deep underline-offset-4 hover:underline">residential plumbing repair</Link>, you want it done right the first time. M. Webb Plumbing Co. handles all types of repairs for homeowners. From <Link to="/piping-and-leaks-brownwood-tx" className="font-medium text-brand-deep underline-offset-4 hover:underline">fixing leaking pipes</Link> and <Link to="/water-heaters-brownwood-tx" className="font-medium text-brand-deep underline-offset-4 hover:underline">water heater issues</Link> to resolving low water pressure and clogged drains, our local plumbing company brings over 35 years of experience to every job.
+              </p>
+              <p className="mt-4 text-foreground/75 leading-relaxed">
+                We understand that dealing with plumbing issues is stressful. That's why we focus on fast response times, honest assessments, and dependable workmanship to get your plumbing system back to normal.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                 <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-sm transition hover:-translate-y-0.5 hover:shadow">
+                  Request a Repair <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </Reveal>
+          <Reveal delay={150}>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                "Water Heater Repair",
+                "Pipe & Leak Repair",
+                "Drain Cleaning",
+                "Toilet & Faucet Repair",
+                "Gas Line Repair",
+                "Sewer Line Repair"
+              ].map((service) => (
+                <div key={service} className="flex items-center gap-3 rounded-2xl border border-border bg-card p-4 shadow-sm">
+                  <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-brand/10 text-brand-deep">
+                    <Wrench className="h-5 w-5" />
+                  </span>
+                  <span className="font-semibold text-foreground/90">{service}</span>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </Section>
+
       {/* WHY CHOOSE US */}
       <Section>
         <Reveal>
@@ -357,7 +401,7 @@ function Index() {
         </div>
       </Section>
 
-      <CTABanner />
+      <CTABanner title="Contact M. Webb Plumbing Co." subtitle="Call now or request an estimate online to get your plumbing issues resolved by local experts." />
       <div className="h-24" />
 
       <JsonLd data={faqSchema(faqs)} />

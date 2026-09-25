@@ -41,6 +41,8 @@ function Page() {
         body={
           <>
             <p>The kitchen and bathroom are the most heavily used plumbing areas in your home. From fixing a running toilet and unjamming a garbage disposal to installing luxurious new shower fixtures, we ensure everything works flawlessly and looks great.</p>
+
+            <p className="mt-4">We specialize in comprehensive kitchen and bathroom plumbing, ensuring your plumbing fixtures operate flawlessly. Our services include sink repair, toilet installation, bathtub plumbing, shower plumbing, and garbage disposal repair for any home renovation or urgent fix.</p>
           </>
         }
       />

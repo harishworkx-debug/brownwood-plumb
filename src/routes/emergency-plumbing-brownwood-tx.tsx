@@ -41,6 +41,8 @@ function Page() {
         body={
           <>
             <p>Plumbing emergencies don't wait for business hours. Call our true 24-hour emergency plumbing service to stop the damage and fix the problem fast. Connecting <strong>Brownwood, Early, Bangs, Lake Brownwood, Zephyr</strong> and all of Brown County.</p>
+
+            <p className="mt-4">Whether you are dealing with a burst pipe, an emergency water leak, or a severe sewer backup, our 24 hour emergency plumber team is ready to respond. We provide urgent plumbing repair and emergency drain service to mitigate damage and restore your plumbing system quickly.</p>
           </>
         }
       />

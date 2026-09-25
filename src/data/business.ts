@@ -67,6 +67,26 @@ export const faqs = [
     category: "Emergency",
   },
   {
+    question: "What should I do during a plumbing emergency?",
+    answer: "The first step during any plumbing emergency is to shut off the main water valve to prevent further flooding or water damage. Once the water is shut off, call an emergency plumber immediately.",
+    category: "Emergency",
+  },
+  {
+    question: "Does M. Webb Plumbing provide residential plumbing?",
+    answer: "Yes, we specialize in residential plumbing services. From routine maintenance, sink repair, and toilet installation to full house pipe repair and plumbing inspections, we handle all homeowner plumbing needs.",
+    category: "Service",
+  },
+  {
+    question: "What are the signs of a failing water heater?",
+    answer: "Signs that you need water heater repair include rusty or discolored water, strange rumbling noises from the tank, leaking around the base, or simply having no hot water. Contact us for a quick diagnosis.",
+    category: "Service",
+  },
+  {
+    question: "How do I know if I have a hidden water leak?",
+    answer: "Unexplained increases in your water bill, damp spots on walls or ceilings, warm spots on your floor (a sign of a slab leak), or a constantly running water meter are strong indicators. We provide professional water leak detection.",
+    category: "Service",
+  },
+  {
     question: "How quickly can a plumber arrive at my home?",
     answer: "We pride ourselves on fast response times. Most emergency calls in Brownwood and surrounding areas are answered the same day, with many serviced within the hour. For scheduled appointments, convenient time windows are often available.",
     category: "Service",

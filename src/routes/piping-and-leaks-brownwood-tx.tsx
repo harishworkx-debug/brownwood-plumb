@@ -41,6 +41,8 @@ function Page() {
         body={
           <>
             <p>Hidden leaks can cause catastrophic damage to your foundation and walls. We use advanced non-invasive leak detection technology to pinpoint leaks without unnecessary destruction. Whether you need a single pipe repaired or an aging plumbing system completely replaced, we deliver permanent solutions.</p>
+
+            <p className="mt-4">Our water leak detection services can pinpoint hidden water leaks and slab leaks before they cause major damage. Once located, we provide expert burst pipe repair, water line repair, and complete pipe replacement in Brownwood to secure your home's water supply lines.</p>
           </>
         }
       />

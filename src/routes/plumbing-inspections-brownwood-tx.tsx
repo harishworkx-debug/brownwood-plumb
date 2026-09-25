@@ -41,6 +41,8 @@ function Page() {
         body={
           <>
             <p>Buying a new home? Want peace of mind before winter? Our thorough plumbing inspections provide a detailed report on the health of your water lines, drains, water heater, and fixtures.</p>
+
+            <p className="mt-4">A thorough residential plumbing inspection can save you thousands in future repairs. Whether you need a plumbing inspection before buying a house, a routine plumbing system inspection, or a specific pipe inspection to check for vulnerabilities, we provide detailed and honest assessments.</p>
           </>
         }
       />

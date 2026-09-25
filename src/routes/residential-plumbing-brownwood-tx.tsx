@@ -41,6 +41,8 @@ function Page() {
         body={
           <>
             <p>Your home's plumbing system is critical to your daily life. We handle everything from a dripping faucet to a complete house repipe with the care and professionalism developed over 35 years of service.</p>
+
+            <p className="mt-4">Our residential plumbing services cover everything from routine toilet repair and faucet installation to complex residential pipe repair and house plumbing repair. We handle all aspects of home plumbing services, including kitchen plumbing, bathroom plumbing, water pressure adjustments, and resolving leaking pipes or clogged drains for homeowners.</p>
           </>
         }
       />

@@ -41,6 +41,8 @@ function Page() {
         body={
           <>
             <p>Hard water is a common problem in Central Texas, leading to scale buildup that destroys water heaters, clogs showerheads, and leaves spots on dishes. We install premium water softening systems that extend the life of your plumbing.</p>
+
+            <p className="mt-4">Protect your plumbing system from hard water plumbing issues with a professional water softener installation. We also provide water softener repair, residential water treatment, and whole-home water filtration system solutions to improve your water quality.</p>
           </>
         }
       />
