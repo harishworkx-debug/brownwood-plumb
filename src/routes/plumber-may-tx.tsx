@@ -66,7 +66,7 @@ const content = areaContent["may-tx"] || defaultContent;
 export const Route = createFileRoute("/plumber-may-tx")({
   head: () => {
     const title = `Plumber in ${area.name} | M. Webb Plumbing Co.`;
-    const desc = `Expert plumbers serving ${area.name}, TX. 35+ years. Residential & 24-hour emergency plumbing company. Fast response, fair prices. Call (325) 641-2662 now.`;
+    const desc = `Expert plumbers serving ${area.name}, TX. 35+ years. Residential & 24-hour emergency plumbing company. Fast response, fair prices. Call (325) 728-4690 now.`;
     return {
       meta: [
         { title },
