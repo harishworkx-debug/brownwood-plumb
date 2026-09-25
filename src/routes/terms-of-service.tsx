@@ -41,7 +41,7 @@ function Page() {
             <Reveal delay={40}>
               <h2 className="font-display text-xl font-bold text-foreground">Services</h2>
               <p className="mt-2">
-                M. Webb Plumbing provides a free service to assist homeowners in providing residential plumbing services to homeowners in Brownwood, TX and surrounding areas. All services are performed by licensed professionals according to applicable building codes and industry standards.
+                M. Webb Plumbing provides residential plumbing services to homeowners in Brownwood, TX and surrounding areas. All services are performed by licensed professionals according to applicable building codes and industry standards.
               </p>
             </Reveal>
 
@@ -76,7 +76,7 @@ function Page() {
             <Reveal delay={240}>
               <h2 className="font-display text-xl font-bold text-foreground">Website Use</h2>
               <p className="mt-2">
-                This website is provided for informational purposes as a services. Content is subject to change without notice. All work is performed by our licensed professionals.
+                This website is provided for informational purposes. Content is subject to change without notice. All work is performed by our licensed professionals.
               </p>
             </Reveal>
 

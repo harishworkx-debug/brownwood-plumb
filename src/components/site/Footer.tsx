@@ -17,7 +17,7 @@ export function Footer() {
             <span className="font-display text-lg font-bold">M. Webb Plumbing Co.</span>
           </div>
           <p className="mt-4 text-sm text-primary-foreground/70">
-            A free service connecting homeowners in Brownwood, TX and surrounding areas with trusted local plumbing professionals.
+            Professional plumbing services in Brownwood, TX and surrounding areas.
           </p>
           <div className="mt-4 inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-2 text-xs font-medium text-white/80">
             <ShieldCheck className="h-4 w-4 text-cta" /> Local Professionals
@@ -79,10 +79,7 @@ export function Footer() {
             <Link to="/privacy-policy" className="hover:text-white transition">Privacy</Link>
             <Link to="/terms-of-service" className="hover:text-white transition">Terms</Link>
           </div>
-          <div className="flex flex-col gap-2 mb-2 text-primary-foreground/50">
-            <p>M. Webb Plumbing is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired provider furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.</p>
-            <p>"24-Hour" or "Same Day" service is dependent on contractor availability and is not guaranteed.</p>
-          </div>
+
           <div className="flex flex-col items-center justify-between gap-2 sm:flex-row">
             <p>© {currentYear} {business.name}. All rights reserved.</p>
             <p>{business.city}, {business.state}</p>
