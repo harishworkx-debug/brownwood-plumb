@@ -11,10 +11,10 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact M. Webb Plumbing | Brownwood, TX" },
-      { name: "description", content: "Contact M. Webb Plumbing to connect with residential and emergency plumbing services in Brownwood, TX. Call today to request an estimate." },
+      { name: "description", content: "Contact M. Webb Plumbing for residential and emergency plumbing services in Brownwood, TX. Call today to request an estimate." },
       { name: "keywords", content: "contact plumber, plumbing quote, brownwood plumber, emergency plumber" },
       { property: "og:title", content: "Contact M. Webb Plumbing | Brownwood, TX" },
-      { property: "og:description", content: "Contact M. Webb Plumbing to connect with residential and emergency plumbing services in Brownwood, TX. Call today to request an estimate." },
+      { property: "og:description", content: "Contact M. Webb Plumbing for residential and emergency plumbing services in Brownwood, TX. Call today to request an estimate." },
       { property: "og:url", content: `${BASE_URL}/contact` },
     ],
     links: [{ rel: "canonical", href: `${BASE_URL}/contact` }],

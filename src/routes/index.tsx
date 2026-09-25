@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { Phone, ShieldCheck, Clock4, Award, Wrench, Star, ArrowRight, CheckCircle2, MapPin, Sparkles } from "lucide-react";
-import { business, services, testimonials, serviceAreas } from "@/data/business";
+import { business, services, testimonials, serviceAreas, faqs } from "@/data/business";
 import { Section, SectionEyebrow } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { Icon } from "@/components/site/Icon";
@@ -13,11 +13,11 @@ import { faqSchema, reviewSchema } from "@/lib/seo";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Plumber in Brownwood, TX | Emergency & Residential Plumbing" },
-      { name: "description", content: "Find residential and 24-hour emergency plumbing connection services in Brownwood, TX. Get connected with trusted local plumbers with over 35 years of experience." },
-      { name: "keywords", content: "plumber brownwood tx, emergency plumbing, residential plumbing, local plumber" },
-      { property: "og:title", content: "Plumber in Brownwood, TX | Emergency & Residential Plumbing" },
-      { property: "og:description", content: "Find residential and 24-hour emergency plumbing connection services in Brownwood, TX. Get connected with trusted local plumbers with over 35 years of experience." },
+      { title: "Plumber in Brownwood, TX | M. Webb Plumbing Co." },
+      { name: "description", content: "Professional local Brownwood plumbing company offering residential plumbing, water heaters, drain & sewer, and leak repair. Trusted since 1990." },
+      { name: "keywords", content: "plumber Brownwood TX, local plumber Brownwood, residential plumbing Brownwood, emergency plumbing Brownwood" },
+      { property: "og:title", content: "Plumber in Brownwood, TX | M. Webb Plumbing Co." },
+      { property: "og:description", content: "Professional local Brownwood plumbing company offering residential plumbing, water heaters, drain & sewer, and leak repair. Trusted since 1990." },
       { property: "og:url", content: "/" },
     ],
     links: [
@@ -34,12 +34,7 @@ const trustBadges = [
   { icon: Wrench, label: "Residential Services" },
 ];
 
-const faqs = [
-  { q: "Do you offer 24-hour emergency plumbing in Brownwood, TX?", a: "Yes. M. Webb Plumbing Co. provides 24-hour on-call emergency plumbing services for burst pipes, major leaks, overflowing fixtures and other urgent issues across Brownwood, Early, Bangs, Lake Brownwood and Zephyr, TX." },
-  { q: "How quickly can a plumber arrive at my home?", a: "Local providers pride themselves on fast response times. Most emergency calls in Brownwood and surrounding areas are answered the same day, with many serviced within the hour." },
-  { q: "Are you licensed and insured?", a: "All local professionals we connect you with are fully licensed and insured for residential plumbing work in Texas." },
-  { q: "How much does a plumbing repair cost?", a: "Pricing depends on the issue. Most contractors give honest, upfront estimates before any work begins — no surprises. Call (325) 728-4690 to request an estimate." },
-];
+
 
 function Index() {
   return (
@@ -53,17 +48,17 @@ function Index() {
           <div>
             <Reveal>
               <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white/85 backdrop-blur">
-                <Sparkles className="h-3.5 w-3.5 text-cta" /> Connecting Brownwood with Trusted Plumbers
+                <Sparkles className="h-3.5 w-3.5 text-cta" /> Professional Plumbing in Brownwood
               </div>
             </Reveal>
             <Reveal delay={80}>
               <h1 className="mt-6 font-display text-5xl font-bold leading-[1.02] tracking-tight md:text-6xl lg:text-7xl">
-                Trusted Plumbing Experts in <span className="text-gradient-brand">Brownwood, TX</span>
+                Plumber in <span className="text-gradient-brand">Brownwood, TX</span> | M. Webb Plumbing Co.
               </h1>
             </Reveal>
             <Reveal delay={160}>
               <p className="mt-6 max-w-xl text-lg text-white/80 md:text-xl">
-                Connect with professional residential plumbing services backed by honest workmanship, fast response, and real local expertise.
+                Professional residential plumbing services backed by honest workmanship, fast response, and real local expertise since 1990.
               </p>
             </Reveal>
             <Reveal delay={240}>
@@ -111,15 +106,15 @@ function Index() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <Reveal>
             <div>
-              <SectionEyebrow>About Our Connection Service</SectionEyebrow>
+              <SectionEyebrow>About M. Webb Plumbing Co.</SectionEyebrow>
               <h2 className="mt-4 font-display text-3xl font-bold leading-tight md:text-4xl">
-                Honest workmanship, fast response, and three decades of local know-how.
+                Honest workmanship, fast response, and decades of local know-how.
               </h2>
               <p className="mt-5 text-foreground/75">
-                M. Webb Plumbing is a free service to assist homeowners in connecting with local service providers in Brownwood, Texas. We help you find trusted local plumbers who have a reputation across Brown County for doing the job right the first time — at a fair price, with respect for your home.
+                M. Webb Plumbing Co. has been a trusted service provider in Brownwood, Texas since 1990. We are dedicated to doing the job right the first time — at a fair price, with respect for your home.
               </p>
               <p className="mt-4 text-foreground/75">
-                From a leaky faucet to a full plumbing system replacement, we connect you with professionals who provide straightforward advice, clean workmanship and reliable follow-through.
+                From a leaky faucet to a full plumbing system replacement, our professionals provide straightforward advice, clean workmanship, and reliable follow-through.
               </p>
               <div className="mt-6 grid grid-cols-3 gap-4">
                 {[
@@ -148,10 +143,10 @@ function Index() {
               <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-brand/20 to-cta/20 blur-2xl" />
               <div className="relative grid gap-4 sm:grid-cols-2">
                 {[
-                  { icon: ShieldCheck, t: "Licensed & Insured", d: "Connect with fully licensed plumbers serving Brown County, TX." },
+                  { icon: ShieldCheck, t: "Licensed & Insured", d: "Fully licensed plumbers serving Brown County, TX." },
                   { icon: Clock4, t: "Fast Response", d: "Same-day appointments and 24-hour emergency calls." },
                   { icon: Award, t: "Quality Workmanship", d: "Done right the first time by experienced professionals." },
-                  { icon: MapPin, t: "Locally Trusted", d: "Connecting you with reliable plumbers rooted in the Brownwood community." },
+                  { icon: MapPin, t: "Locally Trusted", d: "Reliable plumbers rooted in the Brownwood community since 1990." },
                 ].map((c, i) => (
                   <div key={c.t} className={`rounded-2xl border border-border bg-card p-5 shadow-elegant ${i % 2 ? "translate-y-6" : ""}`}>
                     <span className="grid h-10 w-10 place-items-center rounded-lg bg-brand/10 text-brand-deep">
@@ -172,8 +167,8 @@ function Index() {
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
             <SectionEyebrow>Plumbing Services</SectionEyebrow>
-            <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Full-service plumbing for homes</h2>
-            <p className="mt-4 text-foreground/70">From small repairs to full system replacements, get connected with professionals for every plumbing need across Brownwood and surrounding areas.</p>
+            <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Plumbing Services in Brownwood, TX</h2>
+            <p className="mt-4 text-foreground/70">From small repairs to full system replacements, we provide professional solutions for every plumbing need across Brownwood and surrounding areas.</p>
           </div>
         </Reveal>
 
@@ -211,7 +206,7 @@ function Index() {
               </div>
               <h2 className="mt-5 font-display text-3xl font-bold md:text-5xl">24-Hour Emergency Plumber in Brownwood, TX</h2>
               <p className="mt-4 max-w-xl text-white/75">
-                Burst pipe at 2 AM? Water gushing into your kitchen? Don't wait — every minute of an active leak means more damage. We connect you with on-call plumbers around the clock for urgent plumbing emergencies across Brown County.
+                Burst pipe at 2 AM? Water gushing into your kitchen? Don't wait — every minute of an active leak means more damage. We provide on-call emergency plumbers around the clock for urgent plumbing emergencies across Brown County.
               </p>
               <ul className="mt-6 grid gap-2 sm:grid-cols-2">
                 {["Burst pipes & flooding","Major water leaks","Water line emergencies","Overflowing fixtures","Sewer & drain backups","Urgent plumbing repairs"].map((t) => (
@@ -248,16 +243,16 @@ function Index() {
       <Section>
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
-            <SectionEyebrow>Why Choose Us</SectionEyebrow>
-            <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Connecting Brownwood with trusted plumbers</h2>
+            <SectionEyebrow>Why Choose M. Webb Plumbing Co.</SectionEyebrow>
+            <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Professional plumbing you can trust</h2>
           </div>
         </Reveal>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {[
             { icon: Award, t: "Experienced Professionals", d: "Decades of real-world plumbing knowledge applied to every call." },
             { icon: Clock4, t: "Fast Response Times", d: "Same-day service and a true 24-hour emergency line." },
-            { icon: MapPin, t: "Locally Trusted", d: "Connecting you with reliable plumbers in the Brownwood community." },
-            { icon: Wrench, t: "Residential Experts", d: "From small homes to large estates, we can connect you." },
+            { icon: MapPin, t: "Locally Trusted", d: "Reliable plumbers rooted in the Brownwood community." },
+            { icon: Wrench, t: "Residential Experts", d: "From small homes to large estates, we handle it all." },
             { icon: ShieldCheck, t: "Quality Workmanship", d: "Done right the first time by dedicated professionals." },
             { icon: Phone, t: "Emergency Service Available", d: "24-hour on-call plumbing when you need us most." },
           ].map((c, i) => (
@@ -351,10 +346,10 @@ function Index() {
               {faqs.map((f, i) => (
                 <details key={i} className="group rounded-2xl border border-border bg-card p-5 open:shadow-elegant">
                   <summary className="flex cursor-pointer items-center justify-between font-display text-base font-semibold">
-                    {f.q}
-                    <span className="ml-4 grid h-7 w-7 place-items-center rounded-full bg-secondary text-foreground transition group-open:rotate-45 group-open:bg-cta group-open:text-cta-foreground">+</span>
+                    {f.question}
+                    <span className="ml-4 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-secondary text-foreground transition group-open:rotate-45 group-open:bg-cta group-open:text-cta-foreground">+</span>
                   </summary>
-                  <p className="mt-3 text-sm leading-relaxed text-foreground/75">{f.a}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-foreground/75">{f.answer}</p>
                 </details>
               ))}
             </div>

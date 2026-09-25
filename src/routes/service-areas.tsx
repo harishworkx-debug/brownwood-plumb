@@ -60,7 +60,7 @@ function Page() {
                   Plumber in {a.name}
                 </h3>
                 <p className="mt-2 text-sm text-foreground/70">
-                  {a.description || `Residential and 24-hour emergency plumbing connection services in ${a.name}.`}
+                  {a.description || `Residential and 24-hour emergency plumbing companys in ${a.name}.`}
                 </p>
                 <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep">
                   View area <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />

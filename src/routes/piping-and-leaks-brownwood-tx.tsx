@@ -17,9 +17,9 @@ const faqs = [
 export const Route = createFileRoute("/piping-and-leaks-brownwood-tx")({
   head: () => ({
     meta: [
-      { title: "Leak Detection & Pipe Repair | M. Webb Plumbing" },
+      { title: "Leak Detection & Pipe Repair in Brownwood, TX | M. Webb Plumbing Co." },
       { name: "description", content: "Fast, accurate leak detection, pipe repair, and full plumbing system replacements to protect your home from water damage." },
-      { property: "og:title", content: "Leak Detection & Pipe Repair | M. Webb Plumbing" },
+      { property: "og:title", content: "Leak Detection & Pipe Repair in Brownwood, TX | M. Webb Plumbing Co." },
       { property: "og:description", content: "Fast, accurate leak detection, pipe repair, and full plumbing system replacements to protect your home from water damage." },
       { property: "og:url", content: `${BASE_URL}/piping-and-leaks-brownwood-tx` },
     ],
@@ -33,7 +33,7 @@ function Page() {
     <>
       <ServicePageShell
         eyebrow="Piping & Leaks"
-        title="Leak Detection & Pipe Repair"
+        title="Leak Detection & Pipe Repair in Brownwood, TX"
         icon="Droplets"
         serviceName="Piping & Leaks"
         intro="Fast, accurate leak detection, pipe repair, and full plumbing system replacements to protect your home from water damage."
@@ -44,7 +44,7 @@ function Page() {
           </>
         }
       />
-      <CTABanner title="Need piping & leaks?" subtitle="Get it handled today. Same-day appointments available." />
+      <CTABanner title="Leak Detection & Pipe Repair in Brownwood, TX" subtitle="Leak Detection & Pipe Repair in Brownwood, TX" />
       <div className="h-24" />
       <JsonLd data={faqSchema(faqs.map(f => ({ q: f.q, a: f.a })))} />
     </>

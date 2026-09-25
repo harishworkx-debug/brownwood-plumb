@@ -65,8 +65,8 @@ const content = areaContent["rising-star-tx"] || defaultContent;
 
 export const Route = createFileRoute("/plumber-rising-star-tx")({
   head: () => {
-    const title = `Plumber in ${area.name} | Emergency & Residential | M. Webb`;
-    const desc = `Expert plumbers serving ${area.name}, TX. 35+ years. Residential & 24-hour emergency plumbing connection service. Fast response, fair prices. Call (325) 728-4690 now.`;
+    const title = `Plumber in ${area.name} | M. Webb Plumbing Co.`;
+    const desc = `Expert plumbers serving ${area.name}, TX. 35+ years. Residential & 24-hour emergency plumbing company. Fast response, fair prices. Call (325) 728-4690 now.`;
     return {
       meta: [
         { title },

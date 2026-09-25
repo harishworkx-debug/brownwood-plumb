@@ -17,9 +17,9 @@ const faqs = [
 export const Route = createFileRoute("/plumbing-inspections-brownwood-tx")({
   head: () => ({
     meta: [
-      { title: "Professional Plumbing Inspections | M. Webb Plumbing" },
+      { title: "Plumbing Inspections in Brownwood, TX | M. Webb Plumbing Co." },
       { name: "description", content: "Comprehensive pre-purchase and preventive plumbing inspections to catch problems before they become disasters." },
-      { property: "og:title", content: "Professional Plumbing Inspections | M. Webb Plumbing" },
+      { property: "og:title", content: "Plumbing Inspections in Brownwood, TX | M. Webb Plumbing Co." },
       { property: "og:description", content: "Comprehensive pre-purchase and preventive plumbing inspections to catch problems before they become disasters." },
       { property: "og:url", content: `${BASE_URL}/plumbing-inspections-brownwood-tx` },
     ],
@@ -33,7 +33,7 @@ function Page() {
     <>
       <ServicePageShell
         eyebrow="Inspections"
-        title="Professional Plumbing Inspections"
+        title="Plumbing Inspections in Brownwood, TX"
         icon="ClipboardCheck"
         serviceName="Plumbing Inspections"
         intro="Comprehensive pre-purchase and preventive plumbing inspections to catch problems before they become disasters."
@@ -44,7 +44,7 @@ function Page() {
           </>
         }
       />
-      <CTABanner title="Need plumbing inspections?" subtitle="Get it handled today. Same-day appointments available." />
+      <CTABanner title="Plumbing Inspections in Brownwood, TX" subtitle="Plumbing Inspections in Brownwood, TX" />
       <div className="h-24" />
       <JsonLd data={faqSchema(faqs.map(f => ({ q: f.q, a: f.a })))} />
     </>

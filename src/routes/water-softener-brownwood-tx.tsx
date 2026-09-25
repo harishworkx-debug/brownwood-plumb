@@ -17,9 +17,9 @@ const faqs = [
 export const Route = createFileRoute("/water-softener-brownwood-tx")({
   head: () => ({
     meta: [
-      { title: "Water Softener Installation | M. Webb Plumbing" },
+      { title: "Water Softeners in Brownwood, TX | M. Webb Plumbing Co." },
       { name: "description", content: "Protect your pipes, appliances, and skin with professional water softener installation and service." },
-      { property: "og:title", content: "Water Softener Installation | M. Webb Plumbing" },
+      { property: "og:title", content: "Water Softeners in Brownwood, TX | M. Webb Plumbing Co." },
       { property: "og:description", content: "Protect your pipes, appliances, and skin with professional water softener installation and service." },
       { property: "og:url", content: `${BASE_URL}/water-softener-brownwood-tx` },
     ],
@@ -33,7 +33,7 @@ function Page() {
     <>
       <ServicePageShell
         eyebrow="Water Quality"
-        title="Water Softener Installation"
+        title="Water Softeners in Brownwood, TX"
         icon="Droplet"
         serviceName="Water Softeners"
         intro="Protect your pipes, appliances, and skin with professional water softener installation and service."
@@ -44,7 +44,7 @@ function Page() {
           </>
         }
       />
-      <CTABanner title="Need water softeners?" subtitle="Get it handled today. Same-day appointments available." />
+      <CTABanner title="Water Softeners in Brownwood, TX" subtitle="Water Softeners in Brownwood, TX" />
       <div className="h-24" />
       <JsonLd data={faqSchema(faqs.map(f => ({ q: f.q, a: f.a })))} />
     </>

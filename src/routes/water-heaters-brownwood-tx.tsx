@@ -21,9 +21,9 @@ const faqs = [
 export const Route = createFileRoute("/water-heaters-brownwood-tx")({
   head: () => ({
     meta: [
-      { title: "Water Heater Repair & Installation | M. Webb Plumbing" },
+      { title: "Water Heater Repair in Brownwood, TX | M. Webb Plumbing Co." },
       { name: "description", content: "Never run out of hot water again. We offer comprehensive water heater repair, tankless upgrades, and recirculation pump installations." },
-      { property: "og:title", content: "Water Heater Repair & Installation | M. Webb Plumbing" },
+      { property: "og:title", content: "Water Heater Repair in Brownwood, TX | M. Webb Plumbing Co." },
       { property: "og:description", content: "Never run out of hot water again. We offer comprehensive water heater repair, tankless upgrades, and recirculation pump installations." },
       { property: "og:url", content: `${BASE_URL}/water-heaters-brownwood-tx` },
     ],
@@ -37,7 +37,7 @@ function Page() {
     <>
       <ServicePageShell
         eyebrow="Water Heaters"
-        title="Water Heater Repair & Installation"
+        title="Water Heater Repair in Brownwood, TX"
         icon="Flame"
         serviceName="Water Heaters"
         intro="Never run out of hot water again. We offer comprehensive water heater repair, tankless upgrades, and recirculation pump installations."
@@ -48,7 +48,7 @@ function Page() {
           </>
         }
       />
-      <CTABanner title="Need water heaters?" subtitle="Get it handled today. Same-day appointments available." />
+      <CTABanner title="Water Heater Repair in Brownwood, TX" subtitle="Water Heater Repair in Brownwood, TX" />
       <div className="h-24" />
       <JsonLd data={faqSchema(faqs.map(f => ({ q: f.q, a: f.a })))} />
     </>

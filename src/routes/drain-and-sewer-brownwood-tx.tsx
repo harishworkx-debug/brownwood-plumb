@@ -17,9 +17,9 @@ const faqs = [
 export const Route = createFileRoute("/drain-and-sewer-brownwood-tx")({
   head: () => ({
     meta: [
-      { title: "Drain Cleaning & Sewer Repair | M. Webb Plumbing" },
+      { title: "Drain & Sewer Services in Brownwood, TX | M. Webb Plumbing Co." },
       { name: "description", content: "Complete drain and sewer solutions including professional drain cleaning, high-tech camera inspections, and sewer line repairs." },
-      { property: "og:title", content: "Drain Cleaning & Sewer Repair | M. Webb Plumbing" },
+      { property: "og:title", content: "Drain & Sewer Services in Brownwood, TX | M. Webb Plumbing Co." },
       { property: "og:description", content: "Complete drain and sewer solutions including professional drain cleaning, high-tech camera inspections, and sewer line repairs." },
       { property: "og:url", content: `${BASE_URL}/drain-and-sewer-brownwood-tx` },
     ],
@@ -33,7 +33,7 @@ function Page() {
     <>
       <ServicePageShell
         eyebrow="Drain & Sewer"
-        title="Drain Cleaning & Sewer Repair"
+        title="Drain & Sewer Services in Brownwood, TX"
         icon="Drill"
         serviceName="Drain & Sewer Services"
         intro="Complete drain and sewer solutions including professional drain cleaning, high-tech camera inspections, and sewer line repairs."
@@ -44,7 +44,7 @@ function Page() {
           </>
         }
       />
-      <CTABanner title="Need drain & sewer services?" subtitle="Get it handled today. Same-day appointments available." />
+      <CTABanner title="Drain & Sewer Services in Brownwood, TX" subtitle="Drain & Sewer Services in Brownwood, TX" />
       <div className="h-24" />
       <JsonLd data={faqSchema(faqs.map(f => ({ q: f.q, a: f.a })))} />
     </>

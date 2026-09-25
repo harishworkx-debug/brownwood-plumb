@@ -17,9 +17,9 @@ const faqs = [
 export const Route = createFileRoute("/kitchen-and-bathroom-brownwood-tx")({
   head: () => ({
     meta: [
-      { title: "Kitchen & Bathroom Plumbing | M. Webb Plumbing" },
+      { title: "Kitchen & Bathroom Plumbing in Brownwood, TX | M. Webb Plumbing Co." },
       { name: "description", content: "Expert repairs and installations for faucets, toilets, garbage disposals, and all kitchen and bathroom fixtures." },
-      { property: "og:title", content: "Kitchen & Bathroom Plumbing | M. Webb Plumbing" },
+      { property: "og:title", content: "Kitchen & Bathroom Plumbing in Brownwood, TX | M. Webb Plumbing Co." },
       { property: "og:description", content: "Expert repairs and installations for faucets, toilets, garbage disposals, and all kitchen and bathroom fixtures." },
       { property: "og:url", content: `${BASE_URL}/kitchen-and-bathroom-brownwood-tx` },
     ],
@@ -33,7 +33,7 @@ function Page() {
     <>
       <ServicePageShell
         eyebrow="Kitchen & Bath"
-        title="Kitchen & Bathroom Plumbing"
+        title="Kitchen & Bathroom Plumbing in Brownwood, TX"
         icon="Bath"
         serviceName="Kitchen & Bathroom Plumbing"
         intro="Expert repairs and installations for faucets, toilets, garbage disposals, and all kitchen and bathroom fixtures."
@@ -44,7 +44,7 @@ function Page() {
           </>
         }
       />
-      <CTABanner title="Need kitchen & bathroom plumbing?" subtitle="Get it handled today. Same-day appointments available." />
+      <CTABanner title="Kitchen & Bathroom Plumbing in Brownwood, TX" subtitle="Kitchen & Bathroom Plumbing in Brownwood, TX" />
       <div className="h-24" />
       <JsonLd data={faqSchema(faqs.map(f => ({ q: f.q, a: f.a })))} />
     </>

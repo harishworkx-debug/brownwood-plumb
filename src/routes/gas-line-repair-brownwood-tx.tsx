@@ -17,9 +17,9 @@ const faqs = [
 export const Route = createFileRoute("/gas-line-repair-brownwood-tx")({
   head: () => ({
     meta: [
-      { title: "Gas Line Repair & Installation | M. Webb Plumbing" },
+      { title: "Gas Line Repair in Brownwood, TX | M. Webb Plumbing Co." },
       { name: "description", content: "Licensed, safe, and professional gas line leak detection, repair, and new line installations." },
-      { property: "og:title", content: "Gas Line Repair & Installation | M. Webb Plumbing" },
+      { property: "og:title", content: "Gas Line Repair in Brownwood, TX | M. Webb Plumbing Co." },
       { property: "og:description", content: "Licensed, safe, and professional gas line leak detection, repair, and new line installations." },
       { property: "og:url", content: `${BASE_URL}/gas-line-repair-brownwood-tx` },
     ],
@@ -33,7 +33,7 @@ function Page() {
     <>
       <ServicePageShell
         eyebrow="Gas Lines"
-        title="Gas Line Repair & Installation"
+        title="Gas Line Repair in Brownwood, TX"
         icon="AlertTriangle"
         serviceName="Gas Line Repair"
         intro="Licensed, safe, and professional gas line leak detection, repair, and new line installations."
@@ -44,7 +44,7 @@ function Page() {
           </>
         }
       />
-      <CTABanner title="Need gas line repair?" subtitle="Get it handled today. Same-day appointments available." />
+      <CTABanner title="Gas Line Repair in Brownwood, TX" subtitle="Gas Line Repair in Brownwood, TX" />
       <div className="h-24" />
       <JsonLd data={faqSchema(faqs.map(f => ({ q: f.q, a: f.a })))} />
     </>
