@@ -13,24 +13,24 @@ const BASE_URL = `https://${business.website}`;
 
 const areaContent: Record<string, { intro: string; long: string }> = {
   "brownwood-tx": {
-    intro: "M. Webb Plumbing Co. is headquartered in Brownwood and has been connecting families to local plumbers for over 35 years.",
-    long: "As your hometown plumber connection service, we know Brownwood's older neighborhoods, newer developments, and everything in between. We've helped connect homeowners for practically every type of residential property in the city. When you call, you get connected with a true local — same-day service whenever possible, fair pricing, and work that holds up.",
+    intro: "M. Webb Plumbing Co. is headquartered in Brownwood and has been the trusted local plumber for over 35 years.",
+    long: "As your hometown plumbing company, we know Brownwood's older neighborhoods, newer developments, and everything in between. We've worked on practically every type of residential property in the city. When you call, you get a true local — same-day service whenever possible, fair pricing, and work that holds up.",
   },
   "early-tx": {
-    intro: "Early is right next door, and we treat it like our own backyard. Connect with trusted residential plumbing services throughout Early, TX.",
-    long: "We help connect homes across Early, TX with quality plumbers. Whether you need a fast emergency response, a faucet replaced, or a full plumbing system upgrade, local professionals are just minutes away.",
+    intro: "Early is right next door, and we treat it like our own backyard. Trusted residential plumbing services throughout Early, TX.",
+    long: "We provide homes across Early, TX with quality plumbing services. Whether you need a fast emergency response, a faucet replaced, or a full plumbing system upgrade, our professionals are just minutes away.",
   },
   "bangs-tx": {
     intro: "Reliable plumbing service for Bangs, TX homeowners — fast response, fair prices, real local experience.",
-    long: "Bangs deserves a plumber who actually shows up. We connect Bangs and the surrounding Brown County communities with honest workmanship from experienced local plumbers.",
+    long: "Bangs deserves a plumber who actually shows up. We provide Bangs and the surrounding Brown County communities with honest workmanship and experienced local plumbers.",
   },
   "lake-brownwood-tx": {
     intro: "Lake Brownwood properties come with their own plumbing challenges — long supply lines, well systems, lake homes. We know them all.",
     long: "From year-round residences to weekend lake houses, Lake Brownwood properties often need a plumber who understands their unique systems. We service the entire Lake Brownwood area with everything from routine repairs to full system replacements.",
   },
   "zephyr-tx": {
-    intro: "Zephyr, TX residents trust M. Webb Plumbing to connect them with prompt, professional plumbing service for rural or residential properties.",
-    long: "Out in Zephyr, having a plumber willing to come to you matters. We proudly connect Zephyr homes and properties with the full range of plumbing services — including 24-hour emergency response when you really need it.",
+    intro: "Zephyr, TX residents trust M. Webb Plumbing Co. for prompt, professional plumbing service for rural or residential properties.",
+    long: "Out in Zephyr, having a plumber willing to come to you matters. We proudly provide Zephyr homes and properties with the full range of plumbing services — including 24-hour emergency response when you really need it.",
   },
   "blanket-tx": {
     intro: "Blanket, TX homeowners receive the same reliable plumbing service we've provided across Brown County for over 35 years.",
@@ -38,7 +38,7 @@ const areaContent: Record<string, { intro: string; long: string }> = {
   },
   "may-tx": {
     intro: "Serving May, TX with professional plumbing services and emergency response for homes.",
-    long: "We connect the May area with experienced plumbers for everything from fixing drips and clearing drains to full system installations. We understand rural Texas properties and provide dependable residential plumbing solutions.",
+    long: "We provide the May area with experienced plumbers for everything from fixing drips and clearing drains to full system installations. We understand rural Texas properties and provide dependable residential plumbing solutions.",
   },
   "brookesmith-tx": {
     intro: "Brookesmith, TX receives dedicated plumbing support from M. Webb Plumbing Co.'s experienced team.",
@@ -46,11 +46,11 @@ const areaContent: Record<string, { intro: string; long: string }> = {
   },
   "comanche-tx": {
     intro: "Comanche, TX residents receive trusted plumbing services from the team that's served Central Texas for over 35 years.",
-    long: "We connect Comanche County with quality workmanship and honest service for Central Texas homes. From water heater repairs to emergency plumbing, find professionals when you need them.",
+    long: "We provide Comanche County with quality workmanship and honest service for Central Texas homes. From water heater repairs to emergency plumbing, find professionals when you need them.",
   },
   "coleman-tx": {
     intro: "Coleman, TX homeowners get reliable plumbing service from professionals with 35+ years of experience.",
-    long: "Serving Coleman County, we connect you with residential plumbing experts who bring care and professionalism to every job. Emergency service, repairs, and installations are all part of what they do.",
+    long: "Serving Coleman County, we are residential plumbing experts who bring care and professionalism to every job. Emergency service, repairs, and installations are all part of what we do.",
   },
   "santa-anna-tx": {
     intro: "Santa Anna, TX residents receive trusted plumbing services from the team that's served Central Texas for over 35 years.",
@@ -63,8 +63,8 @@ const areaContent: Record<string, { intro: string; long: string }> = {
 };
 
 const defaultContent = {
-  intro: "Trusted plumbing services for homes from M. Webb Plumbing — connecting Central Texas to experts for over 35 years.",
-  long: "We're proud to connect professional plumbing services throughout Central Texas. Whether you need emergency repairs, routine maintenance, or new installations, we find you an experienced team that brings quality workmanship and fair pricing to every job.",
+  intro: "Trusted plumbing services for homes from M. Webb Plumbing Co. — serving Central Texas with expertise for over 35 years.",
+  long: "We're proud to provide professional plumbing services throughout Central Texas. Whether you need emergency repairs, routine maintenance, or new installations, we bring quality workmanship and fair pricing to every job.",
 };
 
 export function AreaPageShell({ area, content }: { area: any, content: any }) {
@@ -87,7 +87,7 @@ export function AreaPageShell({ area, content }: { area: any, content: any }) {
             <Reveal delay={240}>
               <div className="mt-7 flex flex-wrap gap-3">
                 <a href={`tel:${business.phoneRaw}`} className="inline-flex items-center gap-2 rounded-full bg-cta px-5 py-3 text-sm font-semibold text-cta-foreground shadow-cta"><Phone className="h-4 w-4" /> Call {business.phone}</a>
-                <Link to="/contact" className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/15">Get Connected <ArrowRight className="h-4 w-4" /></Link>
+                <Link to="/contact" className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/15">Request Service <ArrowRight className="h-4 w-4" /></Link>
               </div>
             </Reveal>
           </div>
@@ -133,7 +133,7 @@ export function AreaPageShell({ area, content }: { area: any, content: any }) {
         </div>
       </Section>
 
-      <CTABanner title={`Need a plumber in ${area.name}?`} subtitle="We connect you with local, fast, and easy-to-reach plumbers. Call now or request an estimate." />
+      <CTABanner title={`Need a plumber in ${area.name}?`} subtitle="Local, fast, and easy-to-reach plumbers. Call now or request an estimate." />
       <div className="h-24" />
       <JsonLd data={locationBusinessSchema(area.name, "lat" in area ? area.lat : 31.702854, "lat" in area ? area.lng : -98.990455)} />
     </>
