@@ -23,7 +23,7 @@ const additionalFaqs = [
   },
   {
     question: "What should I do during a plumbing emergency?",
-    answer: "First, shut off the main water valve to your home (usually located near the street or in a utility area). This stops water flow and limits damage. Turn off your water heater to prevent damage. Move valuables away from water. Then call us at (325) 728-4690 — we have a 24-hour emergency line.",
+    answer: "First, shut off the main water valve to your home (usually located near the street or in a utility area). This stops water flow and limits damage. Turn off your water heater to prevent damage. Move valuables away from water. Then call us at (325) 641-2662 — we have a 24-hour emergency line.",
     category: "Emergency",
   },
   {
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
       { title: "Plumbing FAQ | Brownwood TX | M. Webb Plumbing" },
-      { name: "description", content: "Answers to common plumbing questions about emergency service, pricing, warranties, service areas, and more. Serving Brownwood, TX and Brown County. Call (325) 728-4690." },
+      { name: "description", content: "Answers to common plumbing questions about emergency service, pricing, warranties, service areas, and more. Serving Brownwood, TX and Brown County. Call (325) 641-2662." },
       { property: "og:title", content: "Plumbing FAQ | Brownwood TX | M. Webb Plumbing" },
       { property: "og:description", content: "Get answers to frequently asked plumbing questions. Serving Brownwood and Brown County, TX." },
       { property: "og:url", content: `${BASE_URL}/faq` },

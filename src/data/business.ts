@@ -8,7 +8,7 @@ export const business = {
   city: "Brownwood",
   state: "TX",
   zip: "76801",
-  phone: "(325) 728-4690",
+  phone: "(325) 641-2662",
   phoneRaw: "+13256412662",
   email: "webbplumbing@verizon.net",
   website: "www.mwebbplumbingco.com",
@@ -63,7 +63,7 @@ export const testimonials = [
 export const faqs = [
   {
     question: "Do you offer 24-hour emergency plumbing in Brownwood, TX?",
-    answer: "Yes. We provide 24-hour emergency plumbing services for burst pipes, major leaks, overflowing fixtures and other urgent issues across Brownwood, Early, Bangs, Lake Brownwood, Zephyr and all of Brown County, TX. Call (325) 728-4690 anytime.",
+    answer: "Yes. We provide 24-hour emergency plumbing services for burst pipes, major leaks, overflowing fixtures and other urgent issues across Brownwood, Early, Bangs, Lake Brownwood, Zephyr and all of Brown County, TX. Call (325) 641-2662 anytime.",
     category: "Emergency",
   },
   {
@@ -98,12 +98,12 @@ export const faqs = [
   },
   {
     question: "How much does a plumbing repair cost?",
-    answer: "Pricing depends on the type of plumbing problem, materials, accessibility, and work required. We give honest, upfront estimates before any work begins — no surprises. Call (325) 728-4690 to request an assessment.",
+    answer: "Pricing depends on the type of plumbing problem, materials, accessibility, and work required. We give honest, upfront estimates before any work begins — no surprises. Call (325) 641-2662 to request an assessment.",
     category: "Pricing",
   },
   {
     question: "What areas do you serve?",
-    answer: "We proudly serve Brownwood, Early, Bangs, Lake Brownwood, Zephyr, Blanket, May, Brookesmith, Comanche, Coleman, and surrounding communities. If you're unsure if we are available in your area, give us a call at (325) 728-4690.",
+    answer: "We proudly serve Brownwood, Early, Bangs, Lake Brownwood, Zephyr, Blanket, May, Brookesmith, Comanche, Coleman, and surrounding communities. If you're unsure if we are available in your area, give us a call at (325) 641-2662.",
     category: "Service Areas",
   },
   {
