@@ -5,10 +5,10 @@ const srcDir = path.join(process.cwd(), "src");
 
 function processFile(filePath) {
   let content = fs.readFileSync(filePath, "utf-8");
-  if (content.includes("(325) 728-4690") || content.includes("325-728-4690") || content.includes("+13257284690")) {
-    content = content.replace(/\(325\) 728-4690/g, "(325) 728-4690");
-    content = content.replace(/325-728-4690/g, "325-641-2662");
-    content = content.replace(/\+13257284690/g, "+13257284690");
+  if (content.includes("(855) 321-3189") || content.includes("855-321-3189") || content.includes("+18553213189")) {
+    content = content.replace(/\(325\) 728-4690/g, "(855) 321-3189");
+    content = content.replace(/855-321-3189/g, "325-641-2662");
+    content = content.replace(/\+18553213189/g, "+18553213189");
     fs.writeFileSync(filePath, content, "utf-8");
     console.log(`Updated phone number in ${path.basename(filePath)}`);
   }

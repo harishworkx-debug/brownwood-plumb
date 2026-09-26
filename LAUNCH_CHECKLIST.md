@@ -16,7 +16,7 @@
 
 ### 📞 Lead Capture Setup
 - [x] **Floating CTA** - Always visible on mobile & desktop
-- [x] **Call Button** - (325) 728-4690 clickable everywhere
+- [x] **Call Button** - (855) 321-3189 clickable everywhere
 - [x] **Quote Form** - Captures: Name, Phone, Email, Service, Message
 - [x] **Direct Links** - Service areas now have clickable location names
 - [x] **Call-to-Action** - "Free Estimate" & "Call Now" on every page
@@ -37,7 +37,7 @@
 - [x] **Fast Load Times** - Optimized assets and lazy loading
 
 ### 📊 Analytics Ready
-- [x] **Phone Numbers Tracked** - (325) 728-4690 is clickable and trackable
+- [x] **Phone Numbers Tracked** - (855) 321-3189 is clickable and trackable
 - [x] **Form Setup** - Ready to capture leads (need backend integration)
 - [x] **Google Analytics** - Can be integrated (add GA4 code to __root.tsx)
 - [x] **Search Console** - Add domain for keyword tracking

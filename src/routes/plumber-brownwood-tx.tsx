@@ -66,7 +66,7 @@ const content = areaContent["brownwood-tx"] || defaultContent;
 export const Route = createFileRoute("/plumber-brownwood-tx")({
   head: () => {
     const title = `Plumber in ${area.name} | M. Webb Plumbing Co.`;
-    const desc = `Expert plumbers serving ${area.name}, TX. 35+ years. Residential & 24-hour emergency plumbing company. Fast response, fair prices. Call (325) 728-4690 now.`;
+    const desc = `Expert plumbers serving ${area.name}, TX. 35+ years. Residential & 24-hour emergency plumbing company. Fast response, fair prices. Call (855) 321-3189 now.`;
     return {
       meta: [
         { title },
