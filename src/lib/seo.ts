@@ -204,7 +204,7 @@ export function faqSchema(faqs: { q: string; a: string }[]) {
   };
 }
 
-export function reviewSchema(reviews: { name: string; rating: number; text: string }[]) {
+export function reviewSchema(reviews: { name: string; rating: number; text: string; date?: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -212,8 +212,8 @@ export function reviewSchema(reviews: { name: string; rating: number; text: stri
     name: business.name,
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "5",
-      reviewCount: String(reviews.length * 10),
+      ratingValue: "5.0",
+      reviewCount: String(reviews.length),
       bestRating: "5",
       worstRating: "1",
     },
@@ -224,7 +224,7 @@ export function reviewSchema(reviews: { name: string; rating: number; text: stri
         "@type": "Person",
         name: r.name,
       },
-      datePublished: new Date().toISOString().split("T")[0],
+      datePublished: r.date || "2024-12-01",
       reviewRating: {
         "@type": "Rating",
         ratingValue: String(r.rating),

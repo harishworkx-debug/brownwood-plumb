@@ -3,7 +3,6 @@ import { Link } from "@tanstack/react-router";
 import { Phone, CheckCircle2, ArrowRight } from "lucide-react";
 import { business } from "@/data/business";
 import { Section, SectionEyebrow } from "./Section";
-import { QuoteForm } from "./QuoteForm";
 import { Reveal } from "./Reveal";
 import { Icon } from "./Icon";
 
@@ -15,6 +14,7 @@ export function ServicePageShell({
   bullets,
   body,
   serviceName,
+  sectionHeading,
 }: {
   eyebrow: string;
   title: string;
@@ -23,6 +23,7 @@ export function ServicePageShell({
   bullets: string[];
   body: ReactNode;
   serviceName: string;
+  sectionHeading?: string;
 }) {
   return (
     <>
@@ -39,10 +40,9 @@ export function ServicePageShell({
             <Reveal delay={80}>
               <h1 className="mt-5 text-4xl font-bold leading-[1.05] md:text-5xl lg:text-6xl">
                 <span className="inline-flex items-center gap-3">
-                  <Icon name={icon} className="h-10 w-10 text-cta" />
+                  <Icon name={icon} className="h-10 w-10 flex-none text-cta" />
                   {title}
                 </span>
-                <span className="mt-2 block text-base font-medium uppercase tracking-[0.18em] text-white/60">in Brownwood, TX</span>
               </h1>
             </Reveal>
             <Reveal delay={160}>
@@ -63,18 +63,43 @@ export function ServicePageShell({
                   <Phone className="h-4 w-4" /> Call {business.phone}
                 </a>
                 <Link to="/contact" className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/15">
-                  Get Free Estimate <ArrowRight className="h-4 w-4" />
+                  Contact & Hours <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
             </Reveal>
           </div>
           <Reveal delay={200}>
-            <div className="glass-dark rounded-2xl p-5 text-white">
-              <h2 className="font-display text-lg font-semibold">Request service for {serviceName}</h2>
-              <p className="mt-1 text-sm text-white/70">Tell us what's going on and we'll get right back to you.</p>
-              <div className="mt-4">
-                <QuoteForm compact defaultService={serviceName} />
+            <div className="glass-dark rounded-2xl p-6 text-white shadow-xl">
+              <div className="inline-flex items-center gap-1.5 rounded-full bg-cta/20 px-2.5 py-0.5 text-xs font-semibold text-cta">
+                Direct Local Dispatch
               </div>
+              <h2 className="mt-3 font-display text-xl font-bold">Need {serviceName}?</h2>
+              <p className="mt-2 text-sm text-white/80 leading-relaxed">
+                Talk directly with our licensed plumbing crew. Fast phone estimates and immediate scheduling across Brownwood and Brown County.
+              </p>
+              
+              <div className="mt-5 rounded-xl border border-white/15 bg-white/10 p-4 text-center backdrop-blur">
+                <div className="text-[11px] font-semibold uppercase tracking-wider text-white/70">Call Our Service Line</div>
+                <a
+                  href={`tel:${business.phoneRaw}`}
+                  className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-cta px-4 py-3 text-base font-bold text-cta-foreground shadow-cta transition hover:brightness-110"
+                >
+                  <Phone className="h-5 w-5" /> {business.phone}
+                </a>
+                <div className="mt-2 text-[11px] text-white/70">24/7 Response for Urgent Emergencies</div>
+              </div>
+
+              <ul className="mt-5 space-y-2 text-xs text-white/85">
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-cta flex-none" /> Free Over-the-Phone Estimates
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-cta flex-none" /> 45–60 Min Rapid Local Dispatch
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-cta flex-none" /> Honest, Upfront Written Pricing
+                </li>
+              </ul>
             </div>
           </Reveal>
         </div>
@@ -85,6 +110,11 @@ export function ServicePageShell({
           <Reveal>
             <div>
               <SectionEyebrow>What we do</SectionEyebrow>
+              {sectionHeading && (
+                <h2 className="mt-3 font-display text-2xl font-bold text-foreground md:text-3xl">
+                  {sectionHeading}
+                </h2>
+              )}
               <div className="mt-4 space-y-5 text-base leading-relaxed text-foreground/85">{body}</div>
             </div>
           </Reveal>

@@ -49,13 +49,22 @@ function ServicesPage() {
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
             <Reveal key={s.slug} delay={i * 50}>
-              <Link to={("/" + s.slug) as never} className="group block h-full rounded-2xl border border-border bg-card p-6 transition hover:-translate-y-1 hover:shadow-elegant">
-                <span className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-brand to-brand-deep text-white shadow-elegant">
-                  <Icon name={s.icon} className="h-5 w-5" />
-                </span>
-                <h3 className="mt-5 font-display text-lg font-bold">{s.title}</h3>
-                <p className="mt-2 text-sm text-foreground/70">{s.blurb}</p>
-                <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep">View service <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" /></span>
+              <Link
+                to={("/" + s.slug) as never}
+                className="group flex h-full flex-col justify-between rounded-2xl border border-border bg-card p-6 transition hover:-translate-y-1 hover:shadow-elegant"
+              >
+                <div>
+                  <span className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-brand to-brand-deep text-white shadow-elegant">
+                    <Icon name={s.icon} className="h-5 w-5" />
+                  </span>
+                  <h3 className="mt-5 font-display text-lg font-bold group-hover:text-brand-deep transition">{s.title}</h3>
+                  <p className="mt-2 text-sm text-foreground/70 leading-relaxed">{s.blurb}</p>
+                </div>
+                <div className="mt-6 border-t border-border/50 pt-4">
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep">
+                    Learn more about {s.title} <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                  </span>
+                </div>
               </Link>
             </Reveal>
           ))}

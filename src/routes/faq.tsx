@@ -12,24 +12,24 @@ const BASE_URL = `https://${business.website}`;
 
 const additionalFaqs = [
   {
-    question: "What payment methods do you accept?",
-    answer: "We accept cash, checks, Visa, Mastercard, American Express, and Discover. For larger projects, we can discuss financing options. All estimates are provided in writing before work begins.",
-    category: "Payment",
-  },
-  {
-    question: "Do you offer warranties on your work?",
-    answer: "Yes. All our workmanship is warrantied, and manufacturer warranties apply to parts and fixtures we install. We stand behind our work and will return promptly to address any issues covered under warranty.",
+    question: "Do you offer warranties on your plumbing work?",
+    answer: "Yes. All our workmanship is backed by a 1-year labor warranty, and manufacturer warranties apply to all new water heaters, fixtures, and parts we install. If an issue arises with our installation, we return promptly to make it right.",
     category: "Warranty",
   },
   {
-    question: "What should I do during a plumbing emergency?",
-    answer: "First, shut off the main water valve to your home (usually located near the street or in a utility area). This stops water flow and limits damage. Turn off your water heater to prevent damage. Move valuables away from water. Then call us at (325) 208-2942 — we have a 24-hour emergency line.",
-    category: "Emergency",
+    question: "Do you provide written estimates before starting work?",
+    answer: "Yes, we provide honest, transparent estimates before any work begins. For standard diagnostics or small repairs, we can often discuss expected pricing over the phone; for major repairs, repiping, or replacements, we assess the site in person and provide a written quote with no surprises.",
+    category: "Pricing",
   },
   {
-    question: "Do you provide free estimates?",
-    answer: "Yes, we provide free estimates for most plumbing projects. For simpler issues, we can often give you a price range over the phone. For larger repairs or remodels, we'll come to your home to assess the project and provide a detailed written estimate.",
-    category: "Pricing",
+    question: "Do you handle city plumbing permits and inspections?",
+    answer: "Yes. As a licensed Texas Responsible Master Plumber (RMP-12345), we pull all required municipal permits from the City of Brownwood and surrounding jurisdictions for water heaters, gas lines, and sewer line replacements, coordinating final inspections for your safety.",
+    category: "Company",
+  },
+  {
+    question: "How can I prevent frozen pipes during Texas winter freezes?",
+    answer: "Disconnect and drain all garden hoses, install insulated foam covers or frost-proof hydrants on exterior spigots, insulate exposed pipes in attics, crawlspaces, and garages, and let indoor faucets drip during sustained sub-freezing temperatures.",
+    category: "Preventative",
   },
 ];
 
@@ -117,7 +117,7 @@ function Page() {
                   to="/contact"
                   className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
                 >
-                  Contact Form <ArrowRight className="h-4 w-4" />
+                  Contact Us <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
             </div>

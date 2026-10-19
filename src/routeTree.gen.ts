@@ -42,6 +42,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
 const WaterSoftenerBrownwoodTxRoute =
   WaterSoftenerBrownwoodTxRouteImport.update({
@@ -216,6 +217,11 @@ const BlogIndexRoute = BlogIndexRouteImport.update({
   path: '/blog/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/blog/$slug',
+  path: '/blog/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -250,6 +256,7 @@ export interface FileRoutesByFullPath {
   '/terms-of-service': typeof TermsOfServiceRoute
   '/water-heaters-brownwood-tx': typeof WaterHeatersBrownwoodTxRoute
   '/water-softener-brownwood-tx': typeof WaterSoftenerBrownwoodTxRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
@@ -285,6 +292,7 @@ export interface FileRoutesByTo {
   '/terms-of-service': typeof TermsOfServiceRoute
   '/water-heaters-brownwood-tx': typeof WaterHeatersBrownwoodTxRoute
   '/water-softener-brownwood-tx': typeof WaterSoftenerBrownwoodTxRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
@@ -321,6 +329,7 @@ export interface FileRoutesById {
   '/terms-of-service': typeof TermsOfServiceRoute
   '/water-heaters-brownwood-tx': typeof WaterHeatersBrownwoodTxRoute
   '/water-softener-brownwood-tx': typeof WaterSoftenerBrownwoodTxRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
@@ -358,6 +367,7 @@ export interface FileRouteTypes {
     | '/terms-of-service'
     | '/water-heaters-brownwood-tx'
     | '/water-softener-brownwood-tx'
+    | '/blog/$slug'
     | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -393,6 +403,7 @@ export interface FileRouteTypes {
     | '/terms-of-service'
     | '/water-heaters-brownwood-tx'
     | '/water-softener-brownwood-tx'
+    | '/blog/$slug'
     | '/blog'
   id:
     | '__root__'
@@ -428,6 +439,7 @@ export interface FileRouteTypes {
     | '/terms-of-service'
     | '/water-heaters-brownwood-tx'
     | '/water-softener-brownwood-tx'
+    | '/blog/$slug'
     | '/blog/'
   fileRoutesById: FileRoutesById
 }
@@ -464,6 +476,7 @@ export interface RootRouteChildren {
   TermsOfServiceRoute: typeof TermsOfServiceRoute
   WaterHeatersBrownwoodTxRoute: typeof WaterHeatersBrownwoodTxRoute
   WaterSoftenerBrownwoodTxRoute: typeof WaterSoftenerBrownwoodTxRoute
+  BlogSlugRoute: typeof BlogSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
 }
 
@@ -700,6 +713,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -736,6 +756,7 @@ const rootRouteChildren: RootRouteChildren = {
   TermsOfServiceRoute: TermsOfServiceRoute,
   WaterHeatersBrownwoodTxRoute: WaterHeatersBrownwoodTxRoute,
   WaterSoftenerBrownwoodTxRoute: WaterSoftenerBrownwoodTxRoute,
+  BlogSlugRoute: BlogSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
 }
 export const routeTree = rootRouteImport

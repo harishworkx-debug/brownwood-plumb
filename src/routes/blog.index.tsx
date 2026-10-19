@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Calendar } from "lucide-react";
 import { blogCategories, business } from "@/data/business";
+import { blogPosts } from "@/data/blogPosts";
 import { Section, SectionEyebrow } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { CTABanner } from "@/components/site/CTABanner";
@@ -10,61 +11,16 @@ const BASE_URL = `https://${business.website}`;
 export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
-      { title: "Plumbing Blog | Tips & Guides | M. Webb Plumbing Brownwood TX" },
-      { name: "description", content: "Expert plumbing tips, guides, and news from M. Webb Plumbing Co. Learn about water heaters, drain maintenance, emergency plumbing, and more. Serving Brownwood, TX." },
-      { property: "og:title", content: "Plumbing Blog | M. Webb Plumbing" },
-      { property: "og:description", content: "Expert plumbing tips and guides for Texas homeowners." },
+      { title: "Plumbing Blog & Homeowner Guides | M. Webb Plumbing Brownwood TX" },
+      { name: "description", content: "Expert plumbing guides, diagnostic tips, and FAQs written and verified by Texas Master Plumber Mike Webb. Serving Brownwood, TX and Brown County." },
+      { property: "og:title", content: "Plumbing Blog & Homeowner Guides | M. Webb Plumbing" },
+      { property: "og:description", content: "Expert plumbing tips and homeowner guides for Texas homes." },
       { property: "og:url", content: `${BASE_URL}/blog` },
     ],
     links: [{ rel: "canonical", href: `${BASE_URL}/blog` }],
   }),
   component: BlogIndex,
 });
-
-const featuredPosts = [
-  {
-    slug: "what-to-do-plumbing-emergency",
-    title: "What to Do During a Plumbing Emergency",
-    excerpt: "A plumbing emergency can happen at any time. Learn the steps to take immediately when you discover a burst pipe, major leak, or sewage backup.",
-    category: "Emergency Plumbing",
-    date: "2025-01-15",
-  },
-  {
-    slug: "signs-you-need-water-heater-replacement",
-    title: "7 Signs You Need a New Water Heater",
-    excerpt: "Is your water heater showing its age? Discover the warning signs that indicate replacement is more cost-effective than continued repairs.",
-    category: "Water Heaters",
-    date: "2025-01-10",
-  },
-  {
-    slug: "preventing-clogged-drains-brownwood",
-    title: "How to Prevent Clogged Drains in Your Brownwood Home",
-    excerpt: "Preventive drain maintenance saves you from costly emergency calls. Learn what causes clogs and how to keep your drains flowing freely.",
-    category: "Drain Cleaning",
-    date: "2025-01-05",
-  },
-  {
-    slug: "hard-water-brown-county",
-    title: "Understanding Hard Water in Brown County, Texas",
-    excerpt: "Hard water affects many Brown County homes. Learn how it impacts your plumbing and appliances, and what solutions exist.",
-    category: "Texas Plumbing Tips",
-    date: "2024-12-28",
-  },
-  {
-    slug: "tankless-vs-traditional-water-heaters",
-    title: "Tankless vs. Traditional Water Heaters: Which is Right for You?",
-    excerpt: "Considering a water heater upgrade? Compare the pros and cons of tankless and traditional water heaters for Texas homes.",
-    category: "Water Heaters",
-    date: "2024-12-20",
-  },
-  {
-    slug: "winter-plumbing-tips-texas",
-    title: "Winter Plumbing Tips for Texas Homeowners",
-    excerpt: "Even in Texas, winter temperatures can threaten your pipes. Prepare your plumbing for cold weather with these essential tips.",
-    category: "Texas Plumbing Tips",
-    date: "2024-12-15",
-  },
-];
 
 function BlogIndex() {
   return (
@@ -75,17 +31,17 @@ function BlogIndex() {
         <div className="relative mx-auto max-w-4xl px-5 text-center lg:px-8">
           <Reveal>
             <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white/80">
-              Plumbing Blog
+              Plumbing Blog & Guides
             </div>
           </Reveal>
           <Reveal delay={80}>
             <h1 className="mt-6 font-display text-4xl font-bold leading-tight md:text-6xl">
-              Expert Tips & <span className="text-gradient-brand">Plumbing Guides</span>
+              Expert Advice & <span className="text-gradient-brand">Plumbing Guides</span>
             </h1>
           </Reveal>
           <Reveal delay={160}>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-white/80">
-              Helpful plumbing information for Brownwood homeowners and businesses. Learn how to maintain your plumbing, handle emergencies, and make informed decisions.
+              Helpful, customer-focused plumbing answers for Brownwood and Brown County homeowners. Written and verified by Master Plumber Mike Webb.
             </p>
           </Reveal>
         </div>
@@ -95,30 +51,45 @@ function BlogIndex() {
         <div className="grid gap-12 lg:grid-cols-[1fr_280px]">
           <div>
             <Reveal>
-              <SectionEyebrow>Featured Articles</SectionEyebrow>
+              <SectionEyebrow>Featured Guides</SectionEyebrow>
             </Reveal>
             <div className="mt-8 grid gap-6">
-              {featuredPosts.map((post, i) => (
+              {blogPosts.map((post, i) => (
                 <Reveal key={post.slug} delay={i * 60}>
                   <article className="group rounded-2xl border border-border bg-card p-6 transition hover:-translate-y-1 hover:shadow-elegant">
                     <div className="flex items-start gap-4 sm:items-center">
                       <div className="flex-1">
-                        <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+                        <div className="flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
                           <span className="rounded bg-secondary px-2 py-0.5 font-medium">{post.category}</span>
                           <span className="flex items-center gap-1">
                             <Calendar className="h-3 w-3" /> {post.date}
                           </span>
+                          <span className="hidden sm:inline">•</span>
+                          <span className="text-foreground/75 font-medium">By {post.author}</span>
+                          <span className="hidden sm:inline">•</span>
+                          <span>{post.readTime}</span>
                         </div>
-                        <h2 className="mt-2 font-display text-lg font-bold group-hover:text-brand-deep transition">
-                          {post.title}
+                        <h2 className="mt-3 font-display text-lg font-bold group-hover:text-brand-deep transition">
+                          <Link to={`/blog/${post.slug}` as never} className="hover:underline">
+                            {post.title}
+                          </Link>
                         </h2>
-                        <p className="mt-2 text-sm text-foreground/70 line-clamp-2">{post.excerpt}</p>
+                        <p className="mt-2 text-sm text-foreground/70 leading-relaxed">{post.excerpt}</p>
                       </div>
                     </div>
-                    <div className="mt-4">
-                      <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep">
-                        Read Article <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
-                      </span>
+                    <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-border/60 pt-4">
+                      <Link
+                        to={`/blog/${post.slug}` as never}
+                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep hover:underline"
+                      >
+                        Read Full Guide <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                      </Link>
+                      <Link
+                        to={post.serviceLink as never}
+                        className="text-xs text-muted-foreground hover:text-foreground transition underline"
+                      >
+                        Related: {post.serviceName}
+                      </Link>
                     </div>
                   </article>
                 </Reveal>

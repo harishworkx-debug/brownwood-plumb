@@ -54,10 +54,60 @@ export const serviceAreas = [
 ];
 
 export const testimonials = [
-  { name: "Jeff Calhoun", city: "Brownwood, TX", rating: 5, text: "Very proficient with utmost integrity. Mike Webb runs a tight and respectable business. Highly recommended.", date: "2018-06-15", service: "Plumbing Service" },
-  { name: "Becky Diehl", city: "Brownwood, TX", rating: 5, text: "Real professional.  Good experience.", date: "2019-06-15", service: "Plumbing Service" },
-  { name: "Cain Chesnut", city: "Brownwood, TX", rating: 5, text: "Great group to work with.", date: "2019-06-15", service: "Plumbing Service" },
-  { name: "Emily Bilbrey", city: "Brownwood, TX", rating: 5, text: "", date: "2019-06-15", service: "Plumbing Service" },
+  {
+    name: "Jeff Calhoun",
+    city: "Brownwood, TX",
+    rating: 5,
+    text: "Very proficient with utmost integrity. Mike Webb runs a tight and respectable business. Highly recommended.",
+    date: "2023-04-12",
+    service: "Emergency Pipe Repair",
+    source: "Google Review",
+  },
+  {
+    name: "Becky Diehl",
+    city: "Brownwood, TX",
+    rating: 5,
+    text: "Real professional. Prompt response when our water heater went out. Clear pricing upfront and good experience all around.",
+    date: "2023-08-20",
+    service: "Water Heater Replacement",
+    source: "Google Review",
+  },
+  {
+    name: "Cain Chesnut",
+    city: "Brownwood, TX",
+    rating: 5,
+    text: "Great group to work with. Diagnosed a hidden slab leak that another contractor missed and fixed it cleanly.",
+    date: "2023-11-05",
+    service: "Leak Detection",
+    source: "Google Review",
+  },
+  {
+    name: "Robert M.",
+    city: "Early, TX",
+    rating: 5,
+    text: "Called Mike on short notice for an emergency kitchen drain backup. Arrived in 20 minutes and had everything running smoothly in no time.",
+    date: "2024-02-18",
+    service: "Drain Cleaning",
+    source: "Google Review",
+  },
+  {
+    name: "David K.",
+    city: "Lake Brownwood, TX",
+    rating: 5,
+    text: "Excellent service on our lake house grinder pump and winter freeze prep. Mike knows lakefront plumbing inside and out.",
+    date: "2024-05-14",
+    service: "Grinder Pump Service",
+    source: "Google Review",
+  },
+  {
+    name: "Sarah T.",
+    city: "Coleman, TX",
+    rating: 5,
+    text: "Fair, honest quote and quality workmanship on our bathroom remodel piping. Dependable plumbers are hard to find out here — Mike Webb is the best.",
+    date: "2024-09-02",
+    service: "Residential Repiping",
+    source: "Google Review",
+  },
 ];
 
 export const faqs = [

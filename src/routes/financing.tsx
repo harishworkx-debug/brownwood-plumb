@@ -123,9 +123,9 @@ function Page() {
                 </div>
               </div>
 
-              <div className="mt-6 rounded-xl bg-primary/5 p-4">
-                <p className="text-sm text-foreground/80">
-                  <strong className="text-foreground">Subject to credit approval.</strong> Financing through third-party lenders. Terms, rates, and availability vary. Ask for details.
+              <div className="mt-6 rounded-xl bg-primary/5 p-4 border border-border">
+                <p className="text-xs text-foreground/80 leading-relaxed">
+                  <strong className="text-foreground">Disclosure & Terms:</strong> Financing options are provided through qualified third-party consumer lending partners and are subject to credit check and approval. APR, loan terms, and payment schedules are determined by the lender. M. Webb Plumbing Co. LLC does not make loan decisions. Contact our office for current lending partners and application details.
                 </p>
               </div>
 
@@ -133,14 +133,17 @@ function Page() {
                 href={`tel:${business.phoneRaw}`}
                 className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-cta px-4 py-3 text-sm font-semibold text-cta-foreground shadow-cta"
               >
-                <Phone className="h-4 w-4" /> Call to Ask About Financing
+                <Phone className="h-4 w-4" /> Call to Discuss Financing Options
               </a>
             </div>
           </Reveal>
         </div>
       </Section>
 
-      <CTABanner title="Let's find a payment option that works for you" subtitle="Call {business.phone} to discuss financing for your plumbing project." />
+      <CTABanner
+        title="Let's find a payment option that works for you"
+        subtitle={`Call ${business.phone} to discuss flexible payment and financing options for your plumbing project.`}
+      />
       <div className="h-24" />
     </>
   );

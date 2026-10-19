@@ -3,7 +3,6 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { business } from "@/data/business";
 import { Section, SectionEyebrow } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
-import { QuoteForm } from "@/components/site/QuoteForm";
 
 const BASE_URL = `https://${business.website}`;
 
@@ -36,7 +35,7 @@ function Page() {
             <h1 className="mt-6 font-display text-4xl font-bold leading-tight md:text-6xl">Talk to a real local <span className="text-gradient-brand">plumber today</span></h1>
           </Reveal>
           <Reveal delay={160}>
-            <p className="mx-auto mt-5 max-w-2xl text-lg text-white/80">Call, email or fill out the form below — we respond fast, and 24/7 for emergencies.</p>
+            <p className="mx-auto mt-5 max-w-2xl text-lg text-white/80">Call or email our team directly — we respond fast, with 24/7 emergency service available.</p>
           </Reveal>
         </div>
       </section>
@@ -84,10 +83,41 @@ function Page() {
 
           <Reveal delay={120}>
             <div className="rounded-2xl border border-border bg-card p-6 shadow-elegant md:p-8">
-              <h2 className="font-display text-2xl font-bold">Request an estimate</h2>
-              <p className="mt-1 text-sm text-muted-foreground">Tell us about your plumbing project and we'll get right back to you.</p>
-              <div className="mt-6">
-                <QuoteForm />
+              <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-xs font-bold text-brand-deep uppercase tracking-wider">
+                Direct Call Service
+              </div>
+              <h2 className="mt-3 font-display text-2xl font-bold">Call for Fast Phone Estimates</h2>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                Skip the online forms and delayed email replies. When you call M. Webb Plumbing, you speak directly with our local plumbing team for immediate advice and scheduling.
+              </p>
+
+              <div className="mt-6 rounded-2xl bg-gradient-to-br from-brand/10 to-transparent border border-brand/20 p-6 text-center">
+                <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Direct Dispatch & Customer Care</div>
+                <a
+                  href={`tel:${business.phoneRaw}`}
+                  className="mt-3 inline-flex items-center justify-center gap-3 rounded-full bg-cta px-6 py-4 text-lg font-bold text-cta-foreground shadow-cta transition hover:scale-105"
+                >
+                  <Phone className="h-5 w-5" /> {business.phone}
+                </a>
+                <p className="mt-2 text-xs text-muted-foreground">Available 24/7 for True Plumbing Emergencies</p>
+              </div>
+
+              <div className="mt-6 space-y-3">
+                <h3 className="font-semibold text-sm text-foreground">Why Brown County Calls Mike Webb Directly:</h3>
+                <ul className="space-y-2 text-sm text-foreground/80">
+                  <li className="flex items-start gap-2">
+                    <span className="text-cta font-bold">✓</span>
+                    <span><strong>Instant answers:</strong> Discuss your leak, water heater, or drain problem with an experienced plumber immediately.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-cta font-bold">✓</span>
+                    <span><strong>Rapid arrival:</strong> 45–60 minute response times across Brownwood, Early, and surrounding areas.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-cta font-bold">✓</span>
+                    <span><strong>Photo & blueprint reviews:</strong> Need to share inspection reports or photos? Email us directly at <a href={`mailto:${business.email}`} className="text-brand-deep underline font-medium">{business.email}</a>.</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </Reveal>

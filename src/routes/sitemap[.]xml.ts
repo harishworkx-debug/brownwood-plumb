@@ -1,48 +1,55 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
-import { services, serviceAreas } from "@/data/business";
+import { services, serviceAreas, business } from "@/data/business";
+import { blogPosts } from "@/data/blogPosts";
 
-const BASE_URL = "https://www.mwebbplumbingco.com";
+const BASE_URL = `https://${business.website}`;
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
         const staticPages = [
-          { path: "/", priority: "1.0", changefreq: "daily" },
-          { path: "/about", priority: "0.8", changefreq: "monthly" },
-          { path: "/services", priority: "0.9", changefreq: "weekly" },
-          { path: "/service-areas", priority: "0.9", changefreq: "weekly" },
-          { path: "/reviews", priority: "0.7", changefreq: "weekly" },
-          { path: "/contact", priority: "0.7", changefreq: "monthly" },
-          { path: "/faq", priority: "0.7", changefreq: "monthly" },
-          { path: "/financing", priority: "0.7", changefreq: "monthly" },
-          { path: "/blog", priority: "0.8", changefreq: "weekly" },
-          { path: "/privacy-policy", priority: "0.3", changefreq: "yearly" },
-          { path: "/terms-of-service", priority: "0.3", changefreq: "yearly" },
+          { path: "", lastmod: "2025-01-19" },
+          { path: "/about", lastmod: "2025-01-18" },
+          { path: "/services", lastmod: "2025-01-18" },
+          { path: "/service-areas", lastmod: "2025-01-18" },
+          { path: "/reviews", lastmod: "2025-01-15" },
+          { path: "/contact", lastmod: "2025-01-18" },
+          { path: "/faq", lastmod: "2025-01-15" },
+          { path: "/financing", lastmod: "2025-01-12" },
+          { path: "/blog", lastmod: "2025-01-15" },
+          { path: "/privacy-policy", lastmod: "2025-01-01" },
+          { path: "/terms-of-service", lastmod: "2025-01-01" },
         ];
 
         const servicePages = services.map((s) => ({
           path: `/${s.slug}`,
-          priority: "0.8",
-          changefreq: "monthly",
+          lastmod: "2025-01-18",
         }));
 
         const areaPages = serviceAreas.map((a) => ({
           path: `/plumber-${a.slug}`,
-          priority: "0.8",
-          changefreq: "monthly",
+          lastmod: "2025-01-17",
         }));
 
-        const allPages = [...staticPages, ...servicePages, ...areaPages];
+        const blogArticlePages = blogPosts.map((p) => ({
+          path: `/blog/${p.slug}`,
+          lastmod: p.lastModified,
+        }));
+
+        const allPages = [...staticPages, ...servicePages, ...areaPages, ...blogArticlePages];
 
         const urls = allPages
-          .map((p) => `  <url>\n    <loc>${BASE_URL}${p.path}</loc>\n    <changefreq>${p.changefreq}</changefreq>\n    <priority>${p.priority}</priority>\n    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>\n  </url>`)
+          .map((p) => `  <url>\n    <loc>${BASE_URL}${p.path}</loc>\n    <lastmod>${p.lastmod}</lastmod>\n  </url>`)
           .join("\n");
 
         const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`;
         return new Response(xml, {
-          headers: { "Content-Type": "application/xml", "Cache-Control": "public, max-age=3600" },
+          headers: {
+            "Content-Type": "application/xml; charset=utf-8",
+            "Cache-Control": "public, max-age=3600",
+          },
         });
       },
     },

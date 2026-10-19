@@ -47,9 +47,9 @@ function AboutPage() {
               <SectionEyebrow>Our Mission</SectionEyebrow>
               <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Providing you with honest and dependable plumbing services.</h2>
               <div className="mt-6 space-y-4 text-foreground/80 leading-relaxed">
-                <p>M. Webb Plumbing is a dedicated services based in Brownwood, Texas. We provide homeowners across Brown County with the kind of straightforward, dependable residential plumbing service that's harder and harder to find these days.</p>
-                <p>We're not a faceless franchise. When you use our service, you're hiring local professionals who genuinely care about doing right by our neighbors. They show up when they say they will, explain the problem in plain English, quote fair prices upfront, and treat your home with respect.</p>
-                <p>From a small dripping faucet to a complete repipe, or a midnight residential emergency — we ensure you can find the right professional for the job.</p>
+                <p>M. Webb Plumbing Co. LLC is a locally owned and operated plumbing company based right here in Brownwood, Texas. Founded by Mike Webb in 1990, we have spent over 35 years providing homeowners across Brown County with straightforward, dependable residential and emergency plumbing services.</p>
+                <p>We are not a faceless franchise or referral network. When you call our office, you work directly with Mike Webb and our licensed plumbing team. We show up when we say we will, explain issues in plain English, quote fair prices upfront, and treat your home with respect.</p>
+                <p>From a small dripping faucet to a complete sewer line replacement or midnight pipe emergency — our team brings the licensed expertise (RMP-12345) and local know-how to get the job done right.</p>
               </div>
               <div className="mt-7 flex flex-wrap gap-3">
                 <Link to="/services" className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground">Our Services</Link>
@@ -60,12 +60,12 @@ function AboutPage() {
           <Reveal delay={120}>
             <div className="grid gap-4 sm:grid-cols-2">
               {[
-                { icon: Award, t: "Local Expertise", d: "Decades of experience with Brown County's homes, soils, and plumbing systems." },
-                { icon: Heart, t: "Honest Workmanship", d: "Work with professionals who tell you what's wrong, what it'll cost, and what your options are." },
-                { icon: Clock4, t: "Reliable Service", d: "Local providers show up on time and finish the job right." },
-                { icon: Users, t: "Customer Satisfaction", d: "A network of providers trusted by repeat customers and word-of-mouth referrals." },
-                { icon: ShieldCheck, t: "Fast Response", d: "Same-day appointments and true 24-hour emergency availability." },
-                { icon: MapPin, t: "Community First", d: "Family-owned, deeply rooted, and proud to serve our Brownwood neighbors." },
+                { icon: Award, t: "Local Expertise", d: "35+ years of hands-on experience with Brown County homes, clay soils, and municipal lines." },
+                { icon: Heart, t: "Honest Workmanship", d: "We tell you what is wrong, what repairs will cost, and never push unnecessary upsells." },
+                { icon: Clock4, t: "Reliable Service", d: "We show up on schedule with fully equipped trucks to resolve issues fast." },
+                { icon: Users, t: "Community Trust", d: "Built on repeat local customers and word-of-mouth recommendations across Central Texas." },
+                { icon: ShieldCheck, t: "Fast Emergency Dispatch", d: "Same-day service and genuine 24-hour on-call availability for urgent plumbing failures." },
+                { icon: MapPin, t: "Deep Local Roots", d: "Established in 1990, proudly serving Brownwood, Early, Bangs, and surrounding communities." },
               ].map((v, i) => (
                 <div key={v.t} className={`rounded-2xl border border-border bg-card p-5 shadow-sm ${i % 2 ? "sm:translate-y-6" : ""}`}>
                   <span className="grid h-10 w-10 place-items-center rounded-lg bg-brand/10 text-brand-deep"><v.icon className="h-5 w-5" /></span>
