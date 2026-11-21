@@ -286,7 +286,7 @@ export const detailedServiceAreas: Record<string, LocalAreaDetail> = {
     faqs: [
       {
         q: "What should I do if my Lake Brownwood sewer grinder pump alarm goes off?",
-        a: "Stop running water immediately (no laundry, showers, or dishwashers) to avoid an overflow. Silence the alarm buzzer using the silence button on the control box, and call us right away at (325) 208-2942.",
+        a: "Stop running water immediately (no laundry, showers, or dishwashers) to avoid an overflow. Silence the alarm buzzer using the silence button on the control box, and call us right away at (855) 214-2959.",
       },
       {
         q: "Can you winterize my Lake Brownwood second home before winter?",

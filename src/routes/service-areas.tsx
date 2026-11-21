@@ -11,7 +11,7 @@ export const Route = createFileRoute("/service-areas")({
   head: () => ({
     meta: [
       { title: "Service Areas | Plumber Brown County TX | M. Webb Plumbing" },
-      { name: "description", content: "M. Webb Plumbing serves Brownwood, Early, Bangs, Lake Brownwood, Zephyr, Blanket, May, Brookesmith, Comanche, Coleman and surrounding Central Texas communities. 24-hour emergency plumbing. Call (325) 208-2942." },
+      { name: "description", content: "M. Webb Plumbing serves Brownwood, Early, Bangs, Lake Brownwood, Zephyr, Blanket, May, Brookesmith, Comanche, Coleman and surrounding Central Texas communities. 24-hour emergency plumbing. Call (855) 214-2959." },
       { name: "keywords", content: "plumber brown county tx, plumbing service areas, brownwood plumber, early tx plumber, bangs plumber, lake brownwood plumbing, zephyr tx plumber" },
       { property: "og:title", content: "Service Areas | Brown County & Central Texas Plumber | M. Webb Plumbing" },
       { property: "og:description", content: "M. Webb Plumbing proudly serves Brown County and Central Texas communities with reliable plumbing services. 35+ years experience." },
@@ -74,7 +74,7 @@ function Page() {
           <div className="mt-12 rounded-2xl border border-border bg-card p-8 shadow-sm">
             <h3 className="font-display text-xl font-bold">Don't see your area listed?</h3>
             <p className="mt-2 text-foreground/70">
-              We serve communities throughout Brown County and Central Texas. If you don't see your location listed, give us a call at <a href="tel:+13252082942" className="font-semibold text-brand-deep hover:underline">(325) 208-2942</a> — we're likely able to help.
+              We serve communities throughout Brown County and Central Texas. If you don't see your location listed, give us a call at <a href={`tel:${business.phoneRaw}`} className="font-semibold text-brand-deep hover:underline">{business.phone}</a> — we're likely able to help.
             </p>
           </div>
         </Reveal>

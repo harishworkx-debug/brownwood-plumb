@@ -39,7 +39,7 @@ export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
       { title: "Plumbing FAQ | Brownwood TX | M. Webb Plumbing" },
-      { name: "description", content: "Answers to common plumbing questions about emergency service, pricing, warranties, service areas, and more. Serving Brownwood, TX and Brown County. Call (325) 208-2942." },
+      { name: "description", content: "Answers to common plumbing questions about emergency service, pricing, warranties, service areas, and more. Serving Brownwood, TX and Brown County. Call (855) 214-2959." },
       { property: "og:title", content: "Plumbing FAQ | Brownwood TX | M. Webb Plumbing" },
       { property: "og:description", content: "Get answers to frequently asked plumbing questions. Serving Brownwood and Brown County, TX." },
       { property: "og:url", content: `${BASE_URL}/faq` },

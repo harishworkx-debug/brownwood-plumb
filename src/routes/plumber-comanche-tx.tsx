@@ -11,7 +11,7 @@ const detail = detailedServiceAreas[SLUG];
 export const Route = createFileRoute("/plumber-comanche-tx")({
   head: () => {
     const title = `Plumber in ${area.name} | M. Webb Plumbing Co.`;
-    const desc = `${area.name} residential & emergency plumbing from M. Webb Plumbing. 35+ years experience, ${detail ? detail.responseTime.toLowerCase() : "fast local dispatch"}. Call (325) 208-2942.`;
+    const desc = `${area.name} residential & emergency plumbing from M. Webb Plumbing. 35+ years experience, ${detail ? detail.responseTime.toLowerCase() : "fast local dispatch"}. Call (855) 214-2959.`;
     const keywords = detail ? detail.seoKeywords.join(", ") : `plumber ${area.name}, emergency plumber ${area.name}`;
 
     return {

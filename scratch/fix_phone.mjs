@@ -7,10 +7,10 @@ function processFile(filePath) {
   let content = fs.readFileSync(filePath, "utf-8");
   let updated = false;
   if (content.includes("(855) 321-3189") || content.includes("+18553213189") || content.includes("325-641-2662") || content.includes("(325) 728-4690")) {
-    content = content.replace(/\(855\) 321-3189/g, "(325) 208-2942");
-    content = content.replace(/\+18553213189/g, "+13252082942");
-    content = content.replace(/\(325\) 728-4690/g, "(325) 208-2942");
-    content = content.replace(/325-641-2662/g, "(325) 208-2942");
+    content = content.replace(/\(855\) 321-3189/g, "(855) 214-2959");
+    content = content.replace(/\+18553213189/g, "+18552142959");
+    content = content.replace(/\(325\) 728-4690/g, "(855) 214-2959");
+    content = content.replace(/325-641-2662/g, "(855) 214-2959");
     fs.writeFileSync(filePath, content, "utf-8");
     console.log(`Updated phone number in ${path.basename(filePath)}`);
   }

@@ -8,8 +8,8 @@ export const business = {
   city: "Brownwood",
   state: "TX",
   zip: "76801",
-  phone: "(325) 208-2942",
-  phoneRaw: "+13252082942",
+  phone: "(855) 214-2959",
+  phoneRaw: "+18552142959",
   email: "webbplumbing@verizon.net",
   website: "www.mwebbplumbingco.com",
   hours: "Mon–Fri 8:00 AM – 5:00 PM · 24-Hour Emergency On-Call",
@@ -113,7 +113,7 @@ export const testimonials = [
 export const faqs = [
   {
     question: "Do you offer 24-hour emergency plumbing in Brownwood, TX?",
-    answer: "Yes. We provide 24-hour emergency plumbing services for burst pipes, major leaks, overflowing fixtures and other urgent issues across Brownwood, Early, Bangs, Lake Brownwood, Zephyr and all of Brown County, TX. Call (325) 208-2942 anytime.",
+    answer: "Yes. We provide 24-hour emergency plumbing services for burst pipes, major leaks, overflowing fixtures and other urgent issues across Brownwood, Early, Bangs, Lake Brownwood, Zephyr and all of Brown County, TX. Call (855) 214-2959 anytime.",
     category: "Emergency",
   },
   {
@@ -148,12 +148,12 @@ export const faqs = [
   },
   {
     question: "How much does a plumbing repair cost?",
-    answer: "Pricing depends on the type of plumbing problem, materials, accessibility, and work required. We give honest, upfront estimates before any work begins — no surprises. Call (325) 208-2942 to request an assessment.",
+    answer: "Pricing depends on the type of plumbing problem, materials, accessibility, and work required. We give honest, upfront estimates before any work begins — no surprises. Call (855) 214-2959 to request an assessment.",
     category: "Pricing",
   },
   {
     question: "What areas do you serve?",
-    answer: "We proudly serve Brownwood, Early, Bangs, Lake Brownwood, Zephyr, Blanket, May, Brookesmith, Comanche, Coleman, and surrounding communities. If you're unsure if we are available in your area, give us a call at (325) 208-2942.",
+    answer: "We proudly serve Brownwood, Early, Bangs, Lake Brownwood, Zephyr, Blanket, May, Brookesmith, Comanche, Coleman, and surrounding communities. If you're unsure if we are available in your area, give us a call at (855) 214-2959.",
     category: "Service Areas",
   },
   {
