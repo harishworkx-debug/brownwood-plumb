@@ -11,7 +11,7 @@ export const Route = createFileRoute("/service-areas")({
   head: () => ({
     meta: [
       { title: "Service Areas | Plumber Brown County TX | M. Webb Plumbing" },
-      { name: "description", content: "M. Webb Plumbing serves Brownwood, Early, Bangs, Lake Brownwood, Zephyr, Blanket, May, Brookesmith, Comanche, Coleman and surrounding Central Texas communities. 24-hour emergency plumbing. Call (855) 214-2959." },
+      { name: "description", content: "M. Webb Plumbing serves Brownwood, Early, Bangs, Lake Brownwood, Zephyr, Blanket, May, Brookesmith, Comanche, Coleman and surrounding Central Texas communities. 24-hour emergency plumbing. Call (877) 809-2327." },
       { name: "keywords", content: "plumber brown county tx, plumbing service areas, brownwood plumber, early tx plumber, bangs plumber, lake brownwood plumbing, zephyr tx plumber" },
       { property: "og:title", content: "Service Areas | Brown County & Central Texas Plumber | M. Webb Plumbing" },
       { property: "og:description", content: "M. Webb Plumbing proudly serves Brown County and Central Texas communities with reliable plumbing services. 35+ years experience." },

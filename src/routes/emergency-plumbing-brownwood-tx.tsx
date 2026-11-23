@@ -30,9 +30,9 @@ export const Route = createFileRoute("/emergency-plumbing-brownwood-tx")({
   head: () => ({
     meta: [
       { title: "24/7 Emergency Plumber in Brownwood, TX | Fast Response | M. Webb Plumbing" },
-      { name: "description", content: "Burst pipe? Severe leak? Flooded water heater? Call M. Webb Plumbing at (855) 214-2959 for 24/7 emergency plumbing response across Brownwood, Early, and Brown County." },
+      { name: "description", content: "Burst pipe? Severe leak? Flooded water heater? Call M. Webb Plumbing at (877) 809-2327 for 24/7 emergency plumbing response across Brownwood, Early, and Brown County." },
       { property: "og:title", content: "24/7 Emergency Plumber in Brownwood, TX | M. Webb Plumbing Co." },
-      { property: "og:description", content: "Burst pipe? Severe leak? Flooded water heater? Call M. Webb Plumbing at (855) 214-2959 for 24/7 emergency plumbing response across Brownwood, Early, and Brown County." },
+      { property: "og:description", content: "Burst pipe? Severe leak? Flooded water heater? Call M. Webb Plumbing at (877) 809-2327 for 24/7 emergency plumbing response across Brownwood, Early, and Brown County." },
       { property: "og:url", content: `${BASE_URL}/emergency-plumbing-brownwood-tx` },
     ],
     links: [{ rel: "canonical", href: `${BASE_URL}/emergency-plumbing-brownwood-tx` }],

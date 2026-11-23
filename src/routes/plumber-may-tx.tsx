@@ -11,7 +11,7 @@ const detail = detailedServiceAreas[SLUG];
 export const Route = createFileRoute("/plumber-may-tx")({
   head: () => {
     const title = `Plumber in ${area.name} | M. Webb Plumbing Co.`;
-    const desc = `${area.name} residential & emergency plumbing from M. Webb Plumbing. 35+ years experience, ${detail ? detail.responseTime.toLowerCase() : "fast local dispatch"}. Call (855) 214-2959.`;
+    const desc = `${area.name} residential & emergency plumbing from M. Webb Plumbing. 35+ years experience, ${detail ? detail.responseTime.toLowerCase() : "fast local dispatch"}. Call (877) 809-2327.`;
     const keywords = detail ? detail.seoKeywords.join(", ") : `plumber ${area.name}, emergency plumber ${area.name}`;
 
     return {
